@@ -19,9 +19,9 @@ attached where they exist; see each release's notes for what has been tested.
    `tar --zstd -xf burnoutrevenge-launcher-linux-x86_64.tar.zst`
 2. Run `tools/port_gui.sh` (or `./run.sh`). The first thing it asks is where
    your copy of the game is: a `.rar`/`.zip`/`.7z`, a `.iso` disc image, or
-   the extracted folder. Each launcher names the release it was built
-   from - the same rip gives a byte-for-byte verified import; another region
-   usually runs but will not match the checksums.
+   the extracted folder. Each launcher names the disc (region and title ID)
+   its checksums came from - the same disc gives a byte-for-byte verified
+   import; another region usually runs but will not match the checksums.
 3. Play. Saves and settings stay in `user-data/` next to the launcher.
 
 Needs: Linux x86-64, a Vulkan-capable GPU driver, `zenity` for the GUI,
