@@ -54,28 +54,28 @@ The launcher page shows it per title, but the layers are the same for all:
 | CPU | the game's PowerPC code, recompiled ahead of time to native x86-64 - no interpreter, no JIT |
 | Graphics | a native Vulkan renderer; the console's command stream and shaders run as Vulkan |
 | Audio | a native mixer; XMA effects and WMA soundtracks are decoded natively |
-| Console OS calls | the one layer still moving: each port answers a growing share of the console's kernel calls itself, the rest go through the runtime's console layer - the percentage on the page is measured from what the game actually calls |
+| Console OS calls | the one layer still moving: each port answers a growing share of the console's kernel calls itself, the rest go through the runtime's console layer - the percentage in the titles table below is measured from the console calls each game actually makes. CPU, graphics and audio are native on every title; the native / ReXGlue split is only this console-OS-call layer |
 
 ## Titles
 
-| title | type |
-|---|---|
-| Burnout Revenge (USA) | Disc |
-| Ridge Racer Unbounded (USA) | Disc |
-| Midnight Club: Los Angeles - Complete Edition (USA) | Disc |
-| Split/Second (USA) | Disc |
-| Banjo-Kazooie | XBLA |
-| Banjo-Tooie | XBLA |
-| Geometry Wars: Retro Evolved | XBLA |
-| Geometry Wars: Retro Evolved 2 | XBLA |
-| Rez HD | XBLA |
-| SoulCalibur II HD Online | XBLA |
-| After Burner Climax | XBLA |
-| Hydro Thunder Hurricane | XBLA |
-| Space Giraffe | XBLA |
-| OutRun Online Arcade | XBLA |
-| Daytona USA | XBLA |
-| Geometry Wars 3: Dimensions | XBLA |
+| title | type | console calls native | via ReXGlue |
+|---|---|---|---|
+| Burnout Revenge (USA) | Disc | 24% | 76% |
+| Ridge Racer Unbounded (USA) | Disc | 0% | 100% |
+| Midnight Club: Los Angeles - Complete Edition (USA) | Disc | 0% | 100% |
+| Split/Second (USA) | Disc | 0% | 100% |
+| Banjo-Kazooie | XBLA | 0% | 100% |
+| Banjo-Tooie | XBLA | 0% | 100% |
+| Geometry Wars: Retro Evolved | XBLA | 13% | 87% |
+| Geometry Wars: Retro Evolved 2 | XBLA | 0% | 100% |
+| Rez HD | XBLA | 0% | 100% |
+| SoulCalibur II HD Online | XBLA | 0% | 100% |
+| After Burner Climax | XBLA | 0% | 100% |
+| Hydro Thunder Hurricane | XBLA | 0% | 100% |
+| Space Giraffe | XBLA | 0% | 100% |
+| OutRun Online Arcade | XBLA | 0% | 100% |
+| Daytona USA | XBLA | 0% | 100% |
+| Geometry Wars 3: Dimensions | XBLA | 0% | 100% |
 
 Every title is playable. Each port's `CONVERSION.md` records what was done to
 it, and its release page has the launcher downloads.
