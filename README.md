@@ -65,7 +65,20 @@ The launcher page shows it per title, but the layers are the same for all:
 | Midnight Club: Los Angeles - Complete Edition (USA) | playable, slow | free roam, HUD, minimap, radio; ~11 fps on the reference GPU; offline only |
 | Split/Second (USA) | playable | title, menus and races; DLC loader disabled; frame rate follows the host |
 
-Every port's `CONVERSION.md` records what had to be done to it.
+| **Xbox Live Arcade titles** | | |
+| Banjo-Kazooie | playable | boots into Spiral Mountain and the world renders; native PowerPC |
+| Banjo-Tooie | playable | title and in-game world render; native PowerPC |
+| Geometry Wars: Retro Evolved | playable | arena, ship, enemies and score render and play |
+| Geometry Wars: Retro Evolved 2 | playable | confirmed in-game after an exposure fix |
+| Rez HD | playable | levels render; correct on desktop and device |
+| SoulCalibur II HD Online | playable | reaches an in-game match |
+| After Burner Climax | playable | stage one fully lit; target-marker sprite garbled |
+| Hydro Thunder Hurricane | playable | races render (desktop); buoyancy and water-colour issues |
+| Space Giraffe | playable | levels render; image slightly over-bright |
+
+The disc titles head the list; the Xbox Live Arcade titles follow. Each
+port's `CONVERSION.md` records what had to be done to it, and its release
+notes list the known issues.
 
 ## Legal
 
