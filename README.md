@@ -40,6 +40,7 @@ The launcher page shows it per title, but the layers are the same for all:
 |---|---|---|
 | Burnout Revenge (USA) | playable | full soundtrack, menus and races; 24% of console calls native |
 | Ridge Racer Unbounded (USA) | playable | menus and races in full colour; ~35 fps when last measured; offline only |
+| Midnight Club: Los Angeles - Complete Edition (USA) | playable, slow | free roam, HUD, minimap, radio; ~11 fps on the reference GPU; offline only |
 
 Every port's `CONVERSION.md` records what had to be done to it.
 
