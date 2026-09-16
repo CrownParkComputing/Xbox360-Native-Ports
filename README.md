@@ -7,8 +7,9 @@ copy of the game - an archive, a disc image (`.iso`) or an extracted folder -
 and it imports that, verifies it against the checksums the port was built
 from, and plays.
 
-Every title has a Linux launcher. Windows launchers and an Android build are
-attached where they exist; see each release's notes for what has been tested.
+Every title has a Linux launcher and a Windows launcher; see each release's
+notes for what has been tested. No Android builds of these disc titles yet:
+they are too slow until the console layer is fully native.
 
 ## Using a launcher
 
@@ -39,15 +40,6 @@ Needs: Linux x86-64, a Vulkan-capable GPU driver, `zenity` for the GUI,
 Needs: Windows 10/11 x64 with a Vulkan GPU driver. The Windows builds are
 cross-compiled from the same sources; the release notes say how far each has
 been tested.
-
-### Android (arm64)
-
-An `*-android-arm64-v8a.apk` is the game code only. Install it, then copy
-the game files to the app's own folder on the device -
-`Android/data/<package>/files/game/` (the package name is in the release
-notes) - for example with `adb push assets/. /sdcard/Android/data/<package>/files/game/`.
-The title starts and says it has no `default.xex` if the game files are not
-there yet. Needs Android 11+ with a Vulkan GPU.
 
 Keyboard (Linux and Windows): Return = Start, Space = A, W/A/S/D = left
 stick, E = accelerate, Q = brake, Tab = Back. A game controller works as
