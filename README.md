@@ -73,6 +73,9 @@ The launcher page shows it per title, but the layers are the same for all:
 | After Burner Climax | XBLA |
 | Hydro Thunder Hurricane | XBLA |
 | Space Giraffe | XBLA |
+| OutRun Online Arcade | XBLA |
+| Daytona USA | XBLA |
+| Geometry Wars 3: Dimensions | XBLA |
 
 Every title is playable. Each port's `CONVERSION.md` records what was done to
 it, and its release page has the launcher downloads.
