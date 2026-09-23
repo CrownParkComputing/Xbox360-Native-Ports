@@ -1,0 +1,26 @@
+# Build output and runtime artifacts
+out/
+logs/
+frames*/
+xenia_capture/
+*.log
+*.out
+*.png
+*.ppm
+asan.*
+core*
+# The game itself is never committed - point --game_data_root at your own dump.
+gdb_*.txt
+extracted/
+toc_dec.bin
+*.usm
+extracted_audio/
+extracted_textures*/
+samples/
+dist/
+
+# Private game content: restored from the content zip, never committed.
+assets/
+__pycache__/
+*.py[cod]
+content/*.zip

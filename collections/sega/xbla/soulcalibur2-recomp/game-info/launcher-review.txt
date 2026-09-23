@@ -1,0 +1,3 @@
+SoulCalibur II HD Online reaches an in-game match with full-detail fighters and stage after shared-memory validity and presentation fixes.
+Complete arcade matches, test both players, saves and audio, and soak stage transitions while watching for stale textures.
+An arm64 APK exists. Device-test a full match, controller latency, stage transitions, memory validity and lifecycle behavior before marking supported.

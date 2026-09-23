@@ -1,0 +1,3 @@
+Bizarre Creations' original twin-stick XBLA game. Arena, ship, enemies, particles and score HUD render and update correctly with no documented Xenos issue.
+Run a high-particle score session, verify dual-stick controls, achievements and suspend/resume, and capture sustained frame pacing.
+An arm64 APK exists. This is one of the best Android candidates; device-test touch/controller mapping, high-particle GPU load and lifecycle handling.

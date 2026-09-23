@@ -1,0 +1,3 @@
+Rare's XBLA remaster of the Nintendo 64 platformer. The recompiled build boots into Spiral Mountain and renders the game world correctly with the Xenos/Vulkan renderer; the experimental native GPU path remains black.
+Run a full save/load and level-transition soak, then evaluate the complete Xenia 60 FPS timing patch set before offering 60 FPS. Keep Xenos as the supported renderer.
+Device-proven foundation: an arm64 APK exists and the conversion notes record a Retroid handheld run. Re-test controls, suspend/resume, storage picker, audio latency and sustained thermals on the target device.

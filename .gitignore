@@ -1,0 +1,34 @@
+# ---- game content: never commit anything imported from a user's copy ----
+assets/
+content/
+content_root/
+user-data/
+saves/
+dist/
+*.xex
+*.iso
+*.ztm
+*.stfs
+*.pirs
+*.con
+*.live
+*.xzp
+
+# ripped artwork (box icons, achievement icons) — metadata .toml stays
+icon.png
+game-info/icons/*.png
+
+# per-user runtime state
+_shared/saves/
+_shared/achievements/
+_shared/user-data/
+_shared/save-migration-backup/
+_shared/validation_*.csv
+
+# build output
+out/
+build/
+__pycache__/
+*.pyc
+*.log
+*.rollbak

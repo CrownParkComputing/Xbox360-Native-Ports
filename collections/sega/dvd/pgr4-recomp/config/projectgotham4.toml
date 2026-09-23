@@ -1,0 +1,26 @@
+# Project Gotham Racing 4 (Bizarre Creations, Xbox 360). First-boot settings,
+# mirroring the PGR3 rexglue port and the racing-title defaults.
+unregistered_function_nonfatal = true
+gpu_allow_invalid_fetch_constants = true
+async_shader_compilation = false
+render_target_path_vulkan = "fsi"
+# MCLA-family CPU-side coherency savings (2026-09-22 rollout): keep uploaded
+# page-valid state across frames; treat blocks dirtied 3 frames running as
+# permanently dirty (batched upload at frame open, no trap/re-arm per write).
+# Trade: draws late in a frame miss writes after that frame's first upload of
+# a hot page. Safe values if textures/geometry corrupt: true / 0.
+clear_memory_page_state = false
+gpu_hot_page_frames = 3
+# Render at 1080p (guest video mode + window). User request 2026-09-17.
+resolution = "1080p"
+headless = true
+window_title = "Project Gotham Racing 4"
+side_panel_title = "Project Gotham Racing 4"
+# Bizarre's engine free-runs VdSwap; cap it so the present loop does not spin.
+frame_limit = 60
+# External-window rendering: mailbox = tear-free, presents continuously off the guest
+# thread (not gated on input events), up to the display refresh / frame_limit. Strict
+# FIFO froze the windowed surface until mouse input and half-rate-locked it to 30.
+vulkan_allow_present_mode_immediate = false
+vulkan_allow_present_mode_mailbox = true
+vulkan_allow_present_mode_fifo_relaxed = false

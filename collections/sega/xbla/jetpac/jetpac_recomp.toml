@@ -1,0 +1,135 @@
+# XenonRecomp config for Jetpac Refuelled (title 584107FB).
+#
+# Helper addresses come from title_probe, which finds them by their
+# instruction shape and then checks the four save/restore deltas:
+# 0x50, 0x4C, 0x298, 0x298. Those deltas are the independent evidence
+# that real helpers were matched rather than coincidental bytes in a
+# data blob, and this title reports them.
+#
+# RUN IT FROM THIS DIRECTORY WITH A BARE FILENAME, with a CURRENT
+# recompiler. Every path below is resolved relative to this file, and
+# an old XenonRecomp emits a bare `// comment` for an opcode it cannot
+# translate - the instruction is dropped and the recompile still looks
+# clean. Use ./build.sh, which guards both.
+[main]
+file_path = "assets/default.xex"
+out_directory_path = "ppc"
+switch_table_file_path = "jetpac_jumptable.toml"
+
+restgprlr_14_address = 0x8226EFF0
+savegprlr_14_address = 0x8226EFA0
+restfpr_14_address = 0x82271AEC
+savefpr_14_address = 0x82271AA0
+restvmx_14_address = 0x8227FAF8
+savevmx_14_address = 0x8227F860
+restvmx_64_address = 0x8227FB8C
+savevmx_64_address = 0x8227F8F4
+
+# setjmp / longjmp: DELIBERATELY ABSENT, and that is a finding
+# rather than an omission. Leaving them out when a title does have
+# them is the failure where the longjmp is emitted as an ordinary
+# call, control never unwinds, and an unrelated function crashes on
+# a pointer it never computed. Inventing addresses is worse.
+#
+# title_probe matched the known CRT byte patterns 0 and 0 time(s), and established absence
+# structurally rather than from that count: a jmp_buf save is a run
+# of consecutive f14..f31 / r14..r31 saves, and every such run in
+# this image is one of the four register-save helpers, so there is
+# no jmp_buf anywhere to name.
+setjmp_longjmp_absent = true
+
+[[main.functions]]
+address = 0x820AD748
+size = 0x98
+
+[[main.functions]]
+address = 0x820B0A48
+size = 0x94
+
+[[main.functions]]
+address = 0x820BFE88
+size = 0x184
+
+[[main.functions]]
+address = 0x820EDD58
+size = 0x17C
+
+[[main.functions]]
+address = 0x820EFD60
+size = 0x194
+
+[[main.functions]]
+address = 0x820F1B88
+size = 0x94
+
+[[main.functions]]
+address = 0x8210DB50
+size = 0x14
+
+[[main.functions]]
+address = 0x8210DB58
+size = 0xC
+
+[[main.functions]]
+address = 0x8210DB64
+size = 0x4D4
+
+[[main.functions]]
+address = 0x8210E030
+size = 0x8
+
+[[main.functions]]
+address = 0x8210F2F0
+size = 0xE4
+
+[[main.functions]]
+address = 0x8210F3D4
+size = 0x8
+
+[[main.functions]]
+address = 0x8210F3DC
+size = 0x2C
+
+[[main.functions]]
+address = 0x8210F408
+size = 0x10
+
+[[main.functions]]
+address = 0x8210F424
+size = 0x10
+
+[[main.functions]]
+address = 0x8210F434
+size = 0x8
+
+[[main.functions]]
+address = 0x8216FD10
+size = 0x378
+
+[[main.functions]]
+address = 0x8216FE68
+size = 0x220
+
+[[main.functions]]
+address = 0x82197418
+size = 0xB0
+
+[[main.functions]]
+address = 0x82197BB8
+size = 0x1FC
+
+[[main.functions]]
+address = 0x82197CFC
+size = 0xB8
+
+[[main.functions]]
+address = 0x82237B30
+size = 0x11C
+
+[[main.functions]]
+address = 0x82237C50
+size = 0x174
+
+[[main.functions]]
+address = 0x822749A8
+size = 0x14

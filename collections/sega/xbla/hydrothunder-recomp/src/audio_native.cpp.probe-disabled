@@ -1,0 +1,235 @@
+// Hydro Thunder - native audio takeover, stage one: read the voice state.
+//
+// sub_8262D450 is FMOD's per-voice output mix. It is called with r3 pointing at
+// a voice object and dispatches on [r3+24] for 1, 2 or 4 channels, reading a
+// pan matrix from [r3+8]. Everything a host mixer needs is in that object; this
+// reads it rather than guessing, and watches which field fails to advance -
+// the title's audio repeats a 1024 sample block, which is a source position
+// that is not moving, not a data-lane fault (lvlx/lvrx are verified correct).
+//
+// Strong definitions replace the weak aliases DEFINE_REX_FUNC emits, so this
+// survives a re-codegen and must never live in generated/. Forwarding to
+// __imp__* leaves behaviour unchanged while measuring.
+
+#include <atomic>
+#include <cstring>
+#include <map>
+#include <mutex>
+#include <string>
+#include <utility>
+
+#include <rex/cvar.h>
+#include <rex/hook.h>
+#include <rex/logging.h>
+
+extern "C" {
+void __imp__sub_8262D450(PPCContext& ctx, uint8_t* base);
+void __imp__sub_826293B0(PPCContext& ctx, uint8_t* base);
+void __imp__sub_823AFD78(PPCContext& ctx, uint8_t* base);
+void __imp__sub_82359800(PPCContext& ctx, uint8_t* base);
+}
+
+namespace {
+
+uint32_t GuestU32(const uint8_t* base, uint32_t address) {
+  uint32_t v = 0;
+  std::memcpy(&v, base + address, sizeof(v));
+  return __builtin_bswap32(v);
+}
+
+struct VoiceHistory {
+  uint32_t last[12] = {};
+  uint64_t calls = 0;
+  uint64_t stuck[12] = {};   // times a field was identical to the call before
+};
+
+std::mutex g_lock;
+std::map<uint32_t, VoiceHistory> g_voices;
+uint64_t g_calls = 0;
+// The chain produces 256 samples per pass; the consumer takes 256 per frame at
+// 188 frames a second. If passes do not keep up, the consumer re-reads what is
+// already in the output buffer - which is what repeating audio is.
+std::atomic<uint64_t> g_stage_calls{0};
+std::atomic<uint64_t> g_consumer_calls{0};
+// sub_823AFD78 writes the 4-slot ring the chain head reads. If it runs at the
+// rate the head drains the ring, the ring is being refilled and the repeat is
+// upstream of it - the decoder handing it the same audio twice.
+std::atomic<uint64_t> g_producer_calls{0};
+std::atomic<uint64_t> g_producer_same{0};
+
+// Offsets the disassembly actually touches, in the order it reads them.
+constexpr uint32_t kFields[12] = {0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44};
+
+void Observe(const uint8_t* base, uint32_t self) {
+  std::lock_guard<std::mutex> lock(g_lock);
+  auto& v = g_voices[self];
+  ++v.calls;
+  ++g_calls;
+  // The head of the chain is the one whose input moves. Log the sequence of
+  // its source addresses: if it cycles through a handful, the ring behind it is
+  // that small and whatever fills it is the thing that has stopped.
+  {
+    static uint32_t head_seq[16] = {};
+    static size_t head_n = 0;
+    static uint32_t head_obj = 0;
+    const uint32_t in = GuestU32(base, self + 0);
+    if (!head_obj && v.calls > 4 && in != v.last[0]) {
+      head_obj = self;
+    }
+    if (self == head_obj) {
+      head_seq[head_n % 16] = in;
+      if (++head_n % 16 == 0) {
+        std::string line;
+        for (size_t i = 0; i < 16; ++i) line += fmt::format(" {:08X}", head_seq[i]);
+        std::map<uint32_t, int> distinct;
+        for (size_t i = 0; i < 16; ++i) ++distinct[head_seq[i]];
+        REXLOG_INFO("[NATIVEMIX] head {:08X} source over 16 passes ({} distinct):{}",
+                    head_obj, distinct.size(), line);
+      }
+    }
+  }
+
+
+  for (size_t i = 0; i < 12; ++i) {
+    const uint32_t now = GuestU32(base, self + kFields[i]);
+    if (v.calls > 1 && now == v.last[i]) {
+      ++v.stuck[i];
+    }
+    v.last[i] = now;
+  }
+  if (g_calls % 376 != 0) {   // about every two seconds of audio
+    return;
+  }
+  REXLOG_INFO("[NATIVEMIX] {} voice object(s) seen", g_voices.size());
+  for (const auto& [ptr, hist] : g_voices) {
+    if (hist.calls < 16) {
+      continue;
+    }
+    std::string line;
+    for (size_t i = 0; i < 12; ++i) {
+      // A field that never changes is configuration; one that changes every
+      // call is a position. One that changes only sometimes is the bug.
+      const double moved = 100.0 * double(hist.calls - 1 - hist.stuck[i]) /
+                           double(hist.calls - 1);
+      line += fmt::format(" +{:<2}={:08X}({:3.0f}%)", kFields[i], hist.last[i], moved);
+    }
+    REXLOG_INFO("[NATIVEMIX] voice {:08X} calls {}:{}", ptr, hist.calls, line);
+  }
+  g_voices.clear();
+  g_calls = 0;
+}
+
+}  // namespace
+
+REX_HOOK_RAW(sub_8262D450) {
+  g_stage_calls.fetch_add(1, std::memory_order_relaxed);
+  Observe(base, ctx.r3.u32);
+  __imp__sub_8262D450(ctx, base);
+}
+
+REX_HOOK_RAW(sub_823AFD78) {
+  // r5 points at the caller's sample count: it goes in as "how many are
+  // wanted" and comes back as "how many were produced". The caller loops on
+  // the remainder, so a producer that quietly returns fewer than it made - or
+  // more - breaks the accounting rather than the audio.
+  const uint32_t count_ptr = ctx.r5.u32;
+  uint32_t requested = 0;
+  if (count_ptr) {
+    std::memcpy(&requested, base + count_ptr, 4);
+    requested = __builtin_bswap32(requested);
+  }
+
+  // Reached through a function pointer, so it has no findable callers. The
+  // return address names the site that decides how often it runs, which is the
+  // thing running at half rate.
+  {
+    static std::mutex m;
+    static std::map<uint32_t, uint64_t> sites;
+    static uint64_t n = 0;
+    std::lock_guard<std::mutex> g(m);
+    ++sites[static_cast<uint32_t>(ctx.lr)];
+    if (++n % 512 == 0) {
+      std::string line;
+      for (const auto& [lr, c] : sites) line += fmt::format(" {:08X}x{}", lr, c);
+      REXLOG_INFO("[NATIVEMIX] ring producer called from:{}", line);
+      sites.clear();
+    }
+  }
+  // Hash what it leaves in the destination so "ran" and "produced new audio"
+  // can be told apart.
+  const uint32_t dest = ctx.r4.u32 ? ctx.r4.u32 : ctx.r3.u32;
+  __imp__sub_823AFD78(ctx, base);
+  g_producer_calls.fetch_add(1, std::memory_order_relaxed);
+  if (count_ptr) {
+    uint32_t produced = 0;
+    std::memcpy(&produced, base + count_ptr, 4);
+    produced = __builtin_bswap32(produced);
+    static std::mutex m;
+    static std::map<std::pair<uint32_t, uint32_t>, uint64_t> pairs;
+    static uint64_t n = 0;
+    std::lock_guard<std::mutex> g(m);
+    ++pairs[{requested, produced}];
+    if (++n % 256 == 0) {
+      std::string line;
+      for (const auto& [rp, c] : pairs) {
+        line += fmt::format(" want{}/got{}x{}", rp.first, rp.second, c);
+      }
+      REXLOG_INFO("[NATIVEMIX] producer request vs produced:{}", line);
+      pairs.clear();
+    }
+  }
+  if (dest) {
+    uint64_t h = 1469598103934665603ull;
+    const uint8_t* bytes = base + dest;
+    for (size_t i = 0; i < 256; ++i) h = (h ^ bytes[i]) * 1099511628211ull;
+    static uint64_t recent[8] = {};
+    static size_t n = 0;
+    for (size_t back = 0; back < 8 && back < n; ++back) {
+      if (recent[(n - 1 - back) % 8] == h) {
+        g_producer_same.fetch_add(1, std::memory_order_relaxed);
+        break;
+      }
+    }
+    recent[n % 8] = h;
+    ++n;
+  }
+}
+
+REX_HOOK_RAW(sub_826293B0) {
+  const uint64_t n = g_consumer_calls.fetch_add(1, std::memory_order_relaxed) + 1;
+  if (n % 188 == 0) {
+    const uint64_t stages = g_stage_calls.exchange(0);
+    const uint64_t prod = g_producer_calls.exchange(0);
+    const uint64_t same = g_producer_same.exchange(0);
+    REXLOG_INFO("[NATIVEMIX] per second: {} chain passes, {} ring refills "
+                "({} of them repeated recent audio), {} frames consumed",
+                stages / 3, prod, same, uint64_t(188));
+  }
+  __imp__sub_826293B0(ctx, base);
+}
+
+
+// --- Native bypass of the half-rate decode loop -----------------------------
+//
+// sub_82359800 is the loop that refills the 4-slot ring: it asks the producer
+// for samples and repeats until its remainder reaches zero. Measured, it
+// delivers about 93 refills a second where the chain drains 188 - correct
+// audio, at half the rate real time needs, which is why every 1024 sample
+// block is heard twice. The audio it produces is fine; only the rate is wrong.
+//
+// So run it natively at the rate the device actually needs. --audio_drive_loop
+// sets how many times each guest call is executed; 2 doubles production. This
+// is a bypass of recompiled code that does not do what the original did, not a
+// mixer rewrite: the title's own decoder still produces every sample.
+REXCVAR_DEFINE_UINT32(
+    audio_drive_loop, 1, "Audio",
+    "Run Hydro Thunder's audio decode loop this many times per guest call. 1 is the recompiled "
+    "behaviour, which under-produces by half; 2 matches the rate the output device drains.");
+
+REX_HOOK_RAW(sub_82359800) {
+  const uint32_t times = REXCVAR_GET(audio_drive_loop);
+  __imp__sub_82359800(ctx, base);
+  for (uint32_t i = 1; i < times && i < 8; ++i) {
+    __imp__sub_82359800(ctx, base);
+  }
+}

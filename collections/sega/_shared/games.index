@@ -1,0 +1,29 @@
+# All RetroRecomp family games on one launcher. The rail reads this file in
+# the order shown below; ports not listed are hidden from the launcher.
+#
+#   <port-dir> | <display name>
+banjokazooie-recomp       | Banjo-Kazooie
+banjotooie-recomp         | Banjo-Tooie
+1.mcla-recomp             | Midnight Club: Los Angeles
+daytona-recomp            | Daytona USA
+outrun-recomp             | OutRun Online Arcade
+afterburnerclimax-recomp  | After Burner Climax
+alienbreed-recomp         | Alien Breed: Evolution
+burnoutrevenge-recomp     | Burnout Revenge
+crazytaxi-recomp          | Crazy Taxi
+geometrywars-recomp       | Geometry Wars: Retro Evolved
+geometrywars2-recomp      | Geometry Wars: Retro Evolved 2
+geometrywars3-recomp      | Geometry Wars 3: Dimensions
+hydrothunder-recomp       | Hydro Thunder Hurricane
+pgr4-recomp               | Project Gotham Racing 4
+rez-recomp                | Rez HD
+rru-recomp                | Ridge Racer Unbounded
+sc4-recomp                | SoulCalibur IV
+segabass-recomp           | SEGA Bass Fishing
+segarally-recomp          | SEGA Rally Online Arcade
+soulcalibur2-recomp       | SoulCalibur II HD Online
+spacegiraffe-recomp       | Space Giraffe
+ss-recomp                 | Split/Second
+sonic4ep1-recomp          | Sonic the Hedgehog 4: Episode I
+jetpac                    | Jetpac Refuelled
+choplifter                | Choplifter HD

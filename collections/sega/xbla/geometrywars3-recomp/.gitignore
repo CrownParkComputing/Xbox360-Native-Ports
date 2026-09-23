@@ -1,0 +1,6 @@
+out/
+user-data/
+# The disc content is never committed: assets/ is imported from the zip under
+# content/, and content.sha256 proves a restored tree is the right content.
+assets/
+content/*.zip

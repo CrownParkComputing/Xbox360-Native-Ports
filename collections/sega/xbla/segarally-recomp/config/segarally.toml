@@ -1,0 +1,115 @@
+# Per-title run configuration for a new port: the settings every conversion so
+# far has ended up wanting, with the measurement that justifies each one. The
+# scaffold (tools/new_port.sh) copies this into config/<title>.toml, which the
+# runtime loads from next to the executable.
+#
+# Order to turn things off if a title misbehaves: gpu_hot_page_frames first,
+# then clear_memory_page_state, then render_target_path_vulkan.
+#
+# Two of these are performance settings bought at the price of correctness, and
+# the symptom when the price comes due is NOT obvious - on Hydro Thunder it was
+# reported as "red flashing" and turned out to be texture corruption in the
+# Xenos tile pattern. Before assuming a rendering bug in the SDK, capture an
+# actual bad frame and put these back to their safe values:
+#   clear_memory_page_state = true, gpu_hot_page_frames = 0.
+# tools/port_check.py catches the codegen-level problems; these are the two
+# runtime ones that keep recurring.
+
+# BRING-UP ONLY. Log an indirect-call target that was never recompiled and
+# return 0 rather than aborting, so the first run surfaces the whole
+# missing-function frontier instead of one abort per run. Revisit before
+# calling a port finished.
+unregistered_function_nonfatal = true
+
+# Engines routinely issue resolves and fetches the strict path rejects.
+gpu_allow_invalid_fetch_constants = true
+
+# Async pipeline compilation skips presents and draws untextured placeholders on
+# every title tried so far - on Hydro Thunder that reads as flashing, and it was
+# briefly mistaken for a rendering bug. It is also usually unnecessary: once the
+# driver pipeline cache is warm the "compilations" are cache hits, so play
+# through once before concluding a title needs it. Compile synchronously and answer the hitches with a
+# warm cache instead: play through the content, then point
+# shader_storage_seed_root at a directory of the resulting shareable cache files
+# so a fresh install starts with its pipelines already built.
+async_shader_compilation = false
+
+# The host render-target path, not the fragment-shader-interlock EDRAM path.
+# FSI serialises fragment shading: on Midnight Club LA, once the CPU side was
+# fixed, that was 25% of the frame (66 ms -> 49 ms, same scene). Split/Second
+# and Ridge Racer Unbounded need FSI for their colour grade - check a matched
+# pair of frames from one spot on both paths before believing either.
+render_target_path_vulkan = "host"
+
+# SAFETY vs SPEED. Do not wipe shared-memory page-valid state at every frame end.
+# Hydro Thunder needed this back ON: with it off, textures intermittently render
+# as blocky tile-pattern garbage - orange/magenta over the sky, striped green
+# over the water - because the GPU changed pages we then read as if unchanged.
+# 247 frames sampled after turning it on, zero corrupted, against a peak
+# red:blue of 4.95 before. If a title shows ANY intermittent texture or
+# geometry corruption, this is the first thing to put back to true. With it on (the
+# SDK default) every page the CPU uploaded loses its valid bit each frame, so
+# the whole CPU-visible working set is re-uploaded next frame - measured at
+# ~190 MB per two seconds for ~1 MB of actual guest writes. Worth 2.9 -> 10 FPS
+# on Midnight Club LA. Turn it back on if geometry renders stale.
+clear_memory_page_state = false
+
+# Treat a 256 KB block of shared memory dirtied this many frames running as
+# permanently dirty: stop arming its guest write watch and re-upload it once per
+# frame, as one batch when the frame opens. Streaming titles rewrite a handful
+# of geometry pools every frame, and for those the watch only buys a guest trap
+# and another arming, both of which take the kernel-wide lock. Worth 12 -> 20
+# FPS, and batching the uploads took render passes from 701 to 106 a frame.
+#
+# The trade: draws late in a frame do not see writes the guest made after that
+# frame's first upload of a hot page. This is the first thing to turn off if
+# geometry flickers or lags a frame.
+gpu_hot_page_frames = 3
+
+# Answer the guest's on-screen keyboard from configuration instead of showing a
+# dialog. Titles use that keyboard for profile and gamertag names, and typing
+# into an ImGui popup while the game owns the keyboard is awkward. Set it to the
+# name the profile should have; empty (the default) shows the dialog.
+# keyboard_text = "PLAYER"
+
+# Audio needs no per-title setting. The mixer callback is paced evenly at
+# 187.5 Hz by the runtime (--audio_pace_callback, on by default). Before that,
+# calls arrived in clumps - the device releases a credit per frame consumed and
+# consumes several at once - and any title whose mixer paces itself on elapsed
+# time advanced once per clump and repeated the rest, which sounds slow and
+# robotic. If a title still sounds wrong, REX_AUDIO_STATS=1 reports the callback
+# spacing, queue depth and repeat rate, and --audio_dump_wav / --audio_dump_out_wav
+# capture both ends of the pipeline so the guest and the output stage can be
+# told apart.
+
+# Useful during bring-up, not shipped:
+#   --skip_movies=<substring>   refuse to open matching .bik so the title skips
+#                               them; every movie opened is logged as [movie].
+#   --guest_watch=<addr>:<len>  report changes to a guest structure and name the
+#                               guest code that wrote them.
+#   --guest_wait_report_seconds=N   list guest kernel waits still outstanding,
+#                               which names a deadlock in one line.
+
+# Answer the system prompts with their default and draw no dialog. Without
+# this, a title that asks the guide to confirm something - After Burner Climax
+# does it the moment you press Start - gets ReXGlue's own ImGui message box
+# over the game, and ReXGlue's theme is green, so it reads as a green box
+# appearing from nowhere. There is exactly one local profile and one storage
+# device here, so the prompt has no real choice in it to make.
+headless = true
+
+# The window's name. Empty uses the project slug; set the game's real name here
+# before handing a bundle to anyone. The SDK build stamp is no longer appended
+# by default - window_title_build_stamp = true brings it back while bringing a
+# title up and telling two builds apart.
+window_title = "SEGA Rally Online Arcade"
+
+# VSYNC. The presenter prefers VK_PRESENT_MODE_IMMEDIATE_KHR when it is allowed
+# (vulkan_presenter.cpp picks immediate -> mailbox -> fifo_relaxed -> fifo), and
+# immediate is unsynchronised: on a large fullscreen surface that tears badly
+# enough to read as the whole screen flashing. The title itself is fine - frame
+# stats over 2296 frames show zero dropped presents, a steady ~1027 draws and a
+# 16.5 ms median - so this is purely how the finished frame reaches the display.
+# Off here leaves mailbox, which is vsynced and still does not block the guest.
+vulkan_allow_present_mode_immediate = false
+side_panel_title = "SEGA Rally Online Arcade"

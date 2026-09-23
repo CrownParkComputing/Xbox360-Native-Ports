@@ -1,0 +1,33 @@
+# The games this launcher offers, in rail order. One game per non-comment
+# line: <port directory name> | <display name>
+#
+# The launcher reads THIS file instead of scanning the tree, so the rail shows
+# exactly what is listed here, in this order, nothing else. Port directories
+# that exist on disk but are not listed simply do not appear.
+#
+#   banjokazooie-recomp | Banjo-Kazooie
+#   banjotooie-recomp   | Banjo-Tooie
+banjokazooie-recomp | Banjo-Kazooie
+banjotooie-recomp | Banjo-Tooie
+
+1.mcla-recomp | Midnight Club: Los Angeles
+daytona-recomp | Daytona USA
+outrun-recomp | OutRun Online Arcade
+afterburnerclimax-recomp | After Burner Climax
+alienbreed-recomp | Alien Breed: Evolution
+alienbreed1-recomp | Alien Breed 1
+burnoutrevenge-recomp | Burnout Revenge
+crazytaxi-recomp | Crazy Taxi
+geometrywars-recomp | Geometry Wars: Retro Evolved
+geometrywars2-recomp | Geometry Wars: Retro Evolved 2
+geometrywars3-recomp | Geometry Wars 3: Dimensions
+hydrothunder-recomp | Hydro Thunder Hurricane
+pgr4-recomp | Project Gotham Racing 4
+rez-recomp | Rez HD
+rru-recomp | Ridge Racer Unbounded
+sc4-recomp | SoulCalibur IV
+segabass-recomp | SEGA Bass Fishing
+segarally-recomp | SEGA Rally Online Arcade
+soulcalibur2-recomp | SoulCalibur II HD Online
+spacegiraffe-recomp | Space Giraffe
+ss-recomp | Split/Second

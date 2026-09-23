@@ -80,6 +80,31 @@ The launcher page shows it per title, but the layers are the same for all:
 Every title is playable. Each port's `CONVERSION.md` records what was done to
 it, and its release page has the launcher downloads.
 
+## Building from source
+
+This repository is the full source drop behind the releases: the launcher
+and the port trees. Game data is not here - each port imports your own copy
+at first run, exactly like the prebuilt launchers.
+
+| path | what it is |
+|---|---|
+| `_menu/` | rexmenu, the raylib game launcher every title boots into |
+| `_shared/` | shared launch scripts (`embedded_play.sh`), import/validation tooling, the game list (`games.index`) |
+| `collections/sega/xbla/`, `collections/sega/dvd/` | one directory per port: hand-written glue (`src/`), generated recompiled code (`generated/`), per-title config (`config/`), import/headless tools (`tools/`), bring-up notes (`CONVERSION.md`) |
+| `racing-recomps-launcher/` | standalone launcher for the racing titles |
+| `_testing/` | import-path test fixtures and harness (synthetic, no game data) |
+| `docs/` | [what the launcher offers](docs/LAUNCHER.md) and [what our rexglue fork changes vs upstream](docs/REXGLUE_FORK_CHANGES.md) |
+
+The runtime SDK (our fork of [rexglue-sdk](https://github.com/rexglue/rexglue-sdk))
+is **not** in this repository — it lives in a separate private repo and is
+fetched at build time. [docs/REXGLUE_FORK_CHANGES.md](docs/REXGLUE_FORK_CHANGES.md)
+summarizes what the fork changes vs upstream.
+
+Note: this is a working source drop, not a relocatable build tree. Some
+scripts still carry absolute paths from the development checkout
+(`/home/jon/recomp-ports/recomp-family`, `/home/jon/rexglue-vmx`) — adjust
+those (or symlink) when building from a fresh clone.
+
 ## Legal
 
 No game files, discs, packages or assets are distributed here or downloaded by

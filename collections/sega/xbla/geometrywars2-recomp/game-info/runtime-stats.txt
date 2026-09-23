@@ -1,0 +1,1 @@
+OS import coverage: title-native 0.0% (0/151); ReXGlue 100.0% (151/151). Game code: 6,029 PowerPC functions recompiled to native host code. Xenon is the original CPU; Xenos is translated through Vulkan. These describe components, not percentages of frame time.

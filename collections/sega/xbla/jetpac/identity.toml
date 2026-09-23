@@ -1,0 +1,22 @@
+# The container this port was built against.
+#
+# A different build of the same game recompiles cleanly, links, boots, and
+# then fails on data that moved - and nothing in the symptoms points at the
+# executable. verify_dump.sh checks your copy against these numbers before
+# anything is built from it, which is the difference between finding out now
+# and finding out after an evening of debugging.
+#
+# Written by the tool that produced this port, from the copy it was built
+# against. Nothing here is game content: these are sizes and hashes.
+container_kind = "package"
+entry_point = "8210B9B0"
+image_base = "82000000"
+image_bytes = "4718592"
+image_fnv1a64 = "731137D71A7F4DCB"
+image_key = "retail"
+image_size = "00480000"
+needs_extracted_tree = "false"
+setjmp_longjmp_absent = "true"
+title_id = "584107FB"
+xex_bytes = "1470464"
+xex_fnv1a64 = "BDFDB821A1CBE7AA"

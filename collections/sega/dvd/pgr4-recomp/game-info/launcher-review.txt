@@ -1,0 +1,3 @@
+Bizarre Creations' disc-based street racer. Assets and a desktop binary exist, but no conversion report in this tree establishes launcher compatibility or a verified race.
+Run doctor checks and a controlled boot-to-race capture, then document graphics, audio, input, saves and performance before enabling normal support claims.
+No Android configuration or artifact was found. This is likely a high-load port; establish desktop correctness, then add the Android template and perform an arm64 memory/performance feasibility run.

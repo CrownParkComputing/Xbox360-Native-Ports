@@ -1,0 +1,5 @@
+# Adreno on the Retroid Pocket Flip 2 spends less time waiting for the GPU
+# with legacy render passes. Measured in the same busy scene: 27.8 -> 26.3 ms
+# draw CPU time and 29.6 -> 29.8 fps median. This is Android-only because the
+# desktop driver performs differently.
+--vulkan_dynamic_rendering=false

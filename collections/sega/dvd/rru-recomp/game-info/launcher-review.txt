@@ -1,0 +1,3 @@
+Ridge Racer Unbounded, recovered from black-screen and colour-flood failures through codegen, renderer and memory fixes. A full-colour race with HUD, drifting and destruction has been verified.
+Run full events and save reloads, catalogue remaining visual issues, profile busy destruction scenes, and confirm the shared runner preserves its title-specific settings.
+An arm64 native library builds without an APK. The workload and past renderer issues make it a later Android target after desktop launcher validation and Vulkan feature checks.

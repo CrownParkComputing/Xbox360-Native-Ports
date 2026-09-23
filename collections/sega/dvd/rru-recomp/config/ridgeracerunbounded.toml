@@ -1,0 +1,32 @@
+# Ridge Racer Unbounded — per-title config.
+
+# Sun lens-flare intensity is occlusion-query driven; the default fake count
+# (1000 = fully visible) renders a screen-filling flare. 0 = occluded.
+# (-1 crashes: the game then resolves uncommitted memory.)
+query_occlusion_fake_sample_count = 0
+
+# The title's HDR/auto-exposure pipeline requires the fragment-shader-interlock
+# EDRAM path; the host-render-target path leaves a uniform red wash in-race
+# (and, pre-FSI, a blue-crushed colour grade). Matches upstream xenia compat
+# guidance ("ROV/FSI fixes the autoexposure issue").
+render_target_path_vulkan = "fsi"
+
+# Keyboard as pad (Space = A) alongside a physical controller.
+mnk_mode = true
+
+# Answer system prompts with their default instead of drawing ReXGlue's own
+# (green) ImGui dialog over the game. One local profile, one device: no choice.
+headless = true
+
+# The window's name. Without it the title bar reads "<slug> rexglue <build>",
+# which is right while bringing a port up and wrong in anything shipped.
+window_title = "Ridge Racer Unbounded"
+
+# PRESENTATION. The runtime prefers immediate -> mailbox -> fifo_relaxed -> fifo
+# and under immediate/mailbox a present never blocks; on a VRR panel that shows
+# as flicker on the front end (measured on Burnout Revenge, Shift 2, Sega Bass).
+# Strict FIFO paces the title at the display rate.
+vulkan_allow_present_mode_immediate = false
+vulkan_allow_present_mode_mailbox = false
+vulkan_allow_present_mode_fifo_relaxed = false
+side_panel_title = "Ridge Racer Unbounded"

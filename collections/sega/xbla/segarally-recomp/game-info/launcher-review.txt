@@ -1,0 +1,3 @@
+SEGA Rally Online Arcade has imported content and a desktop binary, with no detailed conversion report yet establishing a complete race in this launcher.
+Boot through a race, validate handling, stage rendering, audio, saves and frame pacing, then document the exact supported configuration.
+No Android build configuration or artifact was found. After desktop proof, add arm64 packaging and test Vulkan compatibility and sustained race performance.

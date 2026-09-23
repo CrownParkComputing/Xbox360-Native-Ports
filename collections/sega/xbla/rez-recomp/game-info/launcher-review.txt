@@ -1,0 +1,3 @@
+Rez HD's synchronized wireframe shooter. Levels render in the intended style and conversion notes record correct play on desktop and a device.
+Complete a full area, verify audio synchronization, controller vibration, saves and achievements, then record the exact proven device/build combination.
+An arm64 APK exists and device play is recorded. Re-validate with the unified lifecycle, storage and controller layer; it is a leading Android candidate.

@@ -1,0 +1,23 @@
+# Built launcher binary
+launcher
+
+# Game content - never committed. Original XEX files (or symlinks to them)
+# live here locally for import testing only.
+*.xex
+original-xex/*.xex
+
+# Port folders are symlinks into the build tree; they resolve only inside a
+# local recomp-family checkout and carry that tree's assets and user data.
+afterburnerclimax-recomp
+crazytaxi-recomp
+daytona-recomp
+outrun-recomp
+segabass-recomp
+spacegiraffe-recomp
+assets/
+user-data/
+
+# Runtime leftovers
+*.log
+*.csv
+frames/

@@ -1,0 +1,3 @@
+Lucid Games' 3D arena sequel. The title renders and plays through the shared Xenos/Vulkan runtime, with no native console-OS replacements yet.
+Test campaign progression, 3D stages, dense effects, saves and controller behavior; measure a long gameplay sample and document renderer defects.
+An arm64 APK exists. Device-test first-launch shader cost, memory use, effects-heavy stages and Android lifecycle behavior.

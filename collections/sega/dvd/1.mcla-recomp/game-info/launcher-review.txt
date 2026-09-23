@@ -1,0 +1,3 @@
+Rockstar San Diego's open-world racer, recompiled from the Complete Edition disc. Title, attract mode and free roam work; elapsed-time hooks and runtime upload fixes now keep recent desktop samples above 30 FPS.
+Soak several districts and races, validate save/DLC paths, and profile remaining CPU-heavy scenes. Preserve the title-specific timing hooks when changing presentation pacing.
+An arm64 native library builds, but there is no packaged APK and the workload is the heaviest in this library. Direct Vulkan presentation is feasible; performance, memory footprint and thermal throttling make device validation essential.

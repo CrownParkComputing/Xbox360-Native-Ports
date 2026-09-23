@@ -1,0 +1,3 @@
+Criterion's Xbox 360 racer. It boots and plays; setjmp/longjmp and register-local issues are handled, UI colour and EA Trax playback are fixed, and a headless drive reached a race without logged errors.
+Validate full races, crash events, save reload and soundtrack transitions in the launcher. Profile the remaining non-native OS calls and confirm direct-GPU pacing under heavy traffic.
+An arm64 native library builds but no APK is packaged. Expect a demanding workload; package only after desktop launcher validation, then measure RAM, shader compilation and thermal stability.

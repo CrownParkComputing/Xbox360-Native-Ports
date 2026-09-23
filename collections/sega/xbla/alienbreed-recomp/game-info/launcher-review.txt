@@ -1,0 +1,3 @@
+Team17's top-down science-fiction action title. The port has imported content and a desktop binary, but no conversion report or unified-launcher play result documents its current gameplay state.
+Run doctor checks, boot through gameplay, capture representative frames, verify audio/input/save behavior, and write a conversion report before calling it supported.
+No Android build configuration or artifact was found. Port the current ReXGlue Android CMake template first, then perform a basic arm64 compile and Vulkan feature audit.

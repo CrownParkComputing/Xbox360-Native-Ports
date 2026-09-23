@@ -1,0 +1,112 @@
+// Hydro Thunder - audio mixer instrumentation.
+//
+// The title's audio repeats whole 1024-sample blocks about half the time, and
+// everything around the mixer has been measured clean: the guest clock (ratio
+// 0.9999), the pump rate (1:1 with submissions), CPU (1.42 of 16 cores), the
+// output stage (bit-exact), and both PCM and XMA banks behave identically. So
+// the fault is inside the guest's own mixer, and the question is whether it
+// runs too few times or runs the right number of times and produces the same
+// audio twice.
+//
+// These hooks count and forward - the generated code keeps the real body as
+// __imp__<name>, so behaviour is unchanged. Strong definitions here replace the
+// weak aliases, so this survives a re-codegen; it must never live in
+// generated/.
+//
+// sub_82626F58  mixer thread body: asks sub_82641B90 how many blocks are due,
+//               then calls sub_82626DE0 that many times
+// sub_82626DE0  mixes one block
+// sub_826293B0  the consumer: copies 256 samples x 6ch out to the submit buffer
+
+#include <atomic>
+#include <cstring>
+#include <chrono>
+
+#include <rex/hook.h>
+#include <rex/logging.h>
+
+extern "C" {
+void __imp__sub_82626F58(PPCContext& ctx, uint8_t* base);
+void __imp__sub_82626DE0(PPCContext& ctx, uint8_t* base);
+void __imp__sub_826293B0(PPCContext& ctx, uint8_t* base);
+}
+
+namespace {
+std::atomic<uint64_t> g_thread_wakes{0};
+std::atomic<uint64_t> g_blocks_mixed{0};
+std::atomic<uint64_t> g_frames_consumed{0};
+
+void Report() {
+  static std::atomic<int64_t> next_ms{0};
+  const auto now = std::chrono::duration_cast<std::chrono::milliseconds>(
+                       std::chrono::steady_clock::now().time_since_epoch())
+                       .count();
+  int64_t expected = next_ms.load(std::memory_order_relaxed);
+  if (now < expected) {
+    return;
+  }
+  if (!next_ms.compare_exchange_strong(expected, now + 1000)) {
+    return;
+  }
+  const uint64_t wakes = g_thread_wakes.exchange(0);
+  const uint64_t blocks = g_blocks_mixed.exchange(0);
+  const uint64_t frames = g_frames_consumed.exchange(0);
+  // 188 frames/s of 256 samples is 48,128 samples/s consumed. Feeding that
+  // needs 47 blocks of 1024 a second; anything less and the mixer is short.
+  REXLOG_INFO("[MIXPROBE] {} mixer wakes, {} blocks mixed, {} frames consumed "
+              "-> {} samples produced vs {} consumed ({:.2f}x)",
+              wakes, blocks, frames, blocks * 1024, frames * 256,
+              frames ? double(blocks * 1024) / double(frames * 256) : 0.0);
+}
+}  // namespace
+
+REX_HOOK_RAW(sub_82626F58) {
+  g_thread_wakes.fetch_add(1, std::memory_order_relaxed);
+  __imp__sub_82626F58(ctx, base);
+}
+
+REX_HOOK_RAW(sub_82626DE0) {
+  g_blocks_mixed.fetch_add(1, std::memory_order_relaxed);
+  __imp__sub_82626DE0(ctx, base);
+}
+
+REX_HOOK_RAW(sub_826293B0) {
+  g_frames_consumed.fetch_add(1, std::memory_order_relaxed);
+
+  // The consumer copies 256 samples x 6 channels out of [r3 + 24]. Watching
+  // that source - its address and its contents - separates "the pointer never
+  // moves through the ring" from "it moves but the producer has not refilled
+  // it", which are different bugs with the same symptom.
+  const uint32_t self = ctx.r3.u32;
+  uint32_t source = 0;
+  uint64_t hash = 0;
+  if (self) {
+    std::memcpy(&source, base + self + 24, sizeof(source));
+    source = __builtin_bswap32(source);
+    if (source) {
+      const uint8_t* bytes = base + source;
+      hash = 1469598103934665603ull;
+      for (size_t i = 0; i < 256 * 6 * sizeof(float); ++i) {
+        hash = (hash ^ bytes[i]) * 1099511628211ull;
+      }
+    }
+  }
+  static uint32_t last_source = 0;
+  static uint64_t last_hash = 0;
+  static uint64_t same_ptr = 0, same_data = 0, calls = 0;
+  ++calls;
+  same_ptr += (source == last_source) ? 1 : 0;
+  same_data += (hash == last_hash) ? 1 : 0;
+  last_source = source;
+  last_hash = hash;
+  if (calls % 188 == 0) {
+    REXLOG_INFO("[MIXPROBE] source {:08X}: {} of {} calls reused the same pointer, "
+                "{} saw unchanged data",
+                source, same_ptr, calls, same_data);
+    same_ptr = same_data = 0;
+    calls = 0;
+  }
+
+  __imp__sub_826293B0(ctx, base);
+  Report();
+}

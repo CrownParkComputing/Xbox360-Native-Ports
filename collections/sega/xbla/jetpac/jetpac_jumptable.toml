@@ -1,0 +1,1874 @@
+# Initial XenonAnalyse jump-table inventory for Jetpac Refuelled.
+# The converge pass appends only tables validated against image.bin: a
+# dispatch XenonRecomp did not already emit as a switch, whose table contents
+# read as addresses inside the enclosing function.
+#
+# When the emitted and recovered readings of one table disagree on the register
+# alone, the register that belongs here is the one the SCALING instruction READ,
+# not the one the bounds check tested - the bounds register may be clobbered
+# before the bctr, and XenonRecomp's model is `switch (ctx.rN.u32)` with cases
+# numbered from zero, so rN must still hold the raw index at the branch.
+# ---- ABSOLUTE JUMPTABLE ----
+# ---- COMPUTED JUMPTABLE ----
+# ---- OFFSETED JUMPTABLE ----
+
+
+# ---- rexglue-harvested jump tables ----
+# The following [[switch]] entries were emitted as `switch (ctx.rN.u32)`
+# blocks by rexglue-sdk's codegen and were not in this jumptable. The base
+# is the address of the bctr instruction, reconstructed by walking the
+# function body the same way find_jump_tables.py does.
+
+[[switch]]
+base = 0x820524A8
+r = 10
+labels = [
+    0x820524AC,
+    0x820524EC,
+    0x8205252C,
+    0x8205256C,
+    0x820525AC,
+    0x820525EC,
+    0x8205262C,
+    0x8205266C,
+]
+
+[[switch]]
+base = 0x82065BE0
+r = 11
+labels = [
+    0x82065BE4,
+    0x82065D58,
+    0x82065D78,
+    0x82065D98,
+    0x82066548,
+    0x82065ECC,
+    0x82066548,
+    0x820660C0,
+    0x820660E0,
+    0x82066278,
+    0x82066304,
+    0x820663CC,
+    0x82066438,
+    0x82066300,
+    0x82066548,
+    0x82066474,
+    0x820664A4,
+    0x820664C4,
+]
+
+[[switch]]
+base = 0x820677F8
+r = 4
+labels = [
+    0x820677FC,
+    0x82067804,
+    0x8206780C,
+    0x82067814,
+    0x8206781C,
+    0x82067824,
+    0x8206782C,
+    0x82067834,
+]
+
+[[switch]]
+base = 0x82067BA0
+r = 30
+labels = [
+    0x82067BA4,
+    0x82067BAC,
+    0x82067BB4,
+    0x82067BBC,
+    0x82067BC4,
+    0x82067BA4,
+    0x82067BAC,
+    0x82067BC4,
+    0x82067BB4,
+]
+
+[[switch]]
+base = 0x82067DFC
+r = 5
+labels = [
+    0x82067E00,
+    0x8206824C,
+    0x82069098,
+    0x820682D4,
+    0x82069098,
+    0x820686A4,
+    0x82069098,
+    0x82069098,
+    0x820687DC,
+    0x820689A4,
+    0x82068BB8,
+    0x82069098,
+    0x82069098,
+    0x82068B94,
+    0x82068F38,
+    0x82069088,
+    0x82069080,
+    0x82068F44,
+    0x82067E00,
+    0x82067E00,
+    0x82067E00,
+    0x82067E18,
+    0x82067E30,
+    0x82067E48,
+    0x82067EB4,
+    0x82067ECC,
+    0x82067F58,
+    0x8206801C,
+    0x82067FCC,
+    0x820682C8,
+    0x820682B0,
+    0x8206835C,
+    0x82068338,
+    0x82068090,
+    0x82068210,
+    0x82068228,
+    0x82068274,
+    0x820680A8,
+    0x820680E8,
+    0x820681CC,
+    0x82068168,
+    0x82068380,
+    0x820683E0,
+    0x820683F8,
+    0x82068450,
+    0x82068398,
+    0x82068468,
+    0x82068494,
+    0x820684B8,
+    0x82068508,
+    0x82068540,
+    0x820685B0,
+    0x820685D4,
+    0x82068578,
+    0x82068648,
+    0x820685F8,
+    0x82068630,
+    0x82068684,
+    0x820686F8,
+    0x82068748,
+    0x8206876C,
+    0x82067E00,
+    0x82067E00,
+    0x82067E00,
+    0x82067E00,
+    0x82067F74,
+    0x82067F94,
+    0x82067FB4,
+    0x82068764,
+    0x820680E8,
+    0x82068764,
+    0x820682DC,
+    0x820682FC,
+    0x82068494,
+    0x82068520,
+    0x820685E8,
+    0x82068654,
+    0x8206851C,
+    0x82068764,
+    0x82068690,
+    0x820686C0,
+    0x820686E0,
+    0x82067E00,
+    0x82067E00,
+    0x82067E00,
+    0x82067E20,
+    0x82067E4C,
+    0x82067E64,
+    0x82067EC8,
+    0x82067EE4,
+    0x82067F24,
+    0x82067FC8,
+    0x82068074,
+    0x820680F4,
+    0x8206819C,
+    0x820681F8,
+    0x82068284,
+    0x820682E4,
+    0x82068338,
+    0x8206838C,
+    0x820683F0,
+    0x82067FB8,
+    0x82067FC8,
+    0x82067E00,
+]
+
+[[switch]]
+base = 0x8206A08C
+r = 11
+labels = [
+    0x8206A090,
+    0x8206A0A8,
+    0x8206A0C0,
+    0x8206A0D8,
+    0x8206A144,
+    0x8206A15C,
+    0x8206A1E8,
+    0x8206A2AC,
+    0x8206A25C,
+    0x8206A558,
+    0x8206A540,
+    0x8206A5EC,
+    0x8206A5C8,
+    0x8206A320,
+    0x8206A4A0,
+    0x8206A4B8,
+    0x8206A504,
+    0x8206A338,
+    0x8206A378,
+    0x8206A45C,
+    0x8206A3F8,
+    0x8206A610,
+    0x8206A670,
+    0x8206A688,
+    0x8206A6E0,
+    0x8206A628,
+    0x8206A6F8,
+    0x8206A724,
+    0x8206A748,
+    0x8206A798,
+    0x8206A7D0,
+    0x8206A840,
+    0x8206A864,
+    0x8206A808,
+    0x8206A8D8,
+    0x8206A888,
+    0x8206A8C0,
+    0x8206A914,
+    0x8206A988,
+    0x8206A9D8,
+    0x8206A9FC,
+]
+
+[[switch]]
+base = 0x82072258
+r = 11
+labels = [
+    0x8207225C,
+    0x8207225C,
+    0x82072264,
+    0x8207226C,
+    0x82072278,
+    0x8207226C,
+    0x82072284,
+    0x820722AC,
+    0x820722AC,
+]
+
+[[switch]]
+base = 0x820742DC
+r = 11
+labels = [
+    0x820742E0,
+    0x8207431C,
+    0x8207449C,
+    0x820748C0,
+    0x820746A4,
+    0x820750B4,
+    0x8207535C,
+    0x8207535C,
+    0x8207535C,
+    0x8207535C,
+]
+
+[[switch]]
+base = 0x8207DA18
+r = 10
+labels = [
+    0x8207DA1C,
+    0x8207E514,
+    0x8207E3E4,
+    0x8207E428,
+    0x8207E2E4,
+    0x8207E568,
+    0x8207E790,
+    0x8207E870,
+    0x8207EAB8,
+]
+
+[[switch]]
+base = 0x8208AA04
+r = 11
+labels = [
+    0x8208ABC8,
+    0x8208AC64,
+    0x8208AA40,
+    0x8208AA4C,
+    0x8208AA08,
+    0x8208AA08,
+    0x8208AA08,
+    0x8208AA08,
+    0x8208AA08,
+    0x8208AA18,
+    0x8208AAD0,
+    0x8208AB64,
+    0x8208AB94,
+]
+
+[[switch]]
+base = 0x82091DDC
+r = 10
+labels = [
+    0x82091E9C,
+    0x82091EC8,
+    0x82091E54,
+    0x82091DE0,
+    0x82091F74,
+    0x82091EF0,
+    0x82091F18,
+    0x82091F34,
+    0x82091F50,
+]
+
+[[switch]]
+base = 0x8209EBC8
+r = 31
+labels = [
+    0x8209EBCC,
+    0x8209EBEC,
+    0x8209EC18,
+    0x8209EC30,
+    0x8209EC94,
+    0x8209ECB0,
+    0x8209ECF0,
+    0x8209ED94,
+    0x8209EE40,
+    0x8209EEC0,
+    0x8209EF68,
+    0x8209EFC4,
+    0x8209F050,
+    0x8209F0B0,
+    0x8209F104,
+    0x8209F158,
+    0x8209F1BC,
+    0x8209ED84,
+    0x8209ED94,
+]
+
+[[switch]]
+base = 0x820A5B50
+r = 10
+labels = [
+    0x820A5BF4,
+    0x820A5B54,
+    0x820A5BF4,
+    0x820A5D98,
+    0x820A5CD4,
+    0x820A5CD4,
+    0x820A5E88,
+    0x820A5EAC,
+    0x820A5F04,
+    0x820A5F04,
+    0x820A5BF4,
+    0x820A5F04,
+    0x820A5D98,
+    0x820A5F04,
+    0x820A5EF0,
+    0x820A5EF8,
+]
+
+[[switch]]
+base = 0x820AD77C
+r = 11
+labels = [
+    0x820AD780,
+    0x820AD78C,
+    0x820AD798,
+    0x820AD7A4,
+    0x820AD7B0,
+    0x820AD7BC,
+    0x820AD7C8,
+    0x820AD7D4,
+]
+
+[[switch]]
+base = 0x820B0988
+r = 4
+labels = [
+    0x820B098C,
+    0x820B0994,
+    0x820B09B0,
+    0x820B09C4,
+    0x820B09D8,
+    0x820B09E0,
+    0x820B09F4,
+    0x820B09FC,
+    0x820B0A04,
+    0x820B0A0C,
+    0x820B0A20,
+]
+
+[[switch]]
+base = 0x820B0A74
+r = 4
+labels = [
+    0x820B0A78,
+    0x820B0A80,
+    0x820B0A88,
+    0x820B0A90,
+    0x820B0AA4,
+    0x820B0AAC,
+    0x820B0AB4,
+    0x820B0ABC,
+    0x820B0AC4,
+    0x820B0ACC,
+    0x820B0AD4,
+]
+
+[[switch]]
+base = 0x820BFEE4
+r = 11
+labels = [
+    0x820BFEE8,
+    0x820BFEE8,
+    0x820BFF04,
+    0x820BFF20,
+    0x820BFF30,
+    0x820BFF80,
+    0x820BFF90,
+    0x820BFFDC,
+]
+
+[[switch]]
+base = 0x820C314C
+r = 10
+labels = [
+    0x820C3150,
+    0x820C32AC,
+    0x820C3348,
+    0x820C33D0,
+    0x820C3434,
+    0x820C3458,
+    0x820C3594,
+    0x820C3660,
+    0x820C3728,
+    0x820C37D0,
+    0x820C3810,
+    0x820C382C,
+    0x820C382C,
+    0x820C38F4,
+    0x820C395C,
+    0x820C39D8,
+    0x820C3AA0,
+    0x820C3D70,
+    0x820C3E40,
+    0x820C3FF8,
+    0x820C4060,
+    0x820C41A8,
+    0x820C4230,
+    0x820C42DC,
+    0x820C42F8,
+    0x820C43E8,
+    0x820C4488,
+    0x820C4490,
+    0x820C45EC,
+    0x820C3150,
+    0x820C3150,
+    0x820C3150,
+]
+
+[[switch]]
+base = 0x820D81DC
+r = 10
+labels = [
+    0x820D81F8,
+    0x820D81F8,
+    0x820D8204,
+    0x820D81F8,
+    0x820D8204,
+    0x820D81F8,
+]
+
+[[switch]]
+base = 0x820ED594
+r = 11
+labels = [
+    0x820ED5AC,
+    0x820ED5D0,
+    0x820ED5E0,
+    0x820ED5F0,
+    0x820ED600,
+]
+
+[[switch]]
+base = 0x820ED724
+r = 11
+labels = [
+    0x820ED73C,
+    0x820ED768,
+    0x820ED778,
+    0x820ED788,
+    0x820ED798,
+]
+
+[[switch]]
+base = 0x820EDD7C
+r = 11
+labels = [
+    0x820EDDC8,
+    0x820EDDC8,
+    0x820EDDC8,
+    0x820EDDC8,
+    0x820EDDC8,
+    0x820EDE08,
+    0x820EDE28,
+    0x820EDDC8,
+    0x820EDECC,
+    0x820EDECC,
+    0x820EDECC,
+    0x820EDE30,
+    0x820EDE30,
+    0x820EDE30,
+    0x820EDE30,
+    0x820EDE30,
+    0x820EDE28,
+    0x820EDE28,
+]
+
+[[switch]]
+base = 0x820EF480
+r = 3
+labels = [
+    0x820EF768,
+    0x820EF704,
+    0x820EF4A4,
+    0x820EF53C,
+    0x820EF600,
+    0x820EF7C8,
+    0x820EF7C8,
+    0x820EF7C8,
+]
+
+[[switch]]
+base = 0x820EF8D0
+r = 11
+labels = [
+    0x820EF948,
+    0x820EF8F4,
+    0x820EF95C,
+    0x820EFA04,
+    0x820EFAC0,
+    0x820EFBBC,
+    0x820EFBBC,
+    0x820EFBBC,
+]
+
+[[switch]]
+base = 0x820EFD80
+r = 11
+labels = [
+    0x820EFDDC,
+    0x820EFDEC,
+    0x820EFDFC,
+    0x820EFE0C,
+    0x820EFE1C,
+    0x820EFE2C,
+    0x820EFE3C,
+    0x820EFE4C,
+    0x820EFE5C,
+    0x820EFE6C,
+    0x820EFE7C,
+    0x820EFE8C,
+    0x820EFE9C,
+    0x820EFEAC,
+    0x820EFEB4,
+    0x820EFEBC,
+    0x820EFEC4,
+    0x820EFECC,
+    0x820EFED4,
+    0x820EFEDC,
+    0x820EFEE4,
+    0x820EFEEC,
+]
+
+[[switch]]
+base = 0x820F1BBC
+r = 11
+labels = [
+    0x820F1BD8,
+    0x820F1BE0,
+    0x820F1BE8,
+    0x820F1BF0,
+    0x820F1BF8,
+    0x820F1C00,
+]
+
+[[switch]]
+base = 0x820F5310
+r = 11
+labels = [
+    0x820F535C,
+    0x820F535C,
+    0x820F535C,
+    0x820F535C,
+    0x820F535C,
+    0x820F5484,
+    0x820F5484,
+    0x820F535C,
+    0x820F5484,
+    0x820F5484,
+    0x820F5484,
+    0x820F53EC,
+    0x820F53EC,
+    0x820F53EC,
+    0x820F53EC,
+    0x820F53EC,
+    0x820F5484,
+    0x820F5484,
+]
+
+[[switch]]
+base = 0x820F5C28
+r = 11
+labels = [
+    0x820F5C80,
+    0x820F5C8C,
+    0x820F5CA4,
+    0x820F5CBC,
+    0x820F5C98,
+    0x820F5CB0,
+    0x820F5CFC,
+    0x820F5DF4,
+    0x820F5DF4,
+    0x820F5D3C,
+    0x820F5D8C,
+    0x820F5D98,
+    0x820F5DDC,
+    0x820F5DE8,
+    0x820F5E00,
+    0x820F5DF4,
+    0x820F5E0C,
+    0x820F5E0C,
+    0x820F5E18,
+    0x820F5D3C,
+    0x820F5D48,
+]
+
+[[switch]]
+base = 0x820F93C8
+r = 9
+labels = [
+    0x820F93E0,
+    0x820F9430,
+    0x820F93F8,
+    0x820F9408,
+    0x820F9410,
+]
+
+[[switch]]
+base = 0x820FBB98
+r = 5
+labels = [
+    0x820FBBAC,
+    0x820FBBEC,
+    0x820FBC98,
+    0x820FBCD8,
+]
+
+[[switch]]
+base = 0x820FEACC
+r = 11
+labels = [
+    0x820FEAF0,
+    0x820FEB48,
+    0x820FEAFC,
+    0x820FEB0C,
+    0x820FEB20,
+    0x820FEB34,
+    0x820FEAF0,
+    0x820FEB48,
+]
+
+[[switch]]
+base = 0x820FF668
+r = 11
+labels = [
+    0x820FF680,
+    0x820FF7FC,
+    0x820FF7FC,
+    0x820FF6D0,
+    0x820FF698,
+]
+
+[[switch]]
+base = 0x820FF900
+r = 8
+labels = [
+    0x820FF91C,
+    0x820FF938,
+    0x820FF99C,
+    0x820FF99C,
+    0x820FF9F8,
+    0x820FF9F8,
+]
+
+[[switch]]
+base = 0x821020A4
+r = 11
+labels = [
+    0x821020C0,
+    0x821020C8,
+    0x821020D0,
+    0x821020D8,
+    0x821020E0,
+    0x821020E8,
+]
+
+[[switch]]
+base = 0x82104538
+r = 11
+labels = [
+    0x82104590,
+    0x82104608,
+    0x8210468C,
+    0x82104714,
+    0x82104608,
+    0x8210468C,
+    0x82104714,
+    0x8210493C,
+    0x82104974,
+    0x821049AC,
+    0x821047B4,
+    0x82104814,
+    0x82104878,
+    0x821048D4,
+    0x82104A1C,
+    0x82104A74,
+    0x82104AAC,
+    0x82104AE4,
+    0x82104B1C,
+    0x82104754,
+    0x821045F0,
+]
+
+[[switch]]
+base = 0x82105694
+r = 9
+labels = [
+    0x821056AC,
+    0x821056E0,
+    0x82105734,
+    0x82105744,
+    0x82105768,
+]
+
+[[switch]]
+base = 0x821058FC
+r = 11
+labels = [
+    0x82105910,
+    0x82105918,
+    0x82105918,
+    0x82105920,
+]
+
+[[switch]]
+base = 0x82109BDC
+r = 11
+labels = [
+    0x82109BF4,
+    0x82109BFC,
+    0x82109C04,
+    0x82109C0C,
+    0x82109C14,
+]
+
+[[switch]]
+base = 0x8210AFE8
+r = 11
+labels = [
+    0x8210AFF4,
+    0x8210AFEC,
+    0x8210B10C,
+    0x8210AFFC,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B004,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B00C,
+    0x8210B10C,
+    0x8210B0EC,
+    0x8210B014,
+    0x8210B01C,
+    0x8210B024,
+    0x8210B10C,
+    0x8210B02C,
+    0x8210B04C,
+    0x8210B034,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B0DC,
+    0x8210B03C,
+    0x8210B10C,
+    0x8210B044,
+    0x8210B0FC,
+    0x8210B10C,
+    0x8210B054,
+    0x8210B10C,
+    0x8210B05C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B064,
+    0x8210B10C,
+    0x8210B074,
+    0x8210B10C,
+    0x8210B06C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B07C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B084,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B08C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B094,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B09C,
+    0x8210B0AC,
+    0x8210B0A4,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B0B4,
+    0x8210B10C,
+    0x8210B0BC,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B0E4,
+    0x8210B0C4,
+    0x8210B10C,
+    0x8210B0CC,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B0F4,
+    0x8210B10C,
+    0x8210B104,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B10C,
+    0x8210B0D4,
+]
+
+[[switch]]
+base = 0x8214A0C4
+r = 11
+labels = [
+    0x8214A314,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A1E4,
+    0x8214A1A4,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A31C,
+    0x8214A2E4,
+    0x8214A2B4,
+    0x8214A284,
+    0x8214A254,
+    0x8214A224,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+    0x8214A498,
+]
+
+[[switch]]
+base = 0x8214A8C0
+r = 11
+labels = [
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214AA50,
+    0x8214AA24,
+    0x8214A9F8,
+    0x8214A9CC,
+    0x8214A9A0,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+    0x8214ACC8,
+]
+
+[[switch]]
+base = 0x8214D028
+r = 28
+labels = [
+    0x8214D04C,
+    0x8214D054,
+    0x8214D06C,
+    0x8214D0C0,
+    0x8214D0DC,
+    0x8214D0F8,
+    0x8214D20C,
+    0x8214D320,
+]
+
+[[switch]]
+base = 0x8214DC40
+r = 4
+labels = [
+    0x8214DC5C,
+    0x8214DC9C,
+    0x8214DCE0,
+    0x8214DD0C,
+    0x8214DD34,
+    0x8214DD74,
+]
+
+[[switch]]
+base = 0x82162FE8
+r = 11
+labels = [
+    0x82163028,
+    0x821630CC,
+    0x821630F4,
+    0x82163034,
+    0x82163040,
+    0x82163068,
+    0x82163074,
+    0x82163080,
+    0x82163088,
+    0x821630B0,
+    0x821630D8,
+    0x82163100,
+    0x82163108,
+    0x82163130,
+    0x82163138,
+]
+
+[[switch]]
+base = 0x821631A0
+r = 11
+labels = [
+    0x821631E0,
+    0x82163348,
+    0x8216338C,
+    0x82163210,
+    0x82163238,
+    0x82163288,
+    0x821632B0,
+    0x821632D8,
+    0x821632E0,
+    0x8216332C,
+    0x82163370,
+    0x821633B4,
+    0x821633BC,
+    0x82163408,
+    0x82163410,
+]
+
+[[switch]]
+base = 0x8216D1AC
+r = 4
+labels = [
+    0x8216D1E0,
+    0x8216DA34,
+    0x8216DBAC,
+    0x8216DCB4,
+    0x8216D500,
+    0x8216DDC0,
+    0x8216E0B8,
+    0x8216DE68,
+    0x8216D3F0,
+    0x8216E1C0,
+    0x8216D6B0,
+    0x8216D868,
+]
+
+[[switch]]
+base = 0x8216FD60
+r = 7
+labels = [
+    0x8216FD74,
+    0x8216FDBC,
+    0x8216FE14,
+    0x8216FE68,
+]
+
+[[switch]]
+base = 0x8216FED8
+r = 8
+labels = [
+    0x8216FEEC,
+    0x8216FF48,
+    0x8216FFB4,
+    0x8217001C,
+]
+
+[[switch]]
+base = 0x82192874
+r = 19
+labels = [
+    0x821928CC,
+    0x8219290C,
+    0x82192D28,
+    0x82192924,
+    0x82192924,
+    0x82192964,
+    0x82192924,
+    0x82192A4C,
+    0x82192AC4,
+    0x82192A84,
+    0x82192D28,
+    0x82192D28,
+    0x82192AC4,
+    0x82192AC4,
+    0x82192D28,
+    0x82192D28,
+    0x82192AC4,
+    0x82192D28,
+    0x82192AC4,
+    0x82192B04,
+    0x82192B1C,
+]
+
+[[switch]]
+base = 0x82192B74
+r = 19
+labels = [
+    0x82192BCC,
+    0x82192BCC,
+    0x82192D28,
+    0x82192BCC,
+    0x82192BCC,
+    0x82192CB4,
+    0x82192BCC,
+    0x82192C40,
+    0x82192BCC,
+    0x82192BCC,
+    0x82192D28,
+    0x82192D28,
+    0x82192BCC,
+    0x82192BCC,
+    0x82192D28,
+    0x82192D28,
+    0x82192D28,
+    0x82192D28,
+    0x82192BCC,
+    0x82192BCC,
+    0x82192BCC,
+]
+
+[[switch]]
+base = 0x82193360
+r = 11
+labels = [
+    0x821933B8,
+    0x821933B8,
+    0x82193720,
+    0x821933B8,
+    0x821933B8,
+    0x821933B8,
+    0x821933B8,
+    0x821933B8,
+    0x821933B8,
+    0x821933B8,
+    0x82193428,
+    0x82193720,
+    0x821933B8,
+    0x821933B8,
+    0x82193720,
+    0x82193720,
+    0x821933B8,
+    0x82193720,
+    0x821933B8,
+    0x821933B8,
+    0x821933B8,
+]
+
+[[switch]]
+base = 0x821961E4
+r = 11
+labels = [
+    0x8219626C,
+    0x82196260,
+    0x82196200,
+    0x821961F8,
+]
+
+[[switch]]
+base = 0x8219624C
+r = 11
+labels = [
+    0x82196260,
+    0x821961F8,
+    0x82196200,
+    0x8219626C,
+]
+
+[[switch]]
+base = 0x82197440
+r = 10
+labels = [
+    0x82197454,
+    0x8219747C,
+    0x8219748C,
+    0x8219747C,
+]
+
+[[switch]]
+base = 0x82197BD8
+r = 11
+labels = [
+    0x82197BF8,
+    0x82197C0C,
+    0x82197C1C,
+    0x82197C54,
+    0x82197C84,
+    0x82197CE8,
+    0x82197CFC,
+]
+
+[[switch]]
+base = 0x82197D3C
+r = 11
+labels = [
+    0x82197D5C,
+    0x82197DB0,
+    0x82197D68,
+    0x82197DB0,
+    0x82197D74,
+    0x82197DB0,
+    0x82197D80,
+]
+
+[[switch]]
+base = 0x821A3928
+r = 11
+labels = [
+    0x821A393C,
+    0x821A3948,
+    0x821A393C,
+    0x821A3954,
+]
+
+[[switch]]
+base = 0x821A87C0
+r = 11
+labels = [
+    0x821A87E8,
+    0x821A87DC,
+    0x821A89CC,
+    0x821A89C4,
+    0x821A887C,
+    0x821A8918,
+]
+
+[[switch]]
+base = 0x821ABAA8
+r = 11
+labels = [
+    0x821ABACC,
+    0x821ABAC8,
+    0x821ABCD8,
+    0x821ABCD4,
+    0x821ABB5C,
+    0x821ABC18,
+    0x821AC0E4,
+]
+
+[[switch]]
+base = 0x821AC188
+r = 4
+labels = [
+    0x821AC1A4,
+    0x821AC1E8,
+    0x821AC258,
+    0x821AC350,
+    0x821AC39C,
+    0x821AC3DC,
+]
+
+[[switch]]
+base = 0x821ACC38
+r = 11
+labels = [
+    0x821ACC54,
+    0x821ACC60,
+    0x821ACC6C,
+    0x821ACC78,
+    0x821ACC84,
+    0x821ACC90,
+]
+
+[[switch]]
+base = 0x821AD1B4
+r = 11
+labels = [
+    0x821AD1EC,
+    0x821AD1E4,
+    0x821AD1DC,
+    0x821AD1D4,
+    0x821AD1CC,
+]
+
+[[switch]]
+base = 0x821AEA5C
+r = 10
+labels = [
+    0x821AEA7C,
+    0x821AEA78,
+    0x821AEBB8,
+    0x821AEBB4,
+    0x821AEAEC,
+    0x821AEB54,
+]
+
+[[switch]]
+base = 0x821EBEC0
+r = 6
+labels = [
+    0x821EBED8,
+    0x821EBF00,
+    0x821EBF44,
+    0x821EBFB0,
+    0x821EBF84,
+]
+
+[[switch]]
+base = 0x821EC0F4
+r = 11
+labels = [
+    0x821EC10C,
+    0x821EC17C,
+    0x821EC1DC,
+    0x821EC278,
+    0x821EC23C,
+]
+
+[[switch]]
+base = 0x821EC710
+r = 11
+labels = [
+    0x821EC72C,
+    0x821EC78C,
+    0x821EC7C8,
+    0x821EC7F0,
+    0x821EC800,
+    0x821EC838,
+]
+
+[[switch]]
+base = 0x822053D0
+r = 10
+labels = [
+    0x822053E4,
+    0x822053F0,
+    0x82205404,
+    0x82205418,
+]
+
+[[switch]]
+base = 0x82230A8C
+r = 10
+labels = [
+    0x82230AC0,
+    0x82230AC0,
+    0x82230AC0,
+    0x82230AC0,
+    0x82230AC4,
+    0x82230AC0,
+    0x82230AC4,
+    0x82230AC0,
+    0x82230AC0,
+    0x82230AC4,
+    0x82230AC4,
+    0x82230AC0,
+]
+
+[[switch]]
+base = 0x82237BA8
+r = 9
+labels = [
+    0x82237BBC,
+    0x82237BE0,
+    0x82237C04,
+    0x82237C28,
+]
+
+[[switch]]
+base = 0x82237CC8
+r = 9
+labels = [
+    0x82237CDC,
+    0x82237D08,
+    0x82237D34,
+    0x82237D60,
+]
+
+[[switch]]
+base = 0x822395C0
+r = 11
+labels = [
+    0x82239694,
+    0x822398D8,
+    0x822398D8,
+    0x822398D8,
+    0x822398D8,
+    0x82239620,
+    0x8223965C,
+    0x82239670,
+    0x822397A0,
+    0x822397B8,
+    0x822397D0,
+    0x822398D8,
+    0x8223987C,
+    0x8223988C,
+    0x8223989C,
+    0x822398AC,
+    0x822398BC,
+    0x822397EC,
+    0x82239810,
+    0x82239834,
+    0x82239858,
+    0x822398CC,
+    0x82239790,
+]
+
+[[switch]]
+base = 0x82241DC4
+r = 4
+labels = [
+    0x82241DE0,
+    0x82241E24,
+    0x82241E94,
+    0x82241F8C,
+    0x82241FD8,
+    0x82242018,
+]
+
+[[switch]]
+base = 0x82242804
+r = 11
+labels = [
+    0x82242820,
+    0x82242828,
+    0x82242830,
+    0x82242838,
+    0x82242840,
+    0x82242848,
+]
+
+[[switch]]
+base = 0x82242928
+r = 11
+labels = [
+    0x82242948,
+    0x82242944,
+    0x82242B54,
+    0x82242B50,
+    0x822429D8,
+    0x82242A94,
+]
+
+[[switch]]
+base = 0x82244204
+r = 11
+labels = [
+    0x82244530,
+    0x822445B4,
+    0x822445D8,
+    0x82244788,
+    0x8224421C,
+]
+
+[[switch]]
+base = 0x82248C8C
+r = 11
+labels = [
+    0x82248F08,
+    0x82248F08,
+    0x82248E24,
+    0x82248CF0,
+    0x82248CA4,
+]
+
+[[switch]]
+base = 0x82249910
+r = 11
+labels = [
+    0x82249950,
+    0x822499F4,
+    0x82249A1C,
+    0x8224995C,
+    0x82249968,
+    0x82249990,
+    0x8224999C,
+    0x822499A8,
+    0x822499B0,
+    0x822499D8,
+    0x82249A00,
+    0x82249A28,
+    0x82249A30,
+    0x82249A58,
+    0x82249A60,
+]
+
+[[switch]]
+base = 0x82249AC8
+r = 11
+labels = [
+    0x82249B08,
+    0x82249C70,
+    0x82249CB4,
+    0x82249B38,
+    0x82249B60,
+    0x82249BB0,
+    0x82249BD8,
+    0x82249C00,
+    0x82249C08,
+    0x82249C54,
+    0x82249C98,
+    0x82249CDC,
+    0x82249CE4,
+    0x82249D30,
+    0x82249D38,
+]
+
+[[switch]]
+base = 0x8224E4B4
+r = 10
+labels = [
+    0x8224E4C8,
+    0x8224E4F8,
+    0x8224E528,
+    0x8224E558,
+]
+
+[[switch]]
+base = 0x822608E8
+r = 11
+labels = [
+    0x822608FC,
+    0x82260938,
+    0x82260B3C,
+    0x82260D2C,
+]
+
+[[switch]]
+base = 0x8226113C
+r = 11
+labels = [
+    0x82261748,
+    0x82261150,
+    0x82261350,
+    0x82261550,
+]
+
+[[switch]]
+base = 0x82272DE0
+r = 11
+labels = [
+    0x82272FB0,
+    0x82272DE4,
+    0x82272E04,
+    0x82272E54,
+    0x82272EA0,
+    0x82272EA8,
+    0x82272EE0,
+    0x82273000,
+]
+
+[[switch]]
+base = 0x82273030
+r = 11
+labels = [
+    0x82273210,
+    0x82273500,
+    0x82273034,
+    0x82273500,
+    0x82273210,
+    0x82273500,
+    0x82273210,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x8227311C,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273350,
+    0x82273500,
+    0x822730A0,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x8227321C,
+    0x82273500,
+    0x82273044,
+    0x82273340,
+    0x8227321C,
+    0x8227321C,
+    0x8227321C,
+    0x82273500,
+    0x82273340,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x82273500,
+    0x822731D4,
+    0x82273388,
+    0x8227334C,
+    0x82273500,
+    0x82273500,
+    0x8227312C,
+    0x82273500,
+    0x82273344,
+    0x82273500,
+    0x82273500,
+    0x82273358,
+]
+
+[[switch]]
+base = 0x8227AD48
+r = 11
+labels = [
+    0x8227AD4C,
+    0x8227ADC0,
+    0x8227AE3C,
+    0x8227AEB8,
+    0x8227AF28,
+    0x8227AF9C,
+    0x8227AFBC,
+    0x8227B040,
+    0x8227B004,
+    0x8227B098,
+    0x8227B08C,
+    0x8227B058,
+]
+
+[[switch]]
+base = 0x8227EA44
+r = 11
+labels = [
+    0x8227EB2C,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EB2C,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EB4C,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EBF4,
+    0x8227EB4C,
+]
+
+[[switch]]
+base = 0x8228D800
+r = 30
+labels = [
+    0x8228D9A4,
+    0x8228D814,
+    0x8228D82C,
+    0x8228DA84,
+]
+
+[[switch]]
+base = 0x8229AAF0
+r = 5
+labels = [
+    0x8229AB1C,
+    0x8229AB70,
+    0x8229ABC4,
+    0x8229ABCC,
+    0x8229AC1C,
+    0x8229AC1C,
+    0x8229AC1C,
+    0x8229AC1C,
+    0x8229AB1C,
+    0x8229AB70,
+]
+
+[[switch]]
+base = 0x8229B0CC
+r = 5
+labels = [
+    0x8229B0F8,
+    0x8229B14C,
+    0x8229B1A0,
+    0x8229B1A8,
+    0x8229B1F8,
+    0x8229B1F8,
+    0x8229B1F8,
+    0x8229B1F8,
+    0x8229B0F8,
+    0x8229B14C,
+]
+
+[[switch]]
+base = 0x8229B630
+r = 7
+labels = [
+    0x8229B65C,
+    0x8229B668,
+    0x8229B674,
+    0x8229B67C,
+    0x8229B6DC,
+    0x8229B6DC,
+    0x8229B6DC,
+    0x8229B6DC,
+    0x8229B65C,
+    0x8229B668,
+]
+
+[[switch]]
+base = 0x822C26D0
+r = 9
+labels = [
+    0x822C43A8,
+    0x822C5264,
+    0x822C3534,
+    0x822C26E4,
+]
+
+[[switch]]
+base = 0x822C68C8
+r = 9
+labels = [
+    0x822C914C,
+    0x822CA77C,
+    0x822C7D14,
+    0x822C68E8,
+    0x822CE8BC,
+    0x822CCA18,
+    0x822CD968,
+]
+
+[[switch]]
+base = 0x822CF4D8
+r = 11
+labels = [
+    0x822CF4EC,
+    0x822CF4F8,
+    0x822CF51C,
+    0x822CF5A0,
+]
+
+[[switch]]
+base = 0x822CF76C
+r = 11
+labels = [
+    0x822CF780,
+    0x822CF78C,
+    0x822CF7B0,
+    0x822CF834,
+]
+
+[[switch]]
+base = 0x822D0028
+r = 11
+labels = [
+    0x822D1F5C,
+    0x822D0A5C,
+    0x822D1530,
+    0x822D003C,
+]
+
+[[switch]]
+base = 0x822D2D20
+r = 11
+labels = [
+    0x822D31B0,
+    0x822D31B0,
+    0x822D300C,
+    0x822D2D34,
+]
+
+[[switch]]
+base = 0x822D500C
+r = 11
+labels = [
+    0x822D5020,
+    0x822D502C,
+    0x822D5058,
+    0x822D50DC,
+]
+
+[[switch]]
+base = 0x822D52FC
+r = 11
+labels = [
+    0x822D5310,
+    0x822D531C,
+    0x822D5348,
+    0x822D53CC,
+]

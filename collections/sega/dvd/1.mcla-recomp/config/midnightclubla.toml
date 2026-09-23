@@ -1,0 +1,75 @@
+# Midnight Club: Los Angeles Complete Edition (USA) - per-title run config.
+#
+# Starting point is what Split/Second, Ridge Racer Unbounded and SoulCalibur IV
+# each needed on this SDK; each line is revisited once the game renders.
+
+# Log an indirect-call target that was never recompiled and return 0 instead of
+# aborting, so a bring-up run surfaces the whole missing-function frontier at
+# once instead of one abort per run. Revisit before calling anything shipped.
+unregistered_function_nonfatal = true
+
+# Engines routinely issue resolves and fetches the strict path rejects.
+gpu_allow_invalid_fetch_constants = true
+
+# Async pipeline compilation skips presents and draws untextured placeholders on
+# every title tried so far; compile synchronously and answer the hitches with a
+# warm cache (shader_storage_seed_root) once there is something to seed from.
+async_shader_compilation = false
+
+# The host render-target path, not the fragment-shader-interlock EDRAM path that
+# Split/Second and Ridge Racer Unbounded need. FSI serialises fragment shading,
+# and once this title stopped being CPU-bound that became 25% of the frame:
+# 66 ms -> 49 ms, same scene, same draw count. A matched pair of frames from the
+# same spot shows no colour wash and no grade difference here - the thing FSI
+# was adopted to fix on the other two - so the cheaper path wins. Re-check the
+# grade if anything looks flat or washed out.
+render_target_path_vulkan = "host"
+
+# Do not wipe the shared-memory page-valid state at every frame end. With it on
+# (the SDK default) every page the CPU uploaded loses its valid bit each frame,
+# so the whole CPU-visible working set is re-uploaded next frame: measured here
+# at 6,200 distinct pages re-sent per frame, ~190 MB per two seconds, for ~1 MB
+# of actual guest writes. Off, the guest write-watches alone drive invalidation
+# and the traffic falls to ~2 MB per two seconds. Worth 2.9 -> 10 FPS in free
+# roam. Revisit if geometry ever renders stale.
+clear_memory_page_state = false
+
+# Treat a 256 KB block of shared memory that has been dirty three frames running
+# as permanently dirty: stop arming its guest write watch and re-upload it once
+# per frame instead. This game streams geometry through a handful of pools that
+# are rewritten every single frame, and for those the watch only ever buys a
+# guest trap and another arming - both of which take the kernel-wide lock.
+# Measured parked in free roam: 84 ms -> 50 ms per frame (12 -> 20 FPS).
+# With the released headless baseline, six frames also keeps the same
+# streaming pool hot enough to reach 16.7 ms frames (~60 FPS).
+#
+# The trade: draws late in a frame no longer see writes the guest made after
+# that frame's first upload of a hot page. Nothing has looked wrong so far
+# (parked, driving, collisions), but if geometry ever flickers or lags a frame,
+# this is the first thing to turn off.
+gpu_hot_page_frames = 6
+
+# Answer system prompts with their default instead of drawing ReXGlue's own
+# (green) ImGui dialog over the game. One local profile, one device: no choice.
+headless = true
+vsync = false
+vsync_fps_cap = 0
+
+# The window's name. Without it the title bar reads "<slug> rexglue <build>",
+# which is right while bringing a port up and wrong in anything shipped.
+window_title = "Midnight Club: Los Angeles"
+
+# PRESENTATION. The runtime prefers immediate -> mailbox -> fifo_relaxed -> fifo
+# and under immediate/mailbox a present never blocks; on a VRR panel that shows
+# as flicker on the front end (measured on Burnout Revenge, Shift 2, Sega Bass).
+# Strict FIFO paces the title at the display rate.
+vulkan_allow_present_mode_immediate = false
+vulkan_allow_present_mode_mailbox = false
+vulkan_allow_present_mode_fifo_relaxed = false
+# Dynamic UBOs for guest constants: removes per-material descriptor-set writes
+# (measured: bindings 3.0 -> 2.3 ms, frame 14.5 -> 12.3 ms in a 4k-draw city tail).
+vulkan_dynamic_constant_buffers = true
+side_panel_title = "Midnight Club: Los Angeles"
+resolution_scale = 1
+anisotropic_override = 3
+native_2x_msaa = true

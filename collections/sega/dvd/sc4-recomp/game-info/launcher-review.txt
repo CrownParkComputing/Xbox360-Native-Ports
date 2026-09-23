@@ -1,0 +1,3 @@
+SoulCalibur IV has assets and a desktop binary, but this tree lacks a conversion report proving menu-to-match behavior in the unified launcher.
+Boot into a match, verify fighters/stages, controller latency, audio, saves and longjmp behavior, then document any render-path requirements.
+No Android build configuration or artifact was found. Establish desktop correctness, add the shared Android template, and test an arm64 match before assessing performance.

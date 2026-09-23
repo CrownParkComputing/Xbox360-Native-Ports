@@ -1,0 +1,3 @@
+The expanded twin-stick sequel. A guest exposure-bias fix corrected the initially dark image, and gameplay is verified under the shipping renderer.
+Soak all modes, stress dense particles, verify multiplayer controllers and achievements, and guard the exposure fix with visual captures.
+An arm64 APK exists. Strong candidate, subject to device verification of the exposure fix, controller mapping, lifecycle and thermal frame pacing.

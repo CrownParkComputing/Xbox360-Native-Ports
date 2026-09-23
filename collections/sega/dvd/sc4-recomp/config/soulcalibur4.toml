@@ -1,0 +1,39 @@
+# SoulCalibur IV (EUR) - per-title run config.
+#
+# Bring-up starts from what Split/Second and Ridge Racer Unbounded needed:
+
+# Log an indirect-call target that was never recompiled and return 0 instead of
+# aborting. During bring-up this surfaces the whole missing-function frontier in
+# one run instead of one abort per run. Revisit before calling anything shipped.
+unregistered_function_nonfatal = true
+
+# Engines routinely issue resolves and fetches the strict path rejects.
+gpu_allow_invalid_fetch_constants = true
+
+# The very first boot showed "Skipping Vulkan frame presentation due to async
+# placeholder draw usage in this frame" - the game rendered and resolved, but
+# never presented. Split/Second hit the same thing: async placeholder pipelines
+# cause skipped presents and untextured draws. Compile synchronously; a warm
+# cache (shader_storage_seed_root, see ss-recomp) is the answer to the hitches.
+async_shader_compilation = false
+
+# The default host render-target path leaves Split/Second and Ridge Racer
+# Unbounded with a colour wash; the fragment-shader-interlock EDRAM path fixes
+# the grade and autoexposure on both. Start here and A/B it later.
+render_target_path_vulkan = "fsi"
+
+# MCLA-family CPU-side coherency savings (2026-09-22 rollout): keep uploaded
+# page-valid state across frames; treat blocks dirtied 3 frames running as
+# permanently dirty (batched upload at frame open, no trap/re-arm per write).
+# Trade: draws late in a frame miss writes after that frame's first upload of
+# a hot page. Safe values if textures/geometry corrupt: true / 0.
+clear_memory_page_state = false
+gpu_hot_page_frames = 3
+
+# Answer system prompts with their default instead of drawing ReXGlue's own
+# (green) ImGui dialog over the game. One local profile, one device: no choice.
+headless = true
+
+# The window's name. Without it the title bar reads "<slug> rexglue <build>",
+# which is right while bringing a port up and wrong in anything shipped.
+window_title = "SoulCalibur IV"

@@ -1,0 +1,3 @@
+Rare's larger XBLA adventure. It reaches the title, rendered game world and attract gameplay with no currently documented Xenos rendering defect.
+Complete controller, save/load, world-transition and long-session tests. Review the full multi-part Xenia 60 FPS timing fixes before changing native game speed.
+Android package exists, but this audit found no recorded device play-through. Install on arm64 hardware and verify memory pressure, suspend/resume and input before marking compatible.

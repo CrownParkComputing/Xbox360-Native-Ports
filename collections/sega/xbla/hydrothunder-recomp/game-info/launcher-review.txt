@@ -1,0 +1,9 @@
+Vector Unit's arcade boat racer. Races are playable end-to-end on desktop,
+though there are occasional jitters, a waterfall buoyancy defect and water
+colour differs from the intended blue-teal look. The launcher imports a content
+tree containing default.xex and starts the embedded runner.
+Fix or bound the buoyancy state error, compare water rendering against reference captures, then run a full championship and save/load soak.
+An arm64 APK exists. Device testing is required; water rendering, physics
+consistency, Vulkan features and sustained thermal performance are the priority
+risks. Keyboard controls are Return=Start, Space=A, Z=B, X=X, C=Y, WASD=steer,
+and E=throttle.
