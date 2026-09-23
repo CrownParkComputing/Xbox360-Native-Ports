@@ -43,22 +43,34 @@ CPU-side performance campaign, measured mostly on Midnight Club: LA and
 Split/Second. Every cache has a kill switch and reports counters into the
 per-frame stats CSV (`gpu_frame_stats_path` — the campaign's measurement
 backbone: per-stage draw timings, fence waits, uploads, pipeline/bindings,
-render passes and break reasons).
+render passes and break reasons). The full measured campaign, with validation
+methodology, is in the port's own docs:
+`collections/sega/dvd/1.mcla-recomp/PERFORMANCE_HANDOVER.md`.
 
 - **Pipeline state-input cache** — `ConfigurePipeline` rebuilt and re-hashed
   the full `PipelineDescription` from guest registers per draw; now matched
   against a 64-entry MRU keyed on the masked fields the description actually
-  reads (~95% hit on MCLA). Switch: `vulkan_pipeline_state_hash_cache`.
+  reads (hashing whole registers missed ~always — per-draw garbage in
+  `VGT_DRAW_INITIATOR::num_indices` and absent-RT blend controls). City route
+  hit rate ~95–97%; `GetCurrentStateDescription` self-time ~0.3%→~0.02% of
+  CPU. Invariant: the key must grow if the description starts reading more
+  guest state. Switch: `vulkan_pipeline_state_hash_cache`.
 - **Texture fetch-write memoization** — the write hook compares the raw
   24-byte fetch constant and only invalidates the slot on a real change
   (13–30% of MCLA's fetch writes are identical rewrites). Switch:
   `texture_fetch_write_memoization`.
 - **Frame-local material descriptor cache** — texture descriptor sets reused
-  for materials recurring non-adjacently in a frame (~850 fewer descriptor
-  writes/frame). Switch: `vulkan_reuse_material_descriptor_sets`.
+  for materials recurring non-adjacently in a frame. Measured: 2,046 reuse
+  hits/frame, descriptor writes 1,253→404 (~850 fewer); cleared at frame
+  open, sets kept in the in-flight lifetime queue. Draw counts varied ~30%
+  between scripted runs, so no FPS claim is made from the A/B. Switch:
+  `vulkan_reuse_material_descriptor_sets`.
 - **Stable-binding fast path** — `UpdateBindings` skips image-view resolution
   when shaders/fetch constants/binding epochs/samplers match a recent state
-  (per-slot epochs so a stale `VkImageView` can never be cached). Switch:
+  (16-entry MRU, deep compare first and FNV hash only when scanning the rest —
+  hashing every draw cost more than it saved; per-slot epochs so a stale
+  `VkImageView` can never be cached). Measured: ~1,800–1,900 hits/frame,
+  `UpdateBindings` ~3.2%→~1.9% of all CPU. Switch:
   `vulkan_texture_binding_fast_path`.
 - **`vulkan_dynamic_constant_buffers`** (new, default off) — the 5 guest
   constant-buffer bindings use `VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER_DYNAMIC`
@@ -70,7 +82,9 @@ render passes and break reasons).
   plus a generic bulk path for side-effect-free ranges (`WriteRegister`
   5.9%→0.5% of CPU). A 3,443-case register-name table walked per write was
   replaced by a logger level check, then a once-resolved handle.
-- **Run-length float constant copies** (one `memcpy` per dense run) and
+- **Run-length float constant copies** — one `memcpy` per dense run of the
+  constant map instead of one 16-byte constant per `bit_scan_forward`
+  iteration (`bit_scan_forward` was ~1.8% of all CPU in city profiles) — and
   **barrier source tagging** (per-source counts so render-pass breaks are
   attributable).
 - **Swapchain rebuild guard** — no rebuild when the surface extent is
@@ -102,6 +116,13 @@ render passes and break reasons).
   (45 µs → 3.7 µs per check). Draw residency requests deferred and flushed
   once (each upload ended the open render pass; four streams = four breaks).
   Write watches arm per uploaded range, not across the span.
+- **Exact vertex-range residency** — a hot streaming pool's invalidation is
+  intentionally conservative (it fires globally), but it no longer forces
+  unrelated static vertex ranges back through the deferred upload path: the
+  vertex-fetch path confirms the exact range is still GPU-resident
+  (`RangeResident`, counted as `vfetch_skipped`) and keeps it on the GPU.
+  Deferred ranges are sorted and merged before the resident-range checks,
+  avoiding duplicate bitmap scans and a redundant later sort/merge.
 - MMIO fault handler no longer parses `/proc/self/maps` under the global lock
   on every write-watch fault; the OS query only runs on the rare
   genuine-violation path, and the maps file is parsed by an allocation-free
@@ -111,6 +132,12 @@ render passes and break reasons).
   per frame as one batch at frame open (render passes 701→106/frame on MCLA).
   Documented trade: later draws in a frame don't see writes made after that
   frame's first upload. First thing to disable if geometry flickers.
+- **Hot-page demand tracking** — the hot-page cache records real draw demand
+  (`page_requested_this_frame_`) separately from speculative prefetch uploads;
+  only actual renderer demand keeps a block hot, and unused prefetched pages
+  expire and return to the watched path instead of being recopied indefinitely
+  as the city streams (counting prefetch as demand made hot blocks feed
+  themselves forever).
 - **`clear_memory_page_state = false`** in port profiles — CPU-uploaded pages
   keep their valid bit across frames (on, it re-uploads ~190 MB/2s for ~1 MB
   of guest writes). Documented hazard: intermittent tile-pattern texture
@@ -393,7 +420,45 @@ render passes and break reasons).
 
 ---
 
+## Port-side companion work (not in the SDK)
+
+These live in the MCLA port tree (`collections/sega/dvd/1.mcla-recomp/`), not
+in the fork, but they pair with the SDK changes above and explain how the
+numbers were produced:
+
+- **MCLA timing patch** (`src/timing_hooks.cpp`) — the Xenia Canary
+  "Complete Edition" 60 FPS game-speed fix by illusion/boma, implemented as
+  two strong overrides (`sub_821BDA90`, `sub_824199B0`) via the weak-export
+  mechanism; the generated originals remain intact and reachable.
+  `MCLA_60FPS=0` opts out for regression comparisons. With the hooks enabled,
+  `tools/embedded_play.sh` defaults to elapsed-time gameplay without the
+  hidden compositor's extra presentation waits; `MCLA_UNPACED=0` restores
+  them.
+- The port's `PERFORMANCE_HANDOVER.md` is the authoritative record of the
+  whole MCLA campaign (methodology, validation runs, measured cache behavior);
+  `PERFORMANCE.md` covers the launcher/timing/hot-page operational notes;
+  `CONVERSION.md` records the bring-up itself. MCLA's own config confirms the
+  profile choices: host render-target path (25% faster than FSI here),
+  hot-page uploads on, strict FIFO vsync for VRR panels.
+
 ## Known limitations / work in progress
+
+- **MCLA remains CPU-bound**: GPU pass ~1.1 ms against ~22 ms city frames.
+  Remaining shared-runtime CPU costs after the campaign (city-scene profile,
+  per the handover): `UpdateBindings` ~1.7% of CPU (down from ~3.2%; what
+  remains is the MRU hash/deep compares plus per-draw uniform-pool requests
+  and the dynamic-offset re-bind), `TextureKey` lookups ~1.0% and
+  `VulkanTexture::GetView` ~0.8% (real streaming texture churn, not
+  rewrites), `RenderTargetCache::Update` ~0.9%, `UpdateSystemConstantValues`
+  ~0.9%, and submit/ownership ~0.6–0.7 ms/frame that is mostly stage-timer
+  overhead. Guest code itself is ~31% of CPU, spread thin — out of scope for
+  shared-runtime work. Sustained 60 FPS in heavy city scenes is not
+  demonstrated; the handover says to compare frame-time tails of the same
+  scene, not average FPS.
+- **Descriptor/binding caches are cross-title-validated only on MCLA so
+  far** — the Burnout Revenge validation run was blocked by the shared
+  display-server environment (gamescope sockets occupied); treat the caches
+  as MCLA-proven until the documented A/B runs on a second title.
 
 - **rexgpu-native is not usable yet**: renders loading screens (MCLA at a
   steady 30) and issues real textured 3D draws on Banjo/Rez, but dies
