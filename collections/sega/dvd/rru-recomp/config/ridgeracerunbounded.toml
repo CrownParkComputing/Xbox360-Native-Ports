@@ -11,6 +11,14 @@ query_occlusion_fake_sample_count = 0
 # guidance ("ROV/FSI fixes the autoexposure issue").
 render_target_path_vulkan = "fsi"
 
+# MCLA-family CPU-side coherency savings (2026-09-22 rollout): keep uploaded
+# page-valid state across frames; treat blocks dirtied 3 frames running as
+# permanently dirty (batched upload at frame open, no trap/re-arm per write).
+# Trade: draws late in a frame miss writes after that frame's first upload of
+# a hot page. Safe values if textures/geometry corrupt: true / 0.
+clear_memory_page_state = false
+gpu_hot_page_frames = 3
+
 # Keyboard as pad (Space = A) alongside a physical controller.
 mnk_mode = true
 
