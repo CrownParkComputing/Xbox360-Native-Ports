@@ -1,0 +1,88 @@
+schema_version = 1
+title = "Choplifter HD"
+title_id = "58411232"
+platform = "xbox360"
+classification = "not-working-native-diagnostic"
+release_ready = false
+updated = "2026-08-14"
+known_issue_ids = [
+  "CHOPLIFTER-NOT-WORKING-001",
+  "CHOPLIFTER-IMPORT-STUBS-001",
+  "CHOPLIFTER-DIRECT-CLOSURE-001",
+]
+
+[coverage]
+translated_instructions = 0
+decoded_instructions = 0
+native_translation_percent = 0.0
+rexglue_functions = 51989
+xenonrecomp_functions = 77823
+rexglue_vs_xenon_functions_percent = 66.8
+imports_total = 268
+imports_implemented = 235
+imports_stubbed = 33
+imports_missing = 0
+implemented_imports_percent = 87.69
+stubbed_import_names = [
+  "__imp__IoCheckShareAccess",
+  "__imp__IoCompleteRequest",
+  "__imp__IoDeleteDevice",
+  "__imp__IoDismountVolume",
+  "__imp__IoInvalidDeviceRequest",
+  "__imp__IoRemoveShareAccess",
+  "__imp__IoSetShareAccess",
+  "__imp__NetDll_XNetConnect",
+  "__imp__NetDll_XNetQosGetListenStats",
+  "__imp__NetDll_XNetQosLookup",
+  "__imp__NetDll_XNetRegisterKey",
+  "__imp__NetDll_XNetServerToInAddr",
+  "__imp__NetDll_XNetUnregisterInAddr",
+  "__imp__NetDll_XNetUnregisterKey",
+  "__imp__NetDll_getsockname",
+  "__imp__NetDll_getsockopt",
+  "__imp__NtWriteFileGather",
+  "__imp__ObIsTitleObject",
+  "__imp__ObReferenceObject",
+  "__imp__RtlUpcaseUnicodeChar",
+  "__imp__XNetLogonGetTitleID",
+  "__imp__XamShowAchievementsUI",
+  "__imp__XamShowCustomPlayerListUI",
+  "__imp__XamShowFriendRequestUI",
+  "__imp__XamShowFriendsUI",
+  "__imp__XamShowGameInviteUI",
+  "__imp__XamShowGamerCardUIForXUID",
+  "__imp__XamShowMarketplaceUI",
+  "__imp__XamShowMessageComposeUI",
+  "__imp__XamShowMessagesUI",
+  "__imp__XamShowPlayerReviewUI",
+  "__imp__XamShowPlayersUI",
+  "__imp__XamShowQuickChatUI",
+]
+missing_import_names = []
+
+[static]
+translation_units = 110
+recovered_switches = 107
+unresolved_generated_calls = 2
+
+[artifacts]
+binary_bytes = 72379408
+binary_sha256 = "11e17bd973aa8bf3009a95b55d3f6633da0d50c3d4b6bbcd01a8687503408102"
+rexglue_sdk_commit = "3a098bb1c419c5042509bdc9f99edde6f0d26518"
+
+[review]
+input_fingerprint = "72caf38a2b2ddc691eb62a5c5b7a56f646ea4054a20500ef2af68580b2aa1c9f"
+cookbook_commit = "5a738de14326d6c95734bcf3dae46d0a8aaf43bc"
+
+[tests]
+central_cookbook_unit = "pass"
+recipe_unit = "pass"
+owned_identity = "pass"
+current_rexglue_codegen = "pass"
+current_rexglue_link = "pass"
+gameplay = "blocked"
+graphics = "blocked"
+audio = "not-tested"
+input = "not-tested"
+persistence = "not-tested"
+shutdown = "not-tested"

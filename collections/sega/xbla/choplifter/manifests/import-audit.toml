@@ -1,0 +1,42 @@
+schema_version = 1
+imports_total = 268
+imports_implemented = 235
+imports_stubbed = 33
+imports_missing = 0
+implemented_imports_percent = 87.69
+stubbed = [
+  "__imp__IoCheckShareAccess",
+  "__imp__IoCompleteRequest",
+  "__imp__IoDeleteDevice",
+  "__imp__IoDismountVolume",
+  "__imp__IoInvalidDeviceRequest",
+  "__imp__IoRemoveShareAccess",
+  "__imp__IoSetShareAccess",
+  "__imp__NetDll_XNetConnect",
+  "__imp__NetDll_XNetQosGetListenStats",
+  "__imp__NetDll_XNetQosLookup",
+  "__imp__NetDll_XNetRegisterKey",
+  "__imp__NetDll_XNetServerToInAddr",
+  "__imp__NetDll_XNetUnregisterInAddr",
+  "__imp__NetDll_XNetUnregisterKey",
+  "__imp__NetDll_getsockname",
+  "__imp__NetDll_getsockopt",
+  "__imp__NtWriteFileGather",
+  "__imp__ObIsTitleObject",
+  "__imp__ObReferenceObject",
+  "__imp__RtlUpcaseUnicodeChar",
+  "__imp__XNetLogonGetTitleID",
+  "__imp__XamShowAchievementsUI",
+  "__imp__XamShowCustomPlayerListUI",
+  "__imp__XamShowFriendRequestUI",
+  "__imp__XamShowFriendsUI",
+  "__imp__XamShowGameInviteUI",
+  "__imp__XamShowGamerCardUIForXUID",
+  "__imp__XamShowMarketplaceUI",
+  "__imp__XamShowMessageComposeUI",
+  "__imp__XamShowMessagesUI",
+  "__imp__XamShowPlayerReviewUI",
+  "__imp__XamShowPlayersUI",
+  "__imp__XamShowQuickChatUI",
+]
+missing = []
