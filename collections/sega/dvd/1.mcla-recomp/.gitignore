@@ -1,5 +1,6 @@
 out/
 user-data/
+generated/
 # and the parts themselves are attached to a private release, not to Git.
 assets/
 # The content archive is never committed; content/content.sha256 proves it.

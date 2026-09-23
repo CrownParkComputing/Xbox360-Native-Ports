@@ -31,10 +31,10 @@ fi
 # The SDK libraries sit next to the executable and are NOT refreshed by the
 # project build. Copying one without the other pairs a new runtime with an old
 # GPU plugin, which is its own class of bug; sync whichever is newer, together.
-SDK_LIB="/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx/out/install/linux-amd64/lib"
+SDK_LIB="/home/jon/rexglue-vmx/out/install/linux-amd64/lib"
 GPU_PLUGIN="${REX_GPU_PLUGIN:-xenos}"
-for lib in librexruntime.so "librexgpu-$GPU_PLUGIN.so"; do
-  [ "$SDK_LIB/$lib" -nt "$ROOT/out/build/linux/$lib" ] && cp "$SDK_LIB/$lib" "$ROOT/out/build/linux/" || true
+for lib in librexruntime.so librexruntimed.so librexruntimerd.so "librexgpu-$GPU_PLUGIN.so" "librexgpu-${GPU_PLUGIN}d.so" "librexgpu-${GPU_PLUGIN}rd.so"; do
+  ([ ! -f "$ROOT/out/build/linux/$lib" ] || [ "$SDK_LIB/$lib" -nt "$ROOT/out/build/linux/$lib" ]) && cp "$SDK_LIB/$lib" "$ROOT/out/build/linux/" || true
 done
 cp "$ROOT/config/splitsecond.toml" "$ROOT/out/build/linux/" 2>/dev/null || true
 

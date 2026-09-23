@@ -24,7 +24,7 @@ set -euo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 SECS="${1:-300}"
 TITLE="$(basename "$ROOT" -recomp)"
-RAYVIEW_DIR="/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx/tools/rayview"
+RAYVIEW_DIR="/home/jon/rexglue-vmx/tools/rayview"
 RAYVIEW="$RAYVIEW_DIR/build/rayview"
 
 if [ ! -x "$RAYVIEW" ]; then

@@ -4,12 +4,12 @@
 set -euo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 BUILD="$ROOT/out/build/linux"
-SDKLIB="/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx/out/install/linux-amd64/lib"
+SDKLIB="/home/jon/rexglue-vmx/out/install/linux-amd64/lib"
 [ -x "$BUILD/projectgotham4" ] || { echo "build first: cmake --build out/build/linux -j4" >&2; exit 1; }
 # Keep the SDK libraries beside the exe current (they are not refreshed by the
 # project build); a stale pair links but crashes at load on changed SDK symbols.
-for lib in librexruntime.so librexgpu-xenos.so; do
-  [ "$SDKLIB/$lib" -nt "$BUILD/$lib" ] && cp "$SDKLIB/$lib" "$BUILD/" || true
+for lib in librexruntime.so librexruntimed.so librexruntimerd.so librexgpu-xenos.so librexgpu-xenosd.so librexgpu-xenosrd.so; do
+  ([ ! -f "$BUILD/$lib" ] || [ "$SDKLIB/$lib" -nt "$BUILD/$lib" ]) && cp "$SDKLIB/$lib" "$BUILD/" || true
 done
 # The per-title config is read from beside the executable; copy the current one in
 # (without this, edits to config/projectgotham4.toml silently do nothing at runtime).

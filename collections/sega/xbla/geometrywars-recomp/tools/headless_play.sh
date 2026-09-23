@@ -42,9 +42,8 @@ cp "$ROOT/config/geometrywars.toml" "$ROOT/out/build/linux/" 2>/dev/null || true
 # object file"), and on an older one it silently measures the SDK from whenever
 # run.sh was last used. Both must move together - a mismatched pair links but
 # misbehaves.
-for lib in librexruntime.so librexgpu-xenos.so; do
-  [ "/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx/out/install/linux-amd64/lib/$lib" -nt "$ROOT/out/build/linux/$lib" ] \
-    && cp "/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx/out/install/linux-amd64/lib/$lib" "$ROOT/out/build/linux/" || true
+for lib in librexruntime.so librexruntimed.so librexruntimerd.so librexgpu-xenos.so librexgpu-xenosd.so librexgpu-xenosrd.so; do
+  ([ ! -f "$ROOT/out/build/linux/$lib" ] || [ "/home/jon/rexglue-vmx/out/install/linux-amd64/lib/$lib" -nt "$ROOT/out/build/linux/$lib" ]) && cp "/home/jon/rexglue-vmx/out/install/linux-amd64/lib/$lib" "$ROOT/out/build/linux/" || true
 done
 cd "$ROOT/out/build/linux"
 

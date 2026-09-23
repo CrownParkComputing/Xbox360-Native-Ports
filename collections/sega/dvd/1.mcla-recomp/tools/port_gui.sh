@@ -13,7 +13,7 @@ set -uo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)/.."
 ROOT="$(cd -- "$ROOT" && pwd)"
 TITLE="$(basename "$ROOT" | sed 's/-recomp$//')"
-SDK="${REXSDK_DIR:-/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx}"
+SDK="${REXSDK_DIR:-/home/jon/rexglue-vmx}"
 DEV=0
 [ "${1:-}" = "--dev" ] && DEV=1
 

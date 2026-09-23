@@ -28,7 +28,7 @@ SLUG="$TITLE"
 # Dialogs carry the game's name, not the folder slug.
 NAME="$(sed -n 's/^window_title = "\(.*\)"$/\1/p' "$ROOT/config/$SLUG.toml" 2>/dev/null | head -1)"
 [ -n "$NAME" ] && TITLE="$NAME"
-SDK="${REXSDK_DIR:-/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx}"
+SDK="${REXSDK_DIR:-/home/jon/rexglue-vmx}"
 STFS="$ROOT/tools/stfs_extract.py"; [ -f "$STFS" ] || STFS="$SDK/tools/stfs_extract.py"
 # rexiso reads a disc image with the runtime's own XDVDFS reader; it ships next to the launcher.
 REXISO="$ROOT/rexiso"; [ -x "$REXISO" ] || REXISO="$SDK/out/install/linux-amd64/bin/rexiso"

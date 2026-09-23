@@ -32,8 +32,8 @@ rm -rf "$OUT"; mkdir -p "$OUT"
 # Which runtime this run will actually execute - say so up front, next to what
 # the SDK currently ships. A mismatch here is the whole result being about the
 # wrong binary, and it is much cheaper to see now than to reason about later.
-SDK_LIB="${REXSDK_DIR:-/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx}/out/install/linux-amd64/lib/librexruntime.so"
-for lib in librexruntime.so librexgpu-xenos.so; do
+SDK_LIB="${REXSDK_DIR:-/home/jon/rexglue-vmx}/out/install/linux-amd64/lib/librexruntime.so"
+for lib in librexruntime.so librexruntimed.so librexruntimerd.so librexgpu-xenos.so librexgpu-xenosd.so librexgpu-xenosrd.so; do
   [ "$(dirname "$SDK_LIB")/$lib" -nt "$ROOT/out/build/linux/$lib" ] && cp "$(dirname "$SDK_LIB")/$lib" "$ROOT/out/build/linux/" || true
 done
 echo "runtime: $(sha256sum "$ROOT/out/build/linux/librexruntime.so" 2>/dev/null | cut -c1-12)  (sdk install: $(sha256sum "$SDK_LIB" 2>/dev/null | cut -c1-12))" | tee "$OUT/runtime.txt"

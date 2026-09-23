@@ -1,0 +1,4 @@
+# One project directory name per line - titles the launcher shows.
+# Add a title here once its conversion has been played and judged
+# working, not merely once it builds - see docs/BRINGUP.md.
+hydrothunder-recomp

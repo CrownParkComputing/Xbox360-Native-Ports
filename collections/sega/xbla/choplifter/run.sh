@@ -12,8 +12,8 @@ SDK_LIB="/home/jon/rexglue-vmx/out/install/linux-amd64/lib"
 # The SDK libraries sit next to the executable and are NOT refreshed by the
 # project build: a rebuilt SDK with no copy here runs the old code and every
 # diagnostic you just added is silently missing. Sync whatever is newer.
-for lib in librexruntime.so librexgpu-xenos.so; do
-  [ "$SDK_LIB/$lib" -nt "$BUILD/$lib" ] && cp "$SDK_LIB/$lib" "$BUILD/" || true
+for lib in librexruntime.so librexruntimed.so librexruntimerd.so librexgpu-xenos.so librexgpu-xenosd.so librexgpu-xenosrd.so; do
+  ([ ! -f "$BUILD/$lib" ] || [ "$SDK_LIB/$lib" -nt "$BUILD/$lib" ]) && cp "$SDK_LIB/$lib" "$BUILD/" || true
 done
 cp "$ROOT/config/choplifter.toml" "$BUILD/" 2>/dev/null || true
 

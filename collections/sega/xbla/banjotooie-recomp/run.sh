@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 BUILD="$ROOT/out/build/linux"
 GAME="${BANJOTOOIE_GAME_DATA:-$ROOT/assets}"
-SDK_LIB="/home/jon/recomp-ports/recomp-family/_library/rexglue-vmx/out/install/linux-amd64/lib"
+SDK_LIB="/home/jon/rexglue-vmx/out/install/linux-amd64/lib"
 
 # The disc content is not in the repository, and importing it is not part of
 # the build: a rebuild should not depend on having the game to hand. If assets/
@@ -34,8 +34,8 @@ fi
 # The SDK libraries sit next to the executable and are NOT refreshed by the
 # project build: a rebuilt SDK with no copy here runs the old code and every
 # diagnostic you just added is silently missing. Sync whatever is newer.
-for lib in librexruntime.so librexgpu-xenos.so; do
-  [ "$SDK_LIB/$lib" -nt "$BUILD/$lib" ] && cp "$SDK_LIB/$lib" "$BUILD/" || true
+for lib in librexruntime.so librexruntimed.so librexruntimerd.so librexgpu-xenos.so librexgpu-xenosd.so librexgpu-xenosrd.so; do
+  ([ ! -f "$BUILD/$lib" ] || [ "$SDK_LIB/$lib" -nt "$BUILD/$lib" ]) && cp "$SDK_LIB/$lib" "$BUILD/" || true
 done
 cp "$ROOT/config/banjotooie.toml" "$BUILD/" 2>/dev/null || true
 
