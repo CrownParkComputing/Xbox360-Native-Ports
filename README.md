@@ -1,5 +1,7 @@
 # Xbox 360 Native Ports
 
+<p align="center"><img src="docs/img/brand.png" alt="Retro Recompilation" width="720"></p>
+
 Xbox 360 titles recompiled to run natively. Each release on this page is a
 **launcher**: the recompiled game code, a native Vulkan renderer, a native
 audio path and a small GUI. It contains no game data. You point it at your own
@@ -11,21 +13,85 @@ Every title has a Linux launcher and a Windows launcher; see each release's
 notes for what has been tested. No Android builds of these disc titles yet:
 they are too slow until the console layer is fully native.
 
-## Using a launcher
+## The launcher: rexmenu
+
+Every title boots into **rexmenu**, the same raylib front-end
+(`_menu/src/main.cpp`). It shows the whole collection on a game rail, tracks
+achievements per title and across the library, manages saves, imports new
+games - and then runs the game *inside its own window*: the title executes in
+a headless gamescope session and streams its frames into the menu, so there is
+no window switching and no focus fighting. Input goes to the game through a
+virtual Xbox 360 pad.
+
+<p align="center"><img src="docs/img/rexmenu-home.png" alt="rexmenu home rail" width="900"></p>
+
+*Home rail on a fresh install: letter tiles and "not imported yet" until you
+point the launcher at your own copy of each game. Once a title's content is
+imported, its dashboard tile art appears.*
+
+### Controls
+
+| pad | keyboard | what it does |
+|---|---|---|
+| left stick / d-pad | W/A/S/D or arrows | move around the rail, lists and file browser |
+| A | Space | play / confirm |
+| B | Tab | back / quit |
+| X | X | settings (FPS cap, pad options) |
+| Y | Y | info page (overview, achievements, game files / DLC, saves) |
+| Start | Return | in-game Start |
+| RB | E | in-game bumpers (accelerate in racers) |
+| LB | Q | in-game bumpers (brake in racers) |
+
+### Importing a game - accepted file types
+
+Press play on a title with no content and the launcher opens its file browser.
+Point it at your own copy of the game in any of these forms:
+
+| what you have | file type(s) | how the launcher handles it |
+|---|---|---|
+| Disc image | `.iso` (XDVDFS) | read directly by `rexiso` from the SDK |
+| Archive of the disc/XBLA files | `.rar`, `.zip`, `.7z` | extracted with `unrar` / `unzip` / `7z` |
+| XBLA/GoD package | STFS / LIVE / PIRS / CON (`.pirs`, `.con`, `.live`, `.ztm`, `.cab`, or extensionless) | unpacked by `stfs_extract.py` |
+| Bare executable | `.xex` (XEX2 header checked) | copied to `assets/default.xex` |
+| Already-extracted folder | a directory | whole tree copied into `assets/` |
+| DLC package | LIVE / PIRS / CON (content type 2) | title ID is checked against the imported game, then installed into the shared profile content folder |
+
+After import the whole asset tree is sha256-verified against the checksums
+the port was built from (`content/content.sha256`); a verified marker means
+later launches skip re-hashing. Games without imported content stay dimmed on
+the rail with a "NO ASSETS" badge.
+
+### Playing and settings
+
+- **Play** launches the game embedded in the menu window, with an on-screen
+  FPS counter fed by the game's real present rate.
+- **Settings** cycles the frame-rate cap: 30 / 60 / 120 / 240 / Off ("Max" -
+  vblank waits are disabled and the title free-runs; some games over-speed,
+  since they pace logic on presents). Settings are stored per title.
+- **Info (Y)** shows the overview, the achievement list (read from the same
+  unlock file the in-game overlay uses), imported game files and DLC, and the
+  save manager, which can back up or delete saves (deletes always back up
+  first).
+- If a game exits abnormally the launcher shows its log tail instead of
+  dropping you back silently.
+
+## Using a release launcher
 
 ### Linux
 
 1. Download the title's `*-launcher-linux-x86_64.tar.zst` from
    [Releases](../../releases) and unpack it:
    `tar --zstd -xf burnoutrevenge-launcher-linux-x86_64.tar.zst`
-2. Run `tools/port_gui.sh` (or `./run.sh`). The first thing it asks is where
-   your copy of the game is: a `.rar`/`.zip`/`.7z`, a `.iso` disc image, or
-   the extracted folder. Each launcher names the disc (region and title ID)
-   its checksums came from - the same disc gives a byte-for-byte verified
-   import; another region usually runs but will not match the checksums.
+2. Run `./run.sh`. rexmenu opens on the game rail; press play on the title
+   and its file browser asks where your copy of the game is - a
+   `.rar`/`.zip`/`.7z`, a `.iso` disc image, an STFS/LIVE/PIRS package or the
+   extracted folder (see the full file-type table above). Each launcher names
+   the disc (region and title ID) its checksums came from - the same disc
+   gives a byte-for-byte verified import; another region usually runs but will
+   not match the checksums.
 3. Play. Saves and settings stay in `user-data/` next to the launcher.
 
-Needs: Linux x86-64, a Vulkan-capable GPU driver, `zenity` for the GUI,
+Needs: Linux x86-64, a Vulkan-capable GPU driver, `gamescope`,
 `7z` or `unrar` if your copy is an archive, `python3`.
 
 ### Windows
@@ -41,9 +107,8 @@ Needs: Windows 10/11 x64 with a Vulkan GPU driver. The Windows builds are
 cross-compiled from the same sources; the release notes say how far each has
 been tested.
 
-Keyboard (Linux and Windows): Return = Start, Space = A, W/A/S/D = left
-stick, E = accelerate, Q = brake, Tab = Back. A game controller works as
-expected.
+Both end up in the rexmenu UI described above, with the controls from the
+table. A game controller works as expected.
 
 ## What is native and what is not
 
