@@ -162,8 +162,10 @@ at first run, exactly like the prebuilt launchers.
 
 The runtime SDK (our fork of [rexglue-sdk](https://github.com/rexglue/rexglue-sdk))
 is **not** in this repository — it lives in a separate private repo and is
-fetched at build time. [docs/REXGLUE_FORK_CHANGES.md](docs/REXGLUE_FORK_CHANGES.md)
-summarizes what the fork changes vs upstream.
+fetched at build time. Our fork is based on upstream **v0.10.0** (release
+commit `c94f5eb`, 2026-08-21) and currently sits 97 commits ahead, 0 behind;
+[docs/REXGLUE_FORK_CHANGES.md](docs/REXGLUE_FORK_CHANGES.md) has the version
+baseline and summarizes what the fork changes vs upstream.
 
 Note: this is a working source drop, not a relocatable build tree. Some
 scripts still carry absolute paths from the development checkout

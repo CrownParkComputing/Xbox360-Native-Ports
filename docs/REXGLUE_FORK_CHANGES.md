@@ -4,6 +4,18 @@ What the fork at `rexglue-vmx` (branch `rru-fixes`) changed relative to
 upstream [rexglue/rexglue-sdk](https://github.com/rexglue/rexglue-sdk)
 (`origin/main`).
 
+## Version baseline
+
+| | |
+|---|---|
+| Upstream base | **v0.10.0** release, commit `c94f5eb` ("Release v0.10.0", 2026-08-21) |
+| Upstream state | `origin/main` has not moved since that release, so the fork is **0 behind** |
+| Fork | branch `rru-fixes`, **97 commits ahead** of the base (as of 2026-09-23) |
+| Diff | `git log --oneline c94f5eb..rru-fixes` (equivalently `origin/main..rru-fixes`) |
+
+Upstream tags nightly snapshots (e.g. `nightly-20260826-f5337cdc`); the fork
+tracks the tagged v0.10.0 release commit rather than a nightly.
+
 Upstream ReXGlue is a runtime/SDK for running statically recompiled Xbox 360
 (Xenon PPC) titles natively: a code generator that translates XEX binaries to
 C++, a PPC runtime, Xenos GPU translation over Vulkan, XAM/kernel APIs, audio
