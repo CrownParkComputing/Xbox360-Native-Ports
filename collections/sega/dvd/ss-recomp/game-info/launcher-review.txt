@@ -1,0 +1,3 @@
+Black Rock's Split/Second disc racer uses a multi-module recompile. It reaches races with streaming meshes and a warm pipeline cache, while retaining the game's native presentation interval of two.
+Restore/import verified game content, keep native timing, test full events and power plays, and work through the remaining renderer defects and disabled DLC loader.
+Android native libraries exist but no APK is packaged, and current game content is missing. Multi-module loading, memory use and effects make this a high-risk device target after desktop revalidation.

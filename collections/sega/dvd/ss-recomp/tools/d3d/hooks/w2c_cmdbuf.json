@@ -1,0 +1,20 @@
+[
+ {"va": "0x888EB588", "name": "Present",               "arity": 1},
+ {"va": "0x888ECC28", "name": "RunCommandBuffer",      "arity": 3},
+ {"va": "0x888EC2F8", "name": "BeginCommandBuffer",    "arity": 9},
+ {"va": "0x888EC100", "name": "EndCommandBuffer",      "arity": 6},
+ {"va": "0x888E6538", "name": "SubmitIBList",          "arity": 3},
+ {"va": "0x888E5F58", "name": "RingWriteIB",           "arity": 3},
+ {"va": "0x888E6458", "name": "RecordIB",              "arity": 6},
+ {"va": "0x888E8428", "name": "TileInterpreter",       "arity": 2},
+ {"va": "0x888E8768", "name": "TileQueueDriver",       "arity": 1},
+ {"va": "0x888E7DD0", "name": "KickSegment",           "arity": 2},
+ {"va": "0x888E7740", "name": "SwapCmdBufInit",        "arity": 1},
+ {"va": "0x888050E8", "name": "EngRunForRenderTarget", "arity": 1},
+ {"va": "0x88816028", "name": "EngDrawRenderable",     "arity": 1},
+ {"va": "0x888E4E08", "name": "DrawIndexedVertices",   "arity": 5},
+ {"va": "0x888E4A18", "name": "DrawVertices",          "arity": 4},
+ {"va": "0x888E4460", "name": "DrawIndexedVerticesUP", "arity": 8},
+ {"va": "0x888E3F80", "name": "DrawVerticesUP",        "arity": 4},
+ {"va": "0x888E4418", "name": "DrawWrapper",           "arity": 4}
+]

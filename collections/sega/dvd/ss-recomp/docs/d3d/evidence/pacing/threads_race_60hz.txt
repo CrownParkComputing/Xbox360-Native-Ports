@@ -1,0 +1,36 @@
+== phase A (undisturbed): 40 s wall ==
+thread                     user s    sys s   cores
+Main XThread (F             27.58     5.09    0.82
+Audio Worker (F             19.77     0.00    0.49
+GPU Commands (F             13.64     0.62    0.36
+splitsecond                  9.74     3.90    0.34
+TileClassificat              1.14     4.27    0.14
+JobStream::cJob              1.55     1.50    0.08
+XThread73FFF6C0              2.00     0.04    0.05
+cJobManager::cW              0.86     0.76    0.04
+Audio::APU (F80              0.72     0.01    0.02
+XThread4B1576C0              0.62     0.04    0.02
+XThread491556C0              0.47     0.03    0.01
+XThread4A1566C0              0.47     0.03    0.01
+XThread4E6A26C0              0.26     0.02    0.01
+XThread8B7F76C0              0.27     0.01    0.01
+XThread59AAC6C0              0.15     0.05    0.01
+XThread62AB56C0              0.05     0.06    0.00
+GPU VSync (F800              0.06     0.05    0.00
+XThread5FAB26C0              0.06     0.03    0.00
+Audio::Tonic (F              0.04     0.01    0.00
+XThread58AAB6C0              0.05     0.00    0.00
+TOTAL                                         2.40
+
+== phase B (eu-stack attached; times inflated): 1 s wall ==
+thread                     user s    sys s   cores
+Main XThread (F              0.73     0.18    0.91
+Audio Worker (F              0.50     0.00    0.50
+GPU Commands (F              0.41     0.01    0.42
+splitsecond                  0.21     0.08    0.29
+TileClassificat              0.03     0.12    0.15
+JobStream::cJob              0.04     0.06    0.10
+cJobManager::cW              0.04     0.03    0.07
+XThread73FFF6C0              0.06     0.00    0.06
+TOTAL                                         2.61
+

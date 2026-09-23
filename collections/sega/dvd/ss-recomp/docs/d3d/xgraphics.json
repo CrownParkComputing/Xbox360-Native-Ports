@@ -1,0 +1,384 @@
+{
+ "band": {
+  "lo": "0x88903530",
+  "hi": "0x88AFBF00",
+  "functions": 4304,
+  "note": "Re-derived: 0x88903000-0x88903530 is xapilib/CRT (MultiByteToWideChar core sub_88903108, SystemTimeToFileTime wrapper sub_88903318, large-page alloc helper sub_88903068); 0x88AFBFA8-0x88B00000 is engine allocator/list code (pool allocator sub_88AFC8C8 = the \"57-caller\" entry, refcount lock sub_88AFC7B0, list unlink sub_88AFD408, delete thunk sub_88AFC070). Those account for the difference between the original 61 entry points and the 27 here."
+ },
+ "entry_points": [
+  {
+   "va": "0x88904188",
+   "name": "XGCompileShaderEx",
+   "tier": "A",
+   "arity": 11,
+   "callers": [
+    "0x88647C48"
+   ],
+   "class": "shader_compile",
+   "notes": "pSrcData,SrcDataSize,pDefines,pInclude,pFunctionName,pProfile,Flags,ppShader,ppErrorMsgs,ppConstantTable,pCompileParameters. Wraps source in a reader object (vtable 0x88119A1C) and calls the common core sub_88904000 (which checks profile[0] in {v,p}); output is an ID3DXBuffer (sub_8890BBA8 creates it, vtable 0x8811B668) whose GetBufferPointer returns a 0x102A1100/0x102A1101 compiled-shader blob. Only caller sub_88647C48 (engine: compile one PS from a runtime-built HLSL string table, profile ps_1_1, entry main), itself called only from sub_88649400 (bootstrap: up to 30 PS + 5 VS, Scaleform-GFx-style renderer init)."
+  },
+  {
+   "va": "0x889042D8",
+   "name": "XGCompileShader",
+   "tier": "A",
+   "arity": 10,
+   "callers": [
+    "0x88499218",
+    "0x88647B48"
+   ],
+   "class": "shader_compile",
+   "notes": "Same core as 88904188 with pCompileParameters=NULL. Callers: sub_88647B48 (engine: up to 5 VS, profile vs_1_1, from table 0x88F01708 filled at runtime) and sub_88499218 (three inline HLSL strings at 0x88073xxx: \"struct VS_DATA...\", \"sampler tex0 : register(s0)...\" with vs_2_0/ps_2_0/ps_2_0, results stored in globals 0x88F0827x and fed to D3D CreatePixelShader/CreateVertexShader). All compile-band traffic is at startup; nothing on the material path."
+  },
+  {
+   "va": "0x88904418",
+   "name": "D3DX_LoadSurfaceFromMemory_like",
+   "tier": "C",
+   "arity": 12,
+   "callers": [
+    "0x8864D1A8"
+   ],
+   "class": "d3dx_texture",
+   "notes": "12 args: (pTexture, 0, 0, pSrcMemory, SrcFormat(GPU format e.g. 0x1A200086), SrcPitch, 0, pSrcRect(required, +8/+12 = w/h), Filter, Width(1..8192), Height(1..8192), Flags(-1 -> 0x00080004)). Returns D3DERR_INVALIDCALL (0x8876086C) on bad args; uses XGGetTextureDesc, XGGetMipTailBaseLevel, sub_889D8650/sub_889D8130 (layout) and the tiling helpers. Single caller sub_8864D1A8 (engine texture upload, creates textures with GPU formats 0x18280186/0x1A200152...), which has NO static callers (reached virtually) - hook to see if it is ever hit."
+  },
+  {
+   "va": "0x88906530",
+   "name": "D3DXCreateTextureFromFileExA",
+   "tier": "B",
+   "arity": 14,
+   "callers": [
+    "0x8864D928"
+   ],
+   "class": "d3dx_texture",
+   "notes": "(pDevice, pSrcFile, Width=-1, Height=-1, MipLevels=-1, Usage=0, Format=-1, Pool=0, Filter=-1, MipFilter=-1, ColorKey=0, pSrcInfo=0, pPalette=0, ppTexture). Opens the file via sub_88932870/88932888 and decodes with the D3DX image loaders (closure contains the Radiance \"#?RADIANCE\"/\"32-bit_rle_rgbe\" HDR parser). Single caller sub_8864D928 (engine, 0 static callers - virtual). Likely never used in game; hook to confirm."
+  },
+  {
+   "va": "0x8890C978",
+   "name": "StringCchPrintfA",
+   "tier": "A",
+   "arity": 3,
+   "callers": [
+    "0x88B1BB78"
+   ],
+   "class": "crt",
+   "notes": "strsafe: rejects cchDest > 0x7FFFFFFF with STRSAFE_E_INVALID_PARAMETER (0x80070057), va_list into sub_88907B20. Linked inside the band but is CRT, used by the FMOD audio-format reporter sub_88B1BB78. Not XG."
+  },
+  {
+   "va": "0x88929DE0",
+   "name": "ID3DXBuffer::GetBufferPointer (ICF)",
+   "tier": "A",
+   "arity": 1,
+   "callers": [
+    "0x882D6160",
+    "0x882D6748"
+   ],
+   "class": "icf_trivial",
+   "notes": "lwz r3,12(r3). Slot 3 of the buffer vtable 0x8811B668 (QI 8890BA88, AddRef 8890B9C0, Release 8890B9D8). Engine callers sub_882D6160/882D6748 reach it only through identical-code folding of an unrelated getter."
+  },
+  {
+   "va": "0x889362A0",
+   "name": "zero5_ctor (ICF)",
+   "tier": "A",
+   "arity": 1,
+   "callers": [
+    "0x88B27BB0",
+    "0x88B27C10"
+   ],
+   "class": "icf_trivial",
+   "notes": "stores 0 to +0..+16. Also used by D3DX 88904418. Engine callers 88B27BB0/88B27C10 are ICF aliases."
+  },
+  {
+   "va": "0x889660A0",
+   "name": "return_arg2 (ICF)",
+   "tier": "A",
+   "arity": 2,
+   "callers": [
+    "0x882DCB48",
+    "0x882DCDD8",
+    "0x882DD208",
+    "0x882DD318",
+    "0x882DD600",
+    "0x882DD7F8",
+    "0x882DDBE0",
+    "0x882DDD50",
+    "0x882DDEC0"
+   ],
+   "class": "icf_trivial",
+   "notes": "mr r3,r4; blr. Nine engine callers at 0x882DCxxx are ICF aliases."
+  },
+  {
+   "va": "0x889BBEF0",
+   "name": "return_1 (ICF)",
+   "tier": "A",
+   "arity": 0,
+   "callers": [
+    "0x887A0A58",
+    "0x888BBDF8"
+   ],
+   "class": "icf_trivial",
+   "notes": "li r3,1. Callers sub_887A0A58, 888BBDF8."
+  },
+  {
+   "va": "0x889D8128",
+   "name": "XGGetTextureDesc",
+   "tier": "B",
+   "arity": 3,
+   "callers": [
+    "0x887FA470",
+    "0x887FF430",
+    "0x887FF480",
+    "0x88808B38",
+    "0x888190D8",
+    "0x88819108",
+    "0x88819138"
+   ],
+   "class": "xg_header_helper",
+   "notes": "Tail jump to sub_889D7CF8: (pTexture, Level, pDesc): switches on D3D resource type (3,4,16..20 via D3D sub_888D8428 GetType) and fills the desc from D3D GetLevelDesc (sub_888D3710). Pure CPU, writes only *pDesc. Callers: sub_887FA470 (cRenderableGeom2 area), 887FF430, 887FF480, 88808B38, 888190D8, 88819108, 88819138."
+  },
+  {
+   "va": "0x889D8130",
+   "name": "XGGetTextureLayout_family",
+   "tier": "C",
+   "arity": 2,
+   "callers": [
+    "0x884580E8"
+   ],
+   "class": "xg_header_helper",
+   "notes": "(pTexture, pOut): reads texture w/h/depth through D3D sub_888D19C0, computes log2 tail dimensions and writes pOut+56.... Pure CPU. Callers: sub_884580E8 (engine), and internally D3DX 88904418."
+  },
+  {
+   "va": "0x889D8438",
+   "name": "XGGetMipTailBaseLevel",
+   "tier": "B",
+   "arity": 3,
+   "callers": [
+    "0x8849E768"
+   ],
+   "class": "xg_header_helper",
+   "notes": "(Width, Height, Border): pure arithmetic (cntlzw on w/h). Caller sub_8849E768."
+  },
+  {
+   "va": "0x889D86D8",
+   "name": "XGSetVertexBufferHeader",
+   "tier": "A",
+   "arity": 5,
+   "callers": [
+    "0x887C5500",
+    "0x887C91C0",
+    "0x887C99C8"
+   ],
+   "class": "xg_header_helper",
+   "notes": "(Length, Usage, Pool, BaseAddress, pHeader): memset(pHeader,0,32); Common=1 (|0x00200001 when Usage&4, |0x00400000 when Usage&0x200), ReferenceCount=1, BaseFlush=0xFFFF0000 at +20, Address|3 at +24, Size/flags at +28. Guest-struct only. Callers sub_887C5500, 887C91C0, 887C99C8 (engine XPS/vertex-pool code)."
+  },
+  {
+   "va": "0x889D8978",
+   "name": "XGSetTextureHeader",
+   "tier": "A",
+   "arity": 12,
+   "callers": [
+    "0x88498EF0",
+    "0x88499448",
+    "0x88499A70",
+    "0x88806E58",
+    "0x888070C8",
+    "0x888072E8"
+   ],
+   "class": "xg_header_helper",
+   "notes": "(Width, Height, Levels, Usage, Format, Pool, BaseOffset, MipOffset, Pitch, pTexture, pBaseSize, pMipSize) -> common core sub_889D8770 with Depth=1, dimension constant 3 in the 13th core slot; the core calls D3D format helpers sub_888D1B28 (block dims) and fills the 52-byte GPUTEXTURE_FETCH_CONSTANT. Callers sub_88498EF0, 88499448, 88499A70, 88806E58, 888070C8, 888072E8."
+  },
+  {
+   "va": "0x889D89E8",
+   "name": "XGSetArrayTextureHeader (or Volume)",
+   "tier": "B",
+   "arity": 13,
+   "callers": [
+    "0x88806E58",
+    "0x888070C8"
+   ],
+   "class": "xg_header_helper",
+   "notes": "13 args, passes r5 (Depth/ArraySize) through to the core, constant 19. Callers sub_88806E58, 888070C8 (engine texture creation)."
+  },
+  {
+   "va": "0x889D8A48",
+   "name": "XGSetTextureHeaderEx",
+   "tier": "B",
+   "arity": 13,
+   "callers": [
+    "0x88806E58"
+   ],
+   "class": "xg_header_helper",
+   "notes": "13 args, constant 17, extra zeroed slots (ExpBias/Flags path). Caller sub_88806E58."
+  },
+  {
+   "va": "0x889D8AA8",
+   "name": "XGOffsetBaseTextureAddress",
+   "tier": "A",
+   "arity": 3,
+   "callers": [
+    "0x887FF308",
+    "0x88801BC0",
+    "0x88806E58",
+    "0x888070C8",
+    "0x888072E8"
+   ],
+   "class": "xg_header_helper",
+   "notes": "(pTexture, BaseOffset, MipOffset): adds offsets into the fetch-constant BaseAddress (+32, top 20 bits) and MipAddress (+48) after D3D sub_888D3468 (level count) check. Callers sub_887FF308, 88801BC0, 88806E58, 888070C8, 888072E8."
+  },
+  {
+   "va": "0x889D8B10",
+   "name": "XGOffsetResourceAddress",
+   "tier": "A",
+   "arity": 2,
+   "callers": [
+    "0x88499A70",
+    "0x887C5500",
+    "0x887C91C0",
+    "0x887C99C8"
+   ],
+   "class": "xg_header_helper",
+   "notes": "(pResource, Offset): switch on D3D GetType (sub_888D8428): 1 (vertex buffer +24), 6 (index buffer +32), 2/7/8 and 16..20 textures -> XGOffsetBaseTextureAddress. Callers sub_88499A70, 887C5500, 887C91C0, 887C99C8."
+  },
+  {
+   "va": "0x889D95C0",
+   "name": "XGTileTextureLevel",
+   "tier": "A",
+   "arity": 10,
+   "callers": [
+    "0x887FEE70"
+   ],
+   "class": "xg_tiling",
+   "notes": "(Width, Height, Level, GpuFormat, Flags, pDestination, pPoint, pSource, RowPitch, pRect): bpp from the format table at 0x88000B30, block dims from sub_889D8678. CPU memory copy with 2D tiling. Caller sub_887FEE70 (from sub_884139A8, texture streaming)."
+  },
+  {
+   "va": "0x889D9820",
+   "name": "XGUntileTextureLevel",
+   "tier": "A",
+   "arity": 10,
+   "callers": [
+    "0x887FED40"
+   ],
+   "class": "xg_tiling",
+   "notes": "(Width, Height, Level, GpuFormat, Flags, pDestination, RowPitch, pPoint, pSource, pRect). Caller sub_887FED40 (from sub_884139A8)."
+  },
+  {
+   "va": "0x889DA120",
+   "name": "vcall_slot2_thunk (ICF)",
+   "tier": "A",
+   "arity": 1,
+   "callers": [
+    "0x88D24148"
+   ],
+   "class": "icf_trivial",
+   "notes": "lwz r11,0(r3); lwz r11,8(r11); bctr. Caller sub_88D24148."
+  },
+  {
+   "va": "0x88AB63F0",
+   "name": "xg_static_init_ctor_44",
+   "tier": "C",
+   "arity": 2,
+   "callers": [
+    "0x88E581C0"
+   ],
+   "class": "static_init",
+   "notes": "memset(obj,0,44) then packs arg (114) into obj+8 bitfield |0x00400000. Called from static initializer sub_88E581C0 with global 0x88F07E38 (compiler-internal registry, SSM state-query table). Must run once; harmless."
+  },
+  {
+   "va": "0x88AB70F0",
+   "name": "xg_static_init_ctor_20",
+   "tier": "C",
+   "arity": 2,
+   "callers": [
+    "0x88E581D0"
+   ],
+   "class": "static_init",
+   "notes": "zero 5 words, +16=r4, +0|=0x80000000, links object into r4+4. Called from static initializer sub_88E581D0 (0x88F07E64 <- 0x88F07E38)."
+  },
+  {
+   "va": "0x88ADFEA8",
+   "name": "store0_at4 (ICF)",
+   "tier": "A",
+   "arity": 1,
+   "callers": [
+    "0x882DD5D0",
+    "0x882DE248"
+   ],
+   "class": "icf_trivial",
+   "notes": "stw 0,4(r3). Callers 882DD5D0, 882DE248."
+  },
+  {
+   "va": "0x88AE4A80",
+   "name": "load_at20 (ICF)",
+   "tier": "A",
+   "arity": 1,
+   "callers": [
+    "0x882D6748",
+    "0x882D8FE8"
+   ],
+   "class": "icf_trivial",
+   "notes": "lwz r3,20(r3). Callers 882D6748, 882D8FE8."
+  },
+  {
+   "va": "0x88AE4AA8",
+   "name": "return_3 (ICF)",
+   "tier": "A",
+   "arity": 0,
+   "callers": [
+    "0x887ACCD8"
+   ],
+   "class": "icf_trivial",
+   "notes": "li r3,3. Caller sub_887ACCD8 (this-adjust thunk)."
+  },
+  {
+   "va": "0x88AEBF20",
+   "name": "return_2 (ICF)",
+   "tier": "A",
+   "arity": 0,
+   "callers": [
+    "0x887A0D80"
+   ],
+   "class": "icf_trivial",
+   "notes": "li r3,2. Caller sub_887A0D80 (this-adjust thunk)."
+  }
+ ],
+ "vtable_reached": [
+  {
+   "vtable": "0x8811B668",
+   "object": "ID3DXBuffer (16 bytes: vtable, refcount, size@+8, data@+12) created by sub_8890BBA8",
+   "slots": [
+    "0x8890BA88 QueryInterface",
+    "0x8890B9C0 AddRef",
+    "0x8890B9D8 Release",
+    "0x88929DE0 GetBufferPointer"
+   ]
+  },
+  {
+   "vtable": "0x88EA8F50",
+   "object": "SSM state-query table (44 E_COMPILEWITH_* entries, names at 0x88EB63C4: CompileWithTransformedVertices, CompileWithTableFogALU, CompileGetZScale, CompileGetZOffset, CompileGetMemExportConstant0..3Pix, CompileWithMaxSizeVfetches, CompileGetVertexDwordsFetched, CompileWithShadowBuffering, CompileWithMSAAFilterFunctionPoint, CompileGetPointSizeMax/Min, CompileWithPointSizeClamp...) dispatched by sub_88AA1DE8 from the compiler back end only (chain 889F2D80 <- 889EFE58/88AA25F0 <- 889E0228/889F54B8 <- ... <- 88903AC0 XGCompileShader core). Config table at 0x88EA8EF4 (SSMMaxRSVidMem=0x1F400, SSMMaxVSVidMem, SSMMaxPSVidMem, SSMMaxVSSize=0x2EE0, SSMMaxPSSize, SSMStateCacheBypass=1, SSMCompilerVFetchMaxSize=1, SSMPrecompileEnable=0, SSMShaderRecyclingEnable, SSMUseTranslator, SSMImmediatePacketFlags)."
+  }
+ ],
+ "d3d_band_functions_called_from_xg": [
+  "0x888E0910",
+  "0x888DCD10",
+  "0x888D9838 (Release)",
+  "0x888DD008",
+  "0x888E0710",
+  "0x888D1B28 (format block dims)",
+  "0x888D1C48",
+  "0x888D8428 (GetType)",
+  "0x888DCD40",
+  "0x888E0718",
+  "0x888DB860",
+  "0x888E0770",
+  "0x888DCCB0",
+  "0x888E0790",
+  "0x888E0798",
+  "0x888D19C0 (texture w/h/d)",
+  "0x888D1B10",
+  "0x888DB810",
+  "0x888E0088",
+  "0x888E00A0",
+  "0x888D3710 (GetLevelDesc)",
+  "0x888D3468 (level count)"
+ ],
+ "d3d_band_to_xg_calls": 0,
+ "missing_from_callgraph": []
+}

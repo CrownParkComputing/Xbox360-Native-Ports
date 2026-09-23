@@ -14,8 +14,7 @@ dist/
 *.live
 *.xzp
 
-# ripped artwork (box icons, achievement icons) — metadata .toml stays
-icon.png
+# achievement icons stay out; the per-port box icon (icon.png) is committed
 game-info/icons/*.png
 
 # per-user runtime state

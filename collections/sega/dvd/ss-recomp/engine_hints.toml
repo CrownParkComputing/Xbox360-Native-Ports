@@ -1,0 +1,16 @@
+# Engine (SPLITSECOND1.DLL) hints from the July bring-up campaign.
+# CRT static-initializer pointer: runtime-computed, statically undiscoverable.
+[functions]
+0x8862B100 = {}
+
+# Real function extents that the aggressive call/pointer discovery fragmented
+# into overlapping sub-entries. Each range holds one logical function whose
+# internal branch targets got mis-promoted to function entries, truncating the
+# parent's blocks and orphaning the code past the split (spurious REX_FATAL
+# "Unresolved branch ..." at the race-load screen). Declaring the authoritative
+# extent lets addFunction absorb the interior entries as labels and lets
+# discover_blocks span the whole function. Ends verified from the discovery
+# trace (funcEnd) and confirmed against the next genuinely-called function.
+0x88CF5268 = { end = 0x88CF5514 }   # absorbs spurious 0x88CF52E8
+0x888501D8 = { end = 0x888503E4 }   # absorbs spurious 0x888501FC/0x88850310/0x88850318
+0x885E8A20 = { end = 0x885E8B48 }   # absorbs spurious 0x885E8AD0

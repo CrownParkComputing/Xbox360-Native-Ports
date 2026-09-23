@@ -1,0 +1,80 @@
+unregistered_function_nonfatal = true
+
+# Synchronous shader compilation: async placeholder pipelines caused skipped
+# presents (disjointed/stuttering rendering) and untextured placeholder draws
+# in-race. Compiling on-demand hitches once per new shader, then caches.
+async_shader_compilation = false
+
+# Match Ridge Racer Unbounded's proven render config (same GPU backend).
+# Default host-render-target path leaves an in-race colour wash / broken grade;
+# the fragment-shader-interlock EDRAM path fixes autoexposure and the grade.
+render_target_path_vulkan = "fsi"
+# Occlusion-query lens-flare driver (RRU: default 1000 = screen-filling flare).
+query_occlusion_fake_sample_count = 0
+# Black Rock engine issues resolves/fetches the strict path rejects.
+gpu_allow_invalid_fetch_constants = true
+
+# MCLA-family CPU-side coherency savings (2026-09-22 rollout): keep uploaded
+# page-valid state across frames, and treat blocks dirtied 3 frames running as
+# permanently dirty (re-upload once per frame at frame open instead of trap +
+# re-arm per write, under the kernel-wide lock). The trade: draws late in a
+# frame miss writes the guest made after that frame's first upload of a hot
+# page. Safe values if textures/geometry corrupt: true / 0.
+clear_memory_page_state = false
+gpu_hot_page_frames = 3
+
+# The engine uploads streamed mesh data into GPU-physical memory with memexport
+# draws (cGPUMemoryCopy: one POINTLIST vertex per 64 bytes, the gpu_memory_move
+# shader fetching 8x8B and exporting to the destination). The SDK's memexport
+# readback then copied GPU results back into guest RAM -- and its fast path keys
+# its double-buffered slots on (front range base, total size) while writing the
+# PREVIOUS slot's bytes across the CURRENT draw's ranges, so megabytes of the
+# vertex pool were overwritten with unrelated data. That is the in-race garbage
+# geometry. Upstream Xenia has no readback feature at all; the exported data
+# reaches the vertex fetch through GPU shared memory without it.
+readback_memexport = false
+
+# The vehicle compositor compresses rendered textures on the CPU. It needs
+# completed resolve data in guest RAM; without it, old badge-atlas bytes become
+# car paint. Run 082 confirmed correct cars (also confirmed by the user) and sky.
+# Synchronize only the six complete compositor surfaces identified by CPU locks.
+# Ordinary frame/shadow resolves stay on the GPU (run 089: correct cars, no
+# steady-state readbacks). The SDK filter is deliberately title-specific.
+readback_resolve = "full"
+gpu_readback_ss_compositor = true
+
+# The 64-byte mesh-copy shader computes an offset inside its 20/63 MiB
+# destination pool. Protect the actual copy destination, including both exports
+# per vertex, so CPU uploads elsewhere in the pool remain visible.
+gpu_memexport_copy_ranges = true
+
+# Ship a warm shader/pipeline cache. Without it a fresh install compiles each
+# pipeline the first time a frame needs it: a cold run measured 377 first-use
+# compilations, 2.3 s in total, with one 1.43 s frame. A user cache that already
+# exists is never overwritten. The path is relative to the executable; the
+# tracked copy lives in resources/shader_cache.
+shader_storage_seed_root = "shader_seed"
+
+# Answer system prompts with their default instead of drawing ReXGlue's own
+# (green) ImGui dialog over the game. One local profile, one device: no choice.
+headless = true
+
+# The window's name. Without it the title bar reads "<slug> rexglue <build>",
+# which is right while bringing a port up and wrong in anything shipped.
+window_title = "Split/Second"
+
+# PRESENTATION. The runtime prefers immediate -> mailbox -> fifo_relaxed -> fifo
+# and under immediate/mailbox a present never blocks; on a VRR panel that shows
+# as flicker on the front end (measured on Burnout Revenge, Shift 2, Sega Bass).
+# Strict FIFO paces the title at the display rate.
+vulkan_allow_present_mode_immediate = false
+vulkan_allow_present_mode_mailbox = false
+vulkan_allow_present_mode_fifo_relaxed = false
+side_panel_title = "Split/Second"
+side_panel_info = "Black Rock Studio\nDisney Interactive\n2010 / Xbox 360\n\nNative recompilation\nVulkan renderer\nWork in progress"
+
+# FPS cap. 0 = free-run, otherwise vsync-on at the given rate.
+# Capped to 60 because the title's own pacing interval of two would otherwise
+# queue presents the swapchain can't drain, manifesting as the league
+# flicker observed on VRR panels under uncapped pacing.
+vsync_fps_cap = 60

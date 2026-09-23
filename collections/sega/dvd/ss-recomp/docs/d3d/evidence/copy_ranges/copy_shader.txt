@@ -1,0 +1,34 @@
+/*    0.0 */       exec
+/*    5   */          vfetch_full r8.yxwz, r0.x, vf0, DataFormat=FMT_16_16_16_16, Stride=16, NumFormat=integer, PrefetchCount=8
+/*    6   */          vfetch_mini r7.yxwz, Offset=2, DataFormat=FMT_16_16_16_16, NumFormat=integer
+/*    7   */          vfetch_mini r6.yxwz, Offset=4, DataFormat=FMT_16_16_16_16, NumFormat=integer
+/*    8   */          vfetch_mini r5.yxwz, Offset=6, DataFormat=FMT_16_16_16_16, NumFormat=integer
+/*    9   */          vfetch_full r4.yxwz, r0.x, vf0, Offset=8, DataFormat=FMT_16_16_16_16, Stride=16, NumFormat=integer, PrefetchCount=8
+/*   10   */          vfetch_mini r3.yxwz, Offset=10, DataFormat=FMT_16_16_16_16, NumFormat=integer
+/*    0.1 */       exec
+/*   11   */          vfetch_mini r2.yxwz, Offset=12, DataFormat=FMT_16_16_16_16, NumFormat=integer
+/*   12   */          vfetch_mini r1.yxwz, Offset=14, DataFormat=FMT_16_16_16_16, NumFormat=integer
+/*   13   */          serialize
+                      add r0.x___, r0.xxxx, c68.xxxx
+/*   14   */          mulsc r0.x___, c255.w, r0.x
+/*   15   */          truncs r0.x___, r0.x
+/*    1.0 */       alloc export = 2
+/*    1.1 */       exec
+/*   16   */          mad eA, r0.xxxx, c255.xyxx, c69
+/*   17   */          max eM0, r8, r8
+/*   18   */          max eM1, r7, r7
+/*   19   */          max eM2, r6, r6
+/*   20   */          max eM3, r5, r5
+/*   21   */          addsc r0.x___, c255.z, r0.x
+/*    2.0 */       alloc export = 2
+/*    2.1 */       exec
+/*   22   */          mad eA, r0.xxxx, c255.xyxx, c69
+/*   23   */          max eM0, r4, r4
+/*   24   */          max eM1, r3, r3
+/*   25   */          max eM2, r2, r2
+/*   26   */          max eM3, r1, r1
+/*    3.0 */       alloc position
+/*    3.1 */       exec
+/*   27   */          sgt oPos, -r_abs[0].xxxx, c255.xxxx
+/*    4.0 */       alloc interpolators
+/*    4.1 */       exece

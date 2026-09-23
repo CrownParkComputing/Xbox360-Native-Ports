@@ -1,0 +1,51 @@
+role propagation: 6 iterations, 508 (fn,tag) pairs
+global device tags: {'G880007AC->0': 16, 'G88ED9388->1388': 185}
+objects: {'commandbuffer': 3, 'device': 459, 'resource': 31, 'texture': 14, 'vb_or_ib': 10, 'vertexbuffer': 5, 'device->24200': 16, 'device->13724': 10, 'device->12872': 6, 'device->12868': 5, 'device->21780': 3, 'device->11976': 4, 'device->10896': 4, 'device->12612': 3, 'device->9572': 4}
+leaks: 29 entries, 16 functions, by band {'engine': 14, 'other': 6, 'xgraphics': 9}, by object {'device': 20, 'vb_or_ib': 1, 'resource': 8}
+--- SetStreamSource-like r8 (mask D bit) by caller
+--- band device methods that write through a computed device pointer while holding a texture param (texture fetch setter candidates)
+wrote layouts.md (264 lines)
+--- 0x4800 fetch register constants (li/addi/ori 18432..18999) by band
+     11 	// addi r9,r11,18296
+     11 	// addi r10,r10,18400
+     10 	// addi r4,r11,19032
+      9 	// addi r11,r11,18400
+      8 	// addi r4,r11,19728
+      7 	// li r5,18688
+      7 	// addi r9,r11,19016
+      7 	// addi r7,r11,18296
+      1 DEFINE_REX_FUNC(sub_88D84CC0)
+      1 DEFINE_REX_FUNC(sub_88C8B5E8)
+      1 DEFINE_REX_FUNC(sub_88C8B4B0)
+      1 DEFINE_REX_FUNC(sub_888F9A18)
+      1 DEFINE_REX_FUNC(sub_888EF3D0)
+      1 DEFINE_REX_FUNC(sub_888EDA10)
+      1 DEFINE_REX_FUNC(sub_888E9860)
+      1 DEFINE_REX_FUNC(sub_888E6D58)
+293 docs/d3d/layouts.md
+total 430488
+drwxr-xr-x 1 jon jon       732 Sep 11 20:21 .
+drwxr-xr-x 1 jon jon        24 Sep 11 19:53 ..
+drwxr-xr-x 1 jon jon        52 Sep 11 20:12 captures
+-rw-r--r-- 1 jon jon   2257486 Sep 11 19:53 engine_strings.txt
+-rw-r--r-- 1 jon jon      8039 Sep 11 20:21 layout_leaks.json
+-rw-r--r-- 1 jon jon    316215 Sep 11 20:21 layouts.json
+-rw-r--r-- 1 jon jon     26624 Sep 11 20:21 layouts.md
+-rw-r--r-- 1 jon jon   2622197 Sep 11 19:57 mnhash_hydrothunder.json
+-rw-r--r-- 1 jon jon   3801983 Sep 11 19:57 mnhash_hydrothunder_rr.json
+-rw-r--r-- 1 jon jon   1191159 Sep 11 19:57 mnhash_matches.json
+-rw-r--r-- 1 jon jon   7592383 Sep 11 19:57 mnhash_ss.json
+-rw-r--r-- 1 jon jon 204132440 Sep 11 20:20 pc_fxc.json
+-rw-r--r-- 1 jon jon  55472896 Sep 11 20:20 pc_shaders_layers.json
+-rw-r--r-- 1 jon jon     17987 Sep 11 19:53 PLAN.md
+-rw-r--r-- 1 jon jon   1698916 Sep 11 20:19 shaders.json
+-rw-r--r-- 1 jon jon    391350 Sep 11 20:06 w1a_features_all.json
+-rw-r--r-- 1 jon jon    115955 Sep 11 20:06 w1a_features.json
+-rw-r--r-- 1 jon jon  82596177 Sep 11 19:57 w1a_funcs.json
+-rw-r--r-- 1 jon jon     39314 Sep 11 20:02 w1a_tables_raw.json
+-rw-r--r-- 1 jon jon  70924171 Sep 11 20:13 w1b_census.json
+-rw-r--r-- 1 jon jon     21768 Sep 11 20:09 w1b_flush_asm.txt
+-rw-r--r-- 1 jon jon     15442 Sep 11 20:13 w1b_log2.txt
+-rw-r--r-- 1 jon jon      1396 Sep 11 20:21 w1b_log.txt
+-rw-r--r-- 1 jon jon    142132 Sep 11 20:16 w1d_cache_vs_fxc.json
+-rw-r--r-- 1 jon jon   7383442 Sep 11 20:15 w1d_callgraph.json

@@ -1,0 +1,57 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 58K of event 'cycles:u'
+# Event count (approx.): 577310561843
+#
+# Children      Self  Command        
+# ........  ........  ...............
+#
+    36.43%    36.43%  Main XThread (F
+    25.89%    25.89%  Audio Worker (F
+    16.40%    16.40%  GPU Commands (F
+    10.04%    10.04%  splitsecond    
+     2.16%     2.16%  XThread1E5FF6C0
+     1.77%     1.77%  JobStream::cJob
+     1.59%     1.59%  TileClassificat
+     1.23%     1.23%  cJobManager::cW
+     0.80%     0.80%  Audio::APU (F80
+     0.64%     0.64%  XThreadE20A16C0
+     0.54%     0.54%  XThreadE10A06C0
+     0.52%     0.52%  XThreadE009F6C0
+     0.34%     0.34%  gamescope-xwm  
+     0.33%     0.33%  Xwayland       
+     0.29%     0.29%  XThreadE30A26C0
+     0.28%     0.28%  XThread257FC6C0
+     0.28%     0.28%  gamescope-wl   
+     0.13%     0.13%  XThreadEF8AD6C0
+     0.07%     0.07%  gamescope_img  
+     0.07%     0.07%  XThreadF88B66C0
+     0.06%     0.06%  XThreadEE8AC6C0
+     0.04%     0.04%  XThreadF58B36C0
+     0.03%     0.03%  GPU VSync (F800
+     0.02%     0.02%  gamescope      
+     0.02%     0.02%  Audio::Tonic (F
+     0.02%     0.02%  python3        
+     0.02%     0.02%  [vkps] Update  
+     0.01%     0.01%  XThreadF08AE6C0
+     0.00%     0.00%  XThreadF28B06C0
+     0.00%     0.00%  xdotool        
+     0.00%     0.00%  gamescopereaper
+     0.00%     0.00%  XThreadE42A36C0
+     0.00%     0.00%  XMA Decoder (F8
+     0.00%     0.00%  XThreadED6AB6C0
+     0.00%     0.00%  Vulkan Storage 
+     0.00%     0.00%  [vkcf] Analysis
+     0.00%     0.00%  gamescope-eis  
+     0.00%     0.00%  gamescope-wait 
+     0.00%     0.00%  [vkrt] Analysis
+     0.00%     0.00%  XThreadF38B16C0
+     0.00%     0.00%  XThreadF68B46C0
+
+
+#
+# (Tip: Sample related events with: perf record -e '{cycles,instructions}:S')
+#

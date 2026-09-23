@@ -1,0 +1,5345 @@
+[
+ {
+  "va": "0x888D9838",
+  "name": "D3DResource_Release",
+  "tier": "A",
+  "class": "lifetime",
+  "arity": 1,
+  "ninsn": 32,
+  "callers_count": 37,
+  "callers_sample": [
+   "882248D0",
+   "882249A0",
+   "88224FC0",
+   "88411398",
+   "88415858",
+   "88430588"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 5193,
+    "max_per_frame": 179,
+    "frames": 2443
+   },
+   "race_all": {
+    "total": 2082,
+    "max_per_frame": 178,
+    "frames": 1023
+   },
+   "race_baseline": {
+    "total": 3095,
+    "max_per_frame": 178,
+    "frames": 1658
+   }
+  },
+  "evidence": [
+   "lwarx/stwcx refcount",
+   "body identical to {'candidates': ['822C5EF0'], 'ninstr': 32, 'title': 'hydroth",
+   "runtime: menu_baseline total=5193 max/frame=179 frames=2443, race_all total=2082 max/frame=178 frames=1023, race_baseline total=3095 max/frame=178 frames=1658",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DBC78",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 5,
+  "callers_count": 20,
+  "callers_sample": [
+   "884199E0",
+   "88647F38",
+   "8864B168",
+   "8864EAB0",
+   "8864F338",
+   "8864F5A8"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 887192,
+    "max_per_frame": 1486,
+    "frames": 4485
+   },
+   "race_all": {
+    "total": 725328,
+    "max_per_frame": 1747,
+    "frames": 1892
+   },
+   "race_baseline": {
+    "total": 887592,
+    "max_per_frame": 1759,
+    "frames": 2917
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,8) and writes device+16,device+11992",
+   "runtime: menu_baseline total=887192 max/frame=1486 frames=4485, race_all total=725328 max/frame=1747 frames=1892, race_baseline total=887592 max/frame=1759 frames=2917",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D1AF8",
+  "name": "D3D_Get_888D1AF8",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 18,
+  "callers_sample": [
+   "883486E0",
+   "883489E0",
+   "8841C2D8",
+   "88431AB8",
+   "88457468",
+   "88457CE0"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 3449,
+    "max_per_frame": 98,
+    "frames": 175
+   },
+   "race_all": {
+    "total": 7408,
+    "max_per_frame": 116,
+    "frames": 421
+   },
+   "race_baseline": {
+    "total": 7828,
+    "max_per_frame": 116,
+    "frames": 816
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: menu_baseline total=3449 max/frame=98 frames=175, race_all total=7408 max/frame=116 frames=421, race_baseline total=7828 max/frame=116 frames=816",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D63E8",
+  "name": "D3DDevice_SetState_off0",
+  "tier": "B",
+  "class": "state",
+  "arity": 6,
+  "ninsn": 72,
+  "callers_count": 18,
+  "callers_sample": [
+   "885DEC18",
+   "885EB290",
+   "887C4A40",
+   "887C4E88",
+   "887C5680",
+   "887C9078"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 697194,
+    "max_per_frame": 1410,
+    "frames": 2388
+   },
+   "race_all": {
+    "total": 663690,
+    "max_per_frame": 1675,
+    "frames": 966
+   },
+   "race_baseline": {
+    "total": 767390,
+    "max_per_frame": 1689,
+    "frames": 1601
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,8) and writes device+0,device+24",
+   "body identical to {'candidates': ['822C4660'], 'ninstr': 72, 'title': 'hydroth",
+   "runtime: menu_baseline total=697194 max/frame=1410 frames=2388, race_all total=663690 max/frame=1675 frames=966, race_baseline total=767390 max/frame=1689 frames=1601",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D3618",
+  "name": "D3D_888D3618",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 5,
+  "ninsn": 7,
+  "callers_count": 17,
+  "callers_sample": [
+   "883486E0",
+   "883489E0",
+   "8841C2D8",
+   "88431AB8",
+   "88457CE0",
+   "884580E8"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 3441,
+    "max_per_frame": 98,
+    "frames": 182
+   },
+   "race_all": {
+    "total": 7398,
+    "max_per_frame": 116,
+    "frames": 426
+   },
+   "race_baseline": {
+    "total": 7818,
+    "max_per_frame": 116,
+    "frames": 822
+   }
+  },
+  "evidence": [
+   "7 instr, 5 arg(s)",
+   "runtime: menu_baseline total=3441 max/frame=98 frames=182, race_all total=7398 max/frame=116 frames=426, race_baseline total=7818 max/frame=116 frames=822",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DBE00",
+  "name": "D3D_888DBE00",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 4,
+  "ninsn": 58,
+  "callers_count": 16,
+  "callers_sample": [
+   "8827FC78",
+   "8833FBB8",
+   "883B5390",
+   "883B5570",
+   "883BD938",
+   "883BDAB0"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 28760,
+    "max_per_frame": 32,
+    "frames": 2347
+   },
+   "race_all": {
+    "total": 19894,
+    "max_per_frame": 32,
+    "frames": 899
+   },
+   "race_baseline": {
+    "total": 29430,
+    "max_per_frame": 32,
+    "frames": 1538
+   }
+  },
+  "evidence": [
+   "58 instr, 4 arg(s)",
+   "runtime: menu_baseline total=28760 max/frame=32 frames=2347, race_all total=19894 max/frame=32 frames=899, race_baseline total=29430 max/frame=32 frames=1538",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D7388",
+  "name": "D3D_Get_888D7388",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 15,
+  "callers_sample": [
+   "882249A0",
+   "88224EA0",
+   "8833FBB8",
+   "885DEDC8",
+   "885E8BC8",
+   "885EE428"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 228126,
+    "max_per_frame": 129,
+    "frames": 4497
+   },
+   "race_all": {
+    "total": 101505,
+    "max_per_frame": 129,
+    "frames": 1916
+   },
+   "race_baseline": {
+    "total": 175822,
+    "max_per_frame": 129,
+    "frames": 2928
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: menu_baseline total=228126 max/frame=129 frames=4497, race_all total=101505 max/frame=129 frames=1916, race_baseline total=175822 max/frame=129 frames=2928",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E4418",
+  "name": "D3D_888E4418",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 5,
+  "ninsn": 18,
+  "callers_count": 12,
+  "callers_sample": [
+   "884199E0",
+   "8864B168",
+   "8864EAB0",
+   "8864F5A8",
+   "887FE8B8",
+   "88806D68"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 115910,
+    "max_per_frame": 77,
+    "frames": 4293
+   },
+   "race_all": {
+    "total": 51481,
+    "max_per_frame": 77,
+    "frames": 1648
+   },
+   "race_baseline": {
+    "total": 85644,
+    "max_per_frame": 77,
+    "frames": 2704
+   }
+  },
+  "evidence": [
+   "18 instr, 5 arg(s)",
+   "runtime: menu_baseline total=115910 max/frame=77 frames=4293, race_all total=51481 max/frame=77 frames=1648, race_baseline total=85644 max/frame=77 frames=2704",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D3B58",
+  "name": "D3D_Set_888D3B58",
+  "tier": "B",
+  "class": "setter",
+  "arity": 4,
+  "ninsn": 99,
+  "callers_count": 11,
+  "callers_sample": [
+   "88646D30",
+   "8864A4E8",
+   "8864B168",
+   "8864D048",
+   "8864E808",
+   "8864EAB0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 44867,
+    "max_per_frame": 143,
+    "frames": 1644
+   }
+  },
+  "evidence": [
+   "writes r3+0 without dirty bit",
+   "body identical to {'candidates': ['822D3538'], 'ninstr': 99, 'title': 'hydroth",
+   "runtime: race_all total=44867 max/frame=143 frames=1644",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D70B0",
+  "name": "D3DDevice_SetState_off12632",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 182,
+  "callers_count": 11,
+  "callers_sample": [
+   "882249A0",
+   "88224EA0",
+   "8833FBB8",
+   "885E8BC8",
+   "885EE428",
+   "885EEC88"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 72629,
+    "max_per_frame": 98,
+    "frames": 1917
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,256;oris r11,r11,2) and writes device+12632",
+   "body identical to {'candidates': ['822C4BE8'], 'ninstr': 182, 'title': 'hydrot",
+   "runtime: race_all total=72629 max/frame=98 frames=1917",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DBAA8",
+  "name": "D3DDevice_SetState_off0",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 115,
+  "callers_count": 11,
+  "callers_sample": [
+   "884990E0",
+   "885EB290",
+   "885F21D0",
+   "8860A498",
+   "88647F68",
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 535140,
+    "max_per_frame": 1249,
+    "frames": 1888
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,8) and writes device+0,device+16",
+   "body identical to {'candidates': ['822C96D8'], 'ninstr': 115, 'title': 'hydrot",
+   "runtime: race_all total=535140 max/frame=1249 frames=1888",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DB8E8",
+  "name": "D3DDevice_SetState_off0",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 111,
+  "callers_count": 10,
+  "callers_sample": [
+   "8833FBB8",
+   "884990E0",
+   "885EB290",
+   "885EEC88",
+   "885F21D0",
+   "8860A498"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 536069,
+    "max_per_frame": 1249,
+    "frames": 1889
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,16;oris r11,r11,2) and writes device+0",
+   "body identical to {'candidates': ['822C9330'], 'ninstr': 111, 'title': 'hydrot",
+   "runtime: race_all total=536069 max/frame=1249 frames=1889",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E6D00",
+  "name": "D3D_888E6D00",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 4,
+  "ninsn": 21,
+  "callers_count": 10,
+  "callers_sample": [
+   "885E1860",
+   "885EA5F8",
+   "88809648",
+   "888096A8",
+   "88809710",
+   "888097C0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 8862,
+    "max_per_frame": 6,
+    "frames": 1867
+   }
+  },
+  "evidence": [
+   "21 instr, 4 arg(s)",
+   "body identical to {'candidates': ['822D6150'], 'ninstr': 21, 'title': 'hydroth",
+   "runtime: race_all total=8862 max/frame=6 frames=1867",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D6508",
+  "name": "D3D_Set_888D6508",
+  "tier": "B",
+  "class": "setter",
+  "arity": 2,
+  "ninsn": 36,
+  "callers_count": 9,
+  "callers_sample": [
+   "885EB290",
+   "887C9710",
+   "887CB660",
+   "887F9D40",
+   "887FA968",
+   "887FCA80"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 632932,
+    "max_per_frame": 1542,
+    "frames": 906
+   }
+  },
+  "evidence": [
+   "writes r3+0 without dirty bit",
+   "body identical to {'candidates': ['822C4808'], 'ninstr': 36, 'title': 'hydroth",
+   "runtime: race_all total=632932 max/frame=1542 frames=906",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D6C30",
+  "name": "D3D_888D6C30",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 2,
+  "ninsn": 32,
+  "callers_count": 9,
+  "callers_sample": [
+   "882249A0",
+   "88224EA0",
+   "8833FBB8",
+   "885EA918",
+   "885EEC88",
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 152209,
+    "max_per_frame": 216,
+    "frames": 1917
+   }
+  },
+  "evidence": [
+   "32 instr, 2 arg(s)",
+   "runtime: race_all total=152209 max/frame=216 frames=1917",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D88C8",
+  "name": "D3D_Get_888D88C8",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 4,
+  "callers_count": 9,
+  "callers_sample": [
+   "887F9E40",
+   "887F9E48",
+   "887FBFC8",
+   "887FC968",
+   "887FCC50",
+   "887FCC70"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 19892,
+    "max_per_frame": 116,
+    "frames": 890
+   }
+  },
+  "evidence": [
+   "tiny accessor, 4 instr, 1 arg(s), no stores",
+   "runtime: race_all total=19892 max/frame=116 frames=890",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D98B8",
+  "name": "D3D_888D98B8",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 4,
+  "ninsn": 20,
+  "callers_count": 9,
+  "callers_sample": [
+   "887F9E28",
+   "887F9E48",
+   "887FBF80",
+   "887FC968",
+   "887FCC58",
+   "887FCC70"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 19884,
+    "max_per_frame": 116,
+    "frames": 887
+   }
+  },
+  "evidence": [
+   "20 instr, 4 arg(s)",
+   "runtime: race_all total=19884 max/frame=116 frames=887",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E0910",
+  "name": "D3D_888E0910",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 1,
+  "ninsn": 17,
+  "callers_count": 9,
+  "callers_sample": [
+   "8894FDC8",
+   "8894FEA8",
+   "889500B8",
+   "889507E8",
+   "88950C28",
+   "889E19C0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 428,
+    "max_per_frame": 56,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "17 instr, 1 arg(s)",
+   "runtime: race_all total=428 max/frame=56 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888EAB38",
+  "name": "D3D_888EAB38",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 7,
+  "ninsn": 47,
+  "callers_count": 9,
+  "callers_sample": [
+   "885E16F0",
+   "885F1C10",
+   "885F57F8",
+   "88648250",
+   "887FA178",
+   "887FA1A0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 13188,
+    "max_per_frame": 37,
+    "frames": 1704
+   }
+  },
+  "evidence": [
+   "47 instr, 7 arg(s)",
+   "body identical to {'candidates': ['822D1398'], 'ninstr': 47, 'title': 'hydroth",
+   "runtime: race_all total=13188 max/frame=37 frames=1704",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D8988",
+  "name": "D3D_Get_888D8988",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 3,
+  "callers_count": 8,
+  "callers_sample": [
+   "887F9F00",
+   "887F9F08",
+   "887FC968",
+   "887FCCB8",
+   "887FCCD8",
+   "887FF548"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1953,
+    "max_per_frame": 3,
+    "frames": 901
+   }
+  },
+  "evidence": [
+   "tiny accessor, 3 instr, 1 arg(s), no stores",
+   "runtime: race_all total=1953 max/frame=3 frames=901",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888D9908",
+  "name": "D3D_888D9908",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 4,
+  "ninsn": 18,
+  "callers_count": 8,
+  "callers_sample": [
+   "887F9EE8",
+   "887F9F08",
+   "887FC968",
+   "887FCCC0",
+   "887FCCD8",
+   "887FF548"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1427,
+    "max_per_frame": 2,
+    "frames": 899
+   }
+  },
+  "evidence": [
+   "18 instr, 4 arg(s)",
+   "runtime: race_all total=1427 max/frame=2 frames=899",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888E4E08",
+  "name": "D3DDevice_DrawIndexedVertices",
+  "tier": "A",
+  "class": "draw",
+  "arity": 5,
+  "ninsn": 275,
+  "callers_count": 8,
+  "callers_sample": [
+   "887C9710",
+   "887CB660",
+   "887F9D40",
+   "887FA968",
+   "887FCA80",
+   "887FCB50"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 613123,
+    "max_per_frame": 1541,
+    "frames": 883
+   }
+  },
+  "evidence": [
+   "emits DRAW_INDX[4]+P",
+   "body identical to {'candidates': ['822D4468'], 'ninstr': 275, 'title': 'hydrot",
+   "runtime: race_all total=613123 max/frame=1541 frames=883",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D38F8",
+  "name": "D3DDevice_SetState",
+  "tier": "B",
+  "class": "state",
+  "arity": 5,
+  "ninsn": 78,
+  "callers_count": 7,
+  "callers_sample": [
+   "882247C0",
+   "885F42F8",
+   "885F5C90",
+   "885F8AA8",
+   "887FDAA8",
+   "888060F8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 262,
+    "max_per_frame": 127,
+    "frames": 6
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,16;oris r11,r11,32768) and writes device",
+   "runtime: race_all total=262 max/frame=127 frames=6",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D3A30",
+  "name": "D3D_888D3A30",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 2,
+  "ninsn": 38,
+  "callers_count": 7,
+  "callers_sample": [
+   "88224EA0",
+   "88648250",
+   "888060F8",
+   "888061F8",
+   "889362C0",
+   "88936518"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 2118,
+    "max_per_frame": 124,
+    "frames": 1033
+   }
+  },
+  "evidence": [
+   "38 instr, 2 arg(s)",
+   "body identical to {'candidates': ['822D3400'], 'ninstr': 38, 'title': 'hydroth",
+   "runtime: race_all total=2118 max/frame=124 frames=1033",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D7510",
+  "name": "D3DDevice_Tiling",
+  "tier": "B",
+  "class": "tiling",
+  "arity": 2,
+  "ninsn": 92,
+  "callers_count": 7,
+  "callers_sample": [
+   "88224928",
+   "882249A0",
+   "88224DC8",
+   "883BD938",
+   "883BDAB0",
+   "8842A338"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 43533,
+    "max_per_frame": 134,
+    "frames": 1916
+   }
+  },
+  "evidence": [
+   "emits SET_BIN_MASK_LO[1]",
+   "body identical to {'candidates': ['822C80F8'], 'ninstr': 92, 'title': 'hydroth",
+   "runtime: race_all total=43533 max/frame=134 frames=1916",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DCD10",
+  "name": "D3D_888DCD10",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 2,
+  "ninsn": 12,
+  "callers_count": 7,
+  "callers_sample": [
+   "8894FEA8",
+   "889E19C0",
+   "889E2660",
+   "889F9A98",
+   "889F9B28",
+   "889F9B78"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 675,
+    "max_per_frame": 81,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "12 instr, 2 arg(s)",
+   "body identical to {'candidates': ['822CDED0'], 'ninstr': 12, 'title': 'hydroth",
+   "runtime: race_all total=675 max/frame=81 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0B98",
+  "name": "D3D_888E0B98",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 21,
+  "callers_count": 7,
+  "callers_sample": [
+   "8864CF28",
+   "8864CF98",
+   "8864F230",
+   "88805B08",
+   "888150B8",
+   "889363B8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 2,
+    "max_per_frame": 1,
+    "frames": 2
+   }
+  },
+  "evidence": [
+   "21 instr, 1 arg(s)",
+   "body identical to {'candidates': ['822C5580'], 'ninstr': 21, 'title': 'hydroth",
+   "runtime: race_all total=2 max/frame=1 frames=2",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EABF8",
+  "name": "D3D_Set_888EABF8",
+  "tier": "B",
+  "class": "setter",
+  "arity": 4,
+  "ninsn": 34,
+  "callers_count": 7,
+  "callers_sample": [
+   "8860A498",
+   "88800C90",
+   "88800D00",
+   "8880BC10",
+   "8880BD28",
+   "8880EE08"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 3132583,
+    "max_per_frame": 9609,
+    "frames": 1001
+   }
+  },
+  "evidence": [
+   "writes r3+4,r3+8 without dirty bit",
+   "runtime: race_all total=3132583 max/frame=9609 frames=1001",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D37D8",
+  "name": "D3DDevice_SetState",
+  "tier": "B",
+  "class": "state",
+  "arity": 8,
+  "ninsn": 72,
+  "callers_count": 6,
+  "callers_sample": [
+   "88648530",
+   "8864D1A8",
+   "887FEC30",
+   "88806E58",
+   "88905D58",
+   "88936518"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 28,
+    "max_per_frame": 8,
+    "frames": 16
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2;oris r30,r11,35968) and writes device",
+   "body identical to {'candidates': ['822D3178'], 'ninstr': 72, 'title': 'hydroth",
+   "runtime: race_all total=28 max/frame=8 frames=16",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D8800",
+  "name": "D3DDevice_SetState",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 50,
+  "callers_count": 6,
+  "callers_sample": [
+   "887FC968",
+   "887FCD20",
+   "888056A8",
+   "888057F0",
+   "888077B0",
+   "8880CBB8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 9,
+    "max_per_frame": 2,
+    "frames": 5
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,4096;ori r11,r11,2) and writes device",
+   "body identical to {'candidates': ['822C6068'], 'ninstr': 50, 'title': 'hydroth",
+   "runtime: race_all total=9 max/frame=2 frames=5",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DB628",
+  "name": "D3D_Set_888DB628",
+  "tier": "B",
+  "class": "setter",
+  "arity": 5,
+  "ninsn": 54,
+  "callers_count": 6,
+  "callers_sample": [
+   "88498900",
+   "88646E68",
+   "886480C0",
+   "8892A5F0",
+   "8892A640",
+   "8892A6D0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 50195,
+    "max_per_frame": 226,
+    "frames": 1595
+   }
+  },
+  "evidence": [
+   "writes r3+8 without dirty bit",
+   "body identical to {'candidates': ['822C8E98', '822C8F70'], 'ninstr': 54, 'titl",
+   "runtime: race_all total=50195 max/frame=226 frames=1595",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DBD80",
+  "name": "D3D_888DBD80",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 32,
+  "callers_count": 6,
+  "callers_sample": [
+   "884199A8",
+   "88424430",
+   "88647B08",
+   "88649400",
+   "887DD7B0",
+   "88811C60"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 16,
+    "max_per_frame": 4,
+    "frames": 5
+   }
+  },
+  "evidence": [
+   "32 instr, 1 arg(s)",
+   "body identical to {'candidates': ['822C99B0'], 'ninstr': 32, 'title': 'hydroth",
+   "runtime: race_all total=16 max/frame=4 frames=5",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DBEE8",
+  "name": "D3D_888DBEE8",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 4,
+  "ninsn": 9,
+  "callers_count": 6,
+  "callers_sample": [
+   "8833FBB8",
+   "885E1A50",
+   "885E8BC8",
+   "885EE5A8",
+   "885EEC88",
+   "885F57F8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1427,
+    "max_per_frame": 2,
+    "frames": 899
+   }
+  },
+  "evidence": [
+   "9 instr, 4 arg(s)",
+   "runtime: race_all total=1427 max/frame=2 frames=899",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888DD008",
+  "name": "D3D_Get_888DD008",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 2,
+  "callers_count": 6,
+  "callers_sample": [
+   "88800E00",
+   "889507E8",
+   "889E5040",
+   "889F8F70",
+   "889FDA58",
+   "88A9E188"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 2632,
+    "max_per_frame": 587,
+    "frames": 22
+   }
+  },
+  "evidence": [
+   "tiny accessor, 2 instr, 0 arg(s), no stores",
+   "runtime: race_all total=2632 max/frame=587 frames=22",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E4A18",
+  "name": "D3DDevice_DrawVertices",
+  "tier": "A",
+  "class": "draw",
+  "arity": 4,
+  "ninsn": 251,
+  "callers_count": 6,
+  "callers_sample": [
+   "887C5680",
+   "887F9D40",
+   "887FA968",
+   "887FCA80",
+   "887FCB50",
+   "887FCFD0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 34012,
+    "max_per_frame": 167,
+    "frames": 882
+   }
+  },
+  "evidence": [
+   "emits DRAW_INDX[2]+P",
+   "body identical to {'candidates': ['822D4078'], 'ninstr': 251, 'title': 'hydrot",
+   "runtime: race_all total=34012 max/frame=167 frames=882",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E6AE0",
+  "name": "D3D_Set_888E6AE0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 1,
+  "ninsn": 13,
+  "callers_count": 6,
+  "callers_sample": [
+   "885E8BC8",
+   "887C5680",
+   "887FD328",
+   "887FF4D0",
+   "888096A8",
+   "888097C0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 10111,
+    "max_per_frame": 44,
+    "frames": 1867
+   }
+  },
+  "evidence": [
+   "writes r3+10928 without dirty bit",
+   "runtime: race_all total=10111 max/frame=44 frames=1867",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DB860",
+  "name": "D3D_888DB860",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 2,
+  "ninsn": 20,
+  "callers_count": 5,
+  "callers_sample": [
+   "88800E00",
+   "88915FB0",
+   "889F8DA8",
+   "889F8F70",
+   "88A012A8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 3181,
+    "max_per_frame": 587,
+    "frames": 36
+   }
+  },
+  "evidence": [
+   "20 instr, 2 arg(s)",
+   "body identical to {'candidates': ['822C91B8'], 'ninstr': 20, 'title': 'hydroth",
+   "runtime: race_all total=3181 max/frame=587 frames=36",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E0710",
+  "name": "D3D_Get_888E0710",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 5,
+  "callers_sample": [
+   "88949B50",
+   "889E26C0",
+   "889E2A18",
+   "889E65F0",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0C40",
+  "name": "D3DDevice_InsertFence",
+  "tier": "B",
+  "class": "sync",
+  "arity": 2,
+  "ninsn": 38,
+  "callers_count": 5,
+  "callers_sample": [
+   "8833FBB8",
+   "885EE428",
+   "885EEC88",
+   "885F10C0",
+   "885F21D0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 13935,
+    "max_per_frame": 83,
+    "frames": 837
+   }
+  },
+  "evidence": [
+   "emits EVENT_WRITE[1]",
+   "runtime: race_all total=13935 max/frame=83 frames=837",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E5B48",
+  "name": "D3D_888E5B48",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 1,
+  "ninsn": 24,
+  "callers_count": 5,
+  "callers_sample": [
+   "88498B88",
+   "8849A200",
+   "887C5E00",
+   "887FE810",
+   "88808080"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 677,
+    "max_per_frame": 2,
+    "frames": 565
+   }
+  },
+  "evidence": [
+   "24 instr, 1 arg(s)",
+   "runtime: race_all total=677 max/frame=2 frames=565",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888D1B28",
+  "name": "D3D_888D1B28",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 3,
+  "ninsn": 38,
+  "callers_count": 4,
+  "callers_sample": [
+   "889D7CF8",
+   "889D8130",
+   "889D8678",
+   "889D8770",
+   "888D1C48",
+   "888D1D68"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 150320,
+    "max_per_frame": 3361,
+    "frames": 1955
+   }
+  },
+  "evidence": [
+   "38 instr, 3 arg(s)",
+   "body identical to {'candidates': ['822C6B30'], 'ninstr': 38, 'title': 'hydroth",
+   "runtime: race_all total=150320 max/frame=3361 frames=1955",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D1C48",
+  "name": "D3D_888D1C48",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 7,
+  "ninsn": 72,
+  "callers_count": 4,
+  "callers_sample": [
+   "889D7A78",
+   "889D8130",
+   "889D8498",
+   "889E7A68",
+   "888D1D68",
+   "888D2230"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 121700,
+    "max_per_frame": 2241,
+    "frames": 1955
+   }
+  },
+  "evidence": [
+   "72 instr, 7 arg(s)",
+   "body identical to {'candidates': ['822D1608'], 'ninstr': 72, 'title': 'hydroth",
+   "runtime: race_all total=121700 max/frame=2241 frames=1955",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D3560",
+  "name": "D3DDevice_SetShaderConstantF",
+  "tier": "B",
+  "class": "constants",
+  "arity": 2,
+  "ninsn": 46,
+  "callers_count": 4,
+  "callers_sample": [
+   "8864D1A8",
+   "88905930",
+   "88905D58",
+   "88936518"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 3,
+    "max_per_frame": 1,
+    "frames": 3
+   }
+  },
+  "evidence": [
+   "writes SHADER_CONSTANT_256_Y(0x4401)",
+   "runtime: race_all total=3 max/frame=1 frames=3",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D8428",
+  "name": "D3D_888D8428",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 1,
+  "ninsn": 35,
+  "callers_count": 4,
+  "callers_sample": [
+   "88905930",
+   "889D7CF8",
+   "889D8130",
+   "889D8B10",
+   "888D2230",
+   "888D2600"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 67244,
+    "max_per_frame": 4480,
+    "frames": 1048
+   }
+  },
+  "evidence": [
+   "35 instr, 1 arg(s)",
+   "body identical to {'candidates': ['822C5FD8'], 'ninstr': 35, 'title': 'hydroth",
+   "runtime: race_all total=67244 max/frame=4480 frames=1048",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D88D8",
+  "name": "D3D_888D88D8",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 3,
+  "ninsn": 43,
+  "callers_count": 4,
+  "callers_sample": [
+   "887FC968",
+   "887FCD78",
+   "88805748",
+   "888077B0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 12,
+    "max_per_frame": 6,
+    "frames": 2
+   }
+  },
+  "evidence": [
+   "43 instr, 3 arg(s)",
+   "body identical to {'candidates': ['822C6190'], 'ninstr': 43, 'title': 'hydroth",
+   "runtime: race_all total=12 max/frame=6 frames=2",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DAF90",
+  "name": "D3D_Dispatch_888DAF90",
+  "tier": "B",
+  "class": "dispatch",
+  "arity": 8,
+  "ninsn": 93,
+  "callers_count": 4,
+  "callers_sample": [
+   "88915FB0",
+   "889F8D40",
+   "88DB9628",
+   "88DB9678"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 91,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "indirect dispatch (bctr)",
+   "body identical to {'candidates': ['822CEA50'], 'ninstr': 93, 'title': 'hydroth",
+   "runtime: race_all total=91 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DB550",
+  "name": "D3D_Set_888DB550",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 5,
+  "ninsn": 54,
+  "callers_count": 4,
+  "callers_sample": [
+   "88646E38",
+   "8892A2D0",
+   "8892A320",
+   "8892A3B0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+0 without dirty bit",
+   "body identical to {'candidates': ['822C8E98', '822C8F70'], 'ninstr': 54, 'titl",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DCCB0",
+  "name": "D3D_Get_888DCCB0",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 4,
+  "callers_sample": [
+   "8894EE18",
+   "889E13E0",
+   "889E14F0",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 39,
+    "max_per_frame": 5,
+    "frames": 10
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=39 max/frame=5 frames=10",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DCD40",
+  "name": "D3D_Get_888DCD40",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 4,
+  "callers_sample": [
+   "8894FF78",
+   "889E1CA8",
+   "889E2A18",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DD5A8",
+  "name": "D3DDevice_SetState",
+  "tier": "B",
+  "class": "state",
+  "arity": 1,
+  "ninsn": 60,
+  "callers_count": 4,
+  "callers_sample": [
+   "88499218",
+   "88647B48",
+   "887FE018",
+   "88800E00"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 16,
+    "max_per_frame": 5,
+    "frames": 4
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,16) and writes device",
+   "body identical to {'candidates': ['822C95E8'], 'ninstr': 60, 'title': 'hydroth",
+   "runtime: race_all total=16 max/frame=5 frames=4",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0718",
+  "name": "D3D_Get_888E0718",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 4,
+  "callers_sample": [
+   "8894ED60",
+   "88950E40",
+   "889E17B0",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0770",
+  "name": "D3D_Get_888E0770",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 4,
+  "callers_sample": [
+   "8894F520",
+   "889E10F8",
+   "889FAA88",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 528,
+    "max_per_frame": 69,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=528 max/frame=69 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0790",
+  "name": "D3D_Get_888E0790",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 4,
+  "callers_sample": [
+   "889507E8",
+   "889E26C0",
+   "889E2A18",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0798",
+  "name": "D3D_Get_888E0798",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 4,
+  "callers_sample": [
+   "889507E8",
+   "889E26C0",
+   "889E2A18",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E3F70",
+  "name": "D3D_Set_888E3F70",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 3,
+  "callers_count": 4,
+  "callers_sample": [
+   "887D1560",
+   "887FCF28",
+   "887FCFC0",
+   "887FF698"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 394,
+    "max_per_frame": 2,
+    "frames": 197
+   }
+  },
+  "evidence": [
+   "writes r3+48 without dirty bit",
+   "runtime: race_all total=394 max/frame=2 frames=197",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E5AE8",
+  "name": "D3D_888E5AE8",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 1,
+  "ninsn": 24,
+  "callers_count": 4,
+  "callers_sample": [
+   "887C4EF8",
+   "887FD328",
+   "887FF4D0",
+   "888054E8",
+   "888E2790",
+   "888E3E18"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1872,
+    "max_per_frame": 2,
+    "frames": 1866
+   }
+  },
+  "evidence": [
+   "24 instr, 1 arg(s)",
+   "runtime: race_all total=1872 max/frame=2 frames=1866",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888D19C0",
+  "name": "D3D_888D19C0",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 4,
+  "ninsn": 38,
+  "callers_count": 3,
+  "callers_sample": [
+   "889D7A78",
+   "889D7CF8",
+   "889D8130",
+   "888D2230",
+   "888D2800",
+   "888D3478"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 41461,
+    "max_per_frame": 2240,
+    "frames": 1012
+   }
+  },
+  "evidence": [
+   "38 instr, 4 arg(s)",
+   "body identical to {'candidates': ['822D1A98'], 'ninstr': 38, 'title': 'hydroth",
+   "runtime: race_all total=41461 max/frame=2240 frames=1012",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D1B10",
+  "name": "D3D_Get_888D1B10",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 6,
+  "callers_count": 3,
+  "callers_sample": [
+   "889362C0",
+   "889363B8",
+   "889364B8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 3,
+    "max_per_frame": 1,
+    "frames": 3
+   }
+  },
+  "evidence": [
+   "tiny accessor, 6 instr, 1 arg(s), no stores",
+   "runtime: race_all total=3 max/frame=1 frames=3",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3710",
+  "name": "D3D_Get_888D3710",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 3,
+  "callers_sample": [
+   "8864D928",
+   "88905930",
+   "889D7CF8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 10690,
+    "max_per_frame": 1120,
+    "frames": 951
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=10690 max/frame=1120 frames=951",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4070",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 32,
+  "callers_count": 3,
+  "callers_sample": [
+   "8864B168",
+   "8864EAB0",
+   "8864EE40"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 123696,
+    "max_per_frame": 502,
+    "frames": 1651
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1;ori r11,r11,1024) and writes device+16,device+12028",
+   "body identical to {'candidates': ['822C2278'], 'ninstr': 32, 'title': 'hydroth",
+   "runtime: race_all total=123696 max/frame=502 frames=1651",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D5878",
+  "name": "D3D_Set_888D5878",
+  "tier": "B",
+  "class": "setter",
+  "arity": 3,
+  "ninsn": 50,
+  "callers_count": 3,
+  "callers_sample": [
+   "88648170",
+   "8864B168",
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 14706,
+    "max_per_frame": 40,
+    "frames": 1624
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C3AB8', '822C3C60'], 'ninstr': 50, 'titl",
+   "runtime: race_all total=14706 max/frame=40 frames=1624",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D5A20",
+  "name": "D3D_Set_888D5A20",
+  "tier": "B",
+  "class": "setter",
+  "arity": 3,
+  "ninsn": 50,
+  "callers_count": 3,
+  "callers_sample": [
+   "88648170",
+   "8864B168",
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 14704,
+    "max_per_frame": 40,
+    "frames": 1623
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C3AB8', '822C3C60'], 'ninstr': 50, 'titl",
+   "runtime: race_all total=14704 max/frame=40 frames=1623",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D62A0",
+  "name": "D3D_Set_888D62A0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 2,
+  "ninsn": 62,
+  "callers_count": 3,
+  "callers_sample": [
+   "887FD258",
+   "88805E10",
+   "88805F18",
+   "888D69C8",
+   "888D6C20",
+   "888D7680"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 247565,
+    "max_per_frame": 376,
+    "frames": 1924
+   }
+  },
+  "evidence": [
+   "writes r3+10436,r3+10440,r3+12852 without dirty bit",
+   "body identical to {'candidates': ['822C44E8'], 'ninstr': 62, 'title': 'hydroth",
+   "runtime: race_all total=247565 max/frame=376 frames=1924",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D6398",
+  "name": "D3D_888D6398",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 2,
+  "ninsn": 20,
+  "callers_count": 3,
+  "callers_sample": [
+   "88224928",
+   "887FD258",
+   "88813240"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 76278,
+    "max_per_frame": 98,
+    "frames": 1922
+   }
+  },
+  "evidence": [
+   "20 instr, 2 arg(s)",
+   "runtime: race_all total=76278 max/frame=98 frames=1922",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D65E0",
+  "name": "D3D_888D65E0",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 1,
+  "ninsn": 15,
+  "callers_count": 3,
+  "callers_sample": [
+   "88224928",
+   "885EE428",
+   "88648250",
+   "888F3210"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1834,
+    "max_per_frame": 7,
+    "frames": 1019
+   }
+  },
+  "evidence": [
+   "15 instr, 1 arg(s)",
+   "runtime: race_all total=1834 max/frame=7 frames=1019",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DAA78",
+  "name": "D3D_888DAA78",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 3,
+  "ninsn": 7,
+  "callers_count": 3,
+  "callers_sample": [
+   "889506A0",
+   "889E0AB0",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "7 instr, 3 arg(s)",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DB700",
+  "name": "D3D_Set_888DB700",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 4,
+  "ninsn": 23,
+  "callers_count": 3,
+  "callers_sample": [
+   "8892A118",
+   "8892A140",
+   "8892A198"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+32 without dirty bit",
+   "body identical to {'candidates': ['822C9048', '822C90A8'], 'ninstr': 23, 'titl",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DB760",
+  "name": "D3D_Set_888DB760",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 4,
+  "ninsn": 23,
+  "callers_count": 3,
+  "callers_sample": [
+   "8892A438",
+   "8892A460",
+   "8892A4B8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+32 without dirty bit",
+   "body identical to {'candidates': ['822C9048', '822C90A8'], 'ninstr': 23, 'titl",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DB7C0",
+  "name": "D3D_Set_888DB7C0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 4,
+  "ninsn": 19,
+  "callers_count": 3,
+  "callers_sample": [
+   "8892A200",
+   "8892A228",
+   "8892A280"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+32 without dirty bit",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DB810",
+  "name": "D3D_Set_888DB810",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 4,
+  "ninsn": 19,
+  "callers_count": 3,
+  "callers_sample": [
+   "8892A520",
+   "8892A578",
+   "8892A5A0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+32 without dirty bit",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DCCC8",
+  "name": "D3D_Get_888DCCC8",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894F520",
+   "8894FB38",
+   "8894FCC0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DCCE0",
+  "name": "D3D_Get_888DCCE0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894FF78",
+   "889500B8",
+   "889E2A18"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DD380",
+  "name": "D3DDevice_SetState",
+  "tier": "B",
+  "class": "state",
+  "arity": 1,
+  "ninsn": 60,
+  "callers_count": 3,
+  "callers_sample": [
+   "88499218",
+   "88647C48",
+   "88800E00"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 91,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,16) and writes device",
+   "body identical to {'candidates': ['822C9240'], 'ninstr': 60, 'title': 'hydroth",
+   "runtime: race_all total=91 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DE760",
+  "name": "D3D_888DE760",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 31,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894EE18",
+   "889E14F0",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "31 instr, 3 arg(s)",
+   "body identical to {'candidates': ['822CD968'], 'ninstr': 31, 'title': 'hydroth",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DF470",
+  "name": "D3DDevice_SetRegister",
+  "tier": "B",
+  "class": "state",
+  "arity": 0,
+  "ninsn": 19,
+  "callers_count": 3,
+  "callers_sample": [
+   "88951F28",
+   "889E17B0",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "writes ?(0x4E00)",
+   "body identical to {'candidates': ['822CE510'], 'ninstr': 19, 'title': 'hydroth",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0070",
+  "name": "D3D_Get_888E0070",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "889507E8",
+   "88950C28",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E0088",
+  "name": "D3D_Get_888E0088",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894EE18",
+   "889E0F88",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 188,
+    "max_per_frame": 24,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=188 max/frame=24 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E00A0",
+  "name": "D3D_Get_888E00A0",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894EE18",
+   "889E0F88",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 16,
+    "max_per_frame": 5,
+    "frames": 4
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=16 max/frame=5 frames=4",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0720",
+  "name": "D3D_Get_888E0720",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 3,
+  "callers_sample": [
+   "88950E40",
+   "889E17B0",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0728",
+  "name": "D3D_Get_888E0728",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894FCC0",
+   "889E10F8",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 78,
+    "max_per_frame": 11,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=78 max/frame=11 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0740",
+  "name": "D3D_Get_888E0740",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894FB38",
+   "889E10F8",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E0758",
+  "name": "D3D_Get_888E0758",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "8894FB38",
+   "889E10F8",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 38,
+    "max_per_frame": 12,
+    "frames": 4
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=38 max/frame=12 frames=4",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0788",
+  "name": "D3D_Get_888E0788",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 3,
+  "callers_sample": [
+   "889507E8",
+   "889E17B0",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E08F8",
+  "name": "D3D_Get_888E08F8",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 3,
+  "callers_sample": [
+   "889500B8",
+   "889E10F8",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 123,
+    "max_per_frame": 16,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=123 max/frame=16 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E3F80",
+  "name": "D3DDevice_DrawVertices",
+  "tier": "A",
+  "class": "draw",
+  "arity": 4,
+  "ninsn": 293,
+  "callers_count": 3,
+  "callers_sample": [
+   "887D1560",
+   "887FCED0",
+   "887FF698",
+   "888E4418"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 51875,
+    "max_per_frame": 77,
+    "frames": 1648
+   }
+  },
+  "evidence": [
+   "emits DRAW_INDX[2]+P",
+   "body identical to {'candidates': ['822D36C8'], 'ninstr': 293, 'title': 'hydrot",
+   "runtime: race_all total=51875 max/frame=77 frames=1648",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D3468",
+  "name": "D3D_Get_888D3468",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 4,
+  "callers_count": 2,
+  "callers_sample": [
+   "88905930",
+   "889D8AA8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 7614,
+    "max_per_frame": 154,
+    "frames": 579
+   }
+  },
+  "evidence": [
+   "tiny accessor, 4 instr, 1 arg(s), no stores",
+   "runtime: race_all total=7614 max/frame=154 frames=579",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D3478",
+  "name": "D3D_888D3478",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 4,
+  "ninsn": 57,
+  "callers_count": 2,
+  "callers_sample": [
+   "88457458",
+   "884580E8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 8,
+    "max_per_frame": 1,
+    "frames": 8
+   }
+  },
+  "evidence": [
+   "57 instr, 4 arg(s)",
+   "runtime: race_all total=8 max/frame=1 frames=8",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3638",
+  "name": "D3DDevice_SetShaderConstantF",
+  "tier": "B",
+  "class": "constants",
+  "arity": 3,
+  "ninsn": 45,
+  "callers_count": 2,
+  "callers_sample": [
+   "88905930",
+   "88905D58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes SHADER_CONSTANT_256_Y(0x4401)",
+   "body identical to {'candidates': ['822D2FF0'], 'ninstr': 45, 'title': 'hydroth",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D36F0",
+  "name": "D3D_888D36F0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 6,
+  "ninsn": 7,
+  "callers_count": 2,
+  "callers_sample": [
+   "887FEFE8",
+   "887FF170"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "7 instr, 6 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3718",
+  "name": "D3D_Get_888D3718",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 2,
+  "callers_sample": [
+   "88905930",
+   "889D7CF8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3720",
+  "name": "D3DDevice_SetShaderConstantF",
+  "tier": "B",
+  "class": "constants",
+  "arity": 2,
+  "ninsn": 43,
+  "callers_count": 2,
+  "callers_sample": [
+   "88905930",
+   "88905D58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes SHADER_CONSTANT_256_Y(0x4401)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3AC8",
+  "name": "D3D_888D3AC8",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 4,
+  "ninsn": 9,
+  "callers_count": 2,
+  "callers_sample": [
+   "889362C0",
+   "88936518"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 3,
+    "max_per_frame": 1,
+    "frames": 3
+   }
+  },
+  "evidence": [
+   "9 instr, 4 arg(s)",
+   "runtime: race_all total=3 max/frame=1 frames=3",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3AF0",
+  "name": "D3D_888D3AF0",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 17,
+  "callers_count": 2,
+  "callers_sample": [
+   "88936A48",
+   "889D7CF8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "17 instr, 2 arg(s)",
+   "body identical to {'candidates': ['822D34B8'], 'ninstr': 17, 'title': 'hydroth",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D47A8",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 14,
+  "callers_count": 2,
+  "callers_sample": [
+   "88648250",
+   "88648498"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 16865,
+    "max_per_frame": 55,
+    "frames": 1630
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048;oris r11,r11,2) and writes device+16,device+12056",
+   "body identical to {'candidates': ['822C2918', '822C29C0'], 'ninstr': 14, 'titl",
+   "runtime: race_all total=16865 max/frame=55 frames=1630",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D4820",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 7,
+  "callers_count": 2,
+  "callers_sample": [
+   "88648250",
+   "88648428"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 46286,
+    "max_per_frame": 179,
+    "frames": 1628
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048) and writes device+16",
+   "runtime: race_all total=46286 max/frame=179 frames=1628",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D48C0",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 7,
+  "callers_count": 2,
+  "callers_sample": [
+   "88648250",
+   "88648428"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 43880,
+    "max_per_frame": 177,
+    "frames": 1627
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048) and writes device+16",
+   "runtime: race_all total=43880 max/frame=177 frames=1627",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D49C0",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 5,
+  "callers_count": 2,
+  "callers_sample": [
+   "88648250",
+   "88648428"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 45983,
+    "max_per_frame": 178,
+    "frames": 1626
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,4096) and writes device+16",
+   "runtime: race_all total=45983 max/frame=178 frames=1626",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D49E0",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 5,
+  "callers_count": 2,
+  "callers_sample": [
+   "88648250",
+   "88648428"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 9823,
+    "max_per_frame": 36,
+    "frames": 1100
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,4096) and writes device+16",
+   "runtime: race_all total=9823 max/frame=36 frames=1100",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D4CA0",
+  "name": "D3D_Set_888D4CA0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 2,
+  "ninsn": 14,
+  "callers_count": 2,
+  "callers_sample": [
+   "88648250",
+   "88648428"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 56332,
+    "max_per_frame": 196,
+    "frames": 1624
+   }
+  },
+  "evidence": [
+   "writes r3+16,r3+12036 without dirty bit",
+   "body identical to {'candidates': ['822C2EC8', '822C2F08', '822C2F48', '822C2F8",
+   "runtime: race_all total=56332 max/frame=196 frames=1624",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D5DE0",
+  "name": "D3D_Set_888D5DE0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 3,
+  "ninsn": 23,
+  "callers_count": 2,
+  "callers_sample": [
+   "8864B168",
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 6402,
+    "max_per_frame": 20,
+    "frames": 1620
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "runtime: race_all total=6402 max/frame=20 frames=1620",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D6598",
+  "name": "D3D_888D6598",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 17,
+  "callers_count": 2,
+  "callers_sample": [
+   "88224928",
+   "885EE428",
+   "888F3210"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "17 instr, 2 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D67C0",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 3,
+  "ninsn": 22,
+  "callers_count": 2,
+  "callers_sample": [
+   "8823D240",
+   "88282930"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 2703,
+    "max_per_frame": 3,
+    "frames": 901
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,2) and writes device+16",
+   "runtime: race_all total=2703 max/frame=3 frames=901",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888D8720",
+  "name": "D3DResource_Release",
+  "tier": "A",
+  "class": "lifetime",
+  "arity": 1,
+  "ninsn": 29,
+  "callers_count": 2,
+  "callers_sample": [
+   "88936518",
+   "88936A48",
+   "888D3560",
+   "888D3638",
+   "888D3720"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1840,
+    "max_per_frame": 7,
+    "frames": 1019
+   }
+  },
+  "evidence": [
+   "lwarx/stwcx refcount",
+   "body identical to {'candidates': ['822C5E78'], 'ninstr': 29, 'title': 'hydroth",
+   "runtime: race_all total=1840 max/frame=7 frames=1019",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D8F68",
+  "name": "D3DDevice_InsertFence",
+  "tier": "B",
+  "class": "sync",
+  "arity": 4,
+  "ninsn": 65,
+  "callers_count": 2,
+  "callers_sample": [
+   "885E8BC8",
+   "887C5680",
+   "888F39A8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 8443,
+    "max_per_frame": 43,
+    "frames": 570
+   }
+  },
+  "evidence": [
+   "emits EVENT_WRITE[1]",
+   "runtime: race_all total=8443 max/frame=43 frames=570",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D9070",
+  "name": "D3DDevice_InsertFence",
+  "tier": "B",
+  "class": "sync",
+  "arity": 4,
+  "ninsn": 152,
+  "callers_count": 2,
+  "callers_sample": [
+   "885E8BC8",
+   "887C5680",
+   "888F39A8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 8443,
+    "max_per_frame": 43,
+    "frames": 570
+   }
+  },
+  "evidence": [
+   "emits EVENT_WRITE[1]",
+   "runtime: race_all total=8443 max/frame=43 frames=570",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DAA58",
+  "name": "D3D_Set_888DAA58",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 8,
+  "callers_count": 2,
+  "callers_sample": [
+   "8894ED60",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+0,r3+19892 without dirty bit",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DAA98",
+  "name": "D3D_Get_888DAA98",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 2,
+  "callers_sample": [
+   "889507E8",
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DCC70",
+  "name": "D3D_888DCC70",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 10,
+  "callers_count": 2,
+  "callers_sample": [
+   "889507E8",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "10 instr, 2 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DCC98",
+  "name": "D3D_Get_888DCC98",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 2,
+  "callers_sample": [
+   "8894EE18",
+   "889E14F0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E0958",
+  "name": "D3D_Get_888E0958",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 2,
+  "callers_sample": [
+   "889507E8",
+   "889FDA58"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E0BF0",
+  "name": "D3D_888E0BF0",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 16,
+  "callers_count": 2,
+  "callers_sample": [
+   "88806058",
+   "888172D0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 10,
+    "max_per_frame": 2,
+    "frames": 8
+   }
+  },
+  "evidence": [
+   "16 instr, 1 arg(s)",
+   "body identical to {'candidates': ['822C55D8'], 'ninstr': 16, 'title': 'hydroth",
+   "runtime: race_all total=10 max/frame=2 frames=8",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E0C30",
+  "name": "D3D_Set_888E0C30",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 4,
+  "callers_count": 2,
+  "callers_sample": [
+   "888172D0",
+   "88817EF8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 10,
+    "max_per_frame": 2,
+    "frames": 8
+   }
+  },
+  "evidence": [
+   "writes r3+10888 without dirty bit",
+   "runtime: race_all total=10 max/frame=2 frames=8",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E0CD8",
+  "name": "D3D_888E0CD8",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 68,
+  "callers_count": 2,
+  "callers_sample": [
+   "887FD328",
+   "887FF4D0",
+   "888EC850",
+   "888F6358"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 6,
+    "max_per_frame": 1,
+    "frames": 6
+   }
+  },
+  "evidence": [
+   "68 instr, 1 arg(s)",
+   "runtime: race_all total=6 max/frame=1 frames=6",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E1108",
+  "name": "D3DDevice_SetState",
+  "tier": "C",
+  "class": "state",
+  "arity": 6,
+  "ninsn": 53,
+  "callers_count": 2,
+  "callers_sample": [
+   "887FD190",
+   "88816C50"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,128) and writes device",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E1540",
+  "name": "D3D_Get_888E1540",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 2,
+  "ninsn": 5,
+  "callers_count": 2,
+  "callers_sample": [
+   "88647DA8",
+   "889052B0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1035,
+    "max_per_frame": 2,
+    "frames": 519
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 2 arg(s), no stores",
+   "runtime: race_all total=1035 max/frame=2 frames=519",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888E15C0",
+  "name": "D3D_888E15C0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 18,
+  "callers_count": 2,
+  "callers_sample": [
+   "887F9F88",
+   "88805BB0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "18 instr, 3 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E1FD8",
+  "name": "D3DDevice_SetState",
+  "tier": "C",
+  "class": "state",
+  "arity": 1,
+  "ninsn": 91,
+  "callers_count": 2,
+  "callers_sample": [
+   "88349C40",
+   "887FA728",
+   "888E3E88"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,30840) and writes device",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E2148",
+  "name": "D3DDevice_BlockUntilIdle",
+  "tier": "B",
+  "class": "sync",
+  "arity": 2,
+  "ninsn": 162,
+  "callers_count": 2,
+  "callers_sample": [
+   "883463F0",
+   "88816120"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "emits WAIT_REG_MEM",
+   "body identical to {'candidates': ['822D6A60'], 'ninstr': 162, 'title': 'hydrot",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E23D0",
+  "name": "D3D_888E23D0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 239,
+  "callers_count": 2,
+  "callers_sample": [
+   "883464A0",
+   "88816120"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "239 instr, 3 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E3E88",
+  "name": "D3D_888E3E88",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 58,
+  "callers_count": 2,
+  "callers_sample": [
+   "88349A60",
+   "887FA6D8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "58 instr, 3 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E6B18",
+  "name": "D3D_888E6B18",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 1,
+  "ninsn": 36,
+  "callers_count": 2,
+  "callers_sample": [
+   "887C4E18",
+   "887C6E80",
+   "888E1F30"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1170,
+    "max_per_frame": 15,
+    "frames": 394
+   }
+  },
+  "evidence": [
+   "36 instr, 1 arg(s)",
+   "body identical to {'candidates': ['822D60C0'], 'ninstr': 36, 'title': 'hydroth",
+   "runtime: race_all total=1170 max/frame=15 frames=394",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E6D58",
+  "name": "D3DDevice_SetState_off4",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 270,
+  "callers_count": 2,
+  "callers_sample": [
+   "887F9FD8",
+   "88805BB0",
+   "888F6070",
+   "888F6358"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2562) and writes device+4",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EB588",
+  "name": "D3DDevice_SetState_off4",
+  "tier": "B",
+  "class": "state",
+  "arity": 3,
+  "ninsn": 408,
+  "callers_count": 2,
+  "callers_sample": [
+   "887FD910",
+   "88816FB0",
+   "888E8A28"
+  ],
+  "runtime": {
+   "menu_baseline": {
+    "total": 4494,
+    "max_per_frame": 1,
+    "frames": 4494
+   },
+   "race_all": {
+    "total": 1858,
+    "max_per_frame": 1,
+    "frames": 1858
+   },
+   "race_baseline": {
+    "total": 2925,
+    "max_per_frame": 1,
+    "frames": 2925
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,16384;ori r11,r11,4096) and writes device+4",
+   "runtime: menu_baseline total=4494 max/frame=1 frames=4494, race_all total=1858 max/frame=1 frames=1858, race_baseline total=2925 max/frame=1 frames=2925",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888EC100",
+  "name": "D3D_888EC100",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 6,
+  "ninsn": 126,
+  "callers_count": 2,
+  "callers_sample": [
+   "88805048",
+   "88815130"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "126 instr, 6 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D20D8",
+  "name": "D3D_Set_888D20D8",
+  "tier": "B",
+  "class": "setter",
+  "arity": 8,
+  "ninsn": 86,
+  "callers_count": 1,
+  "callers_sample": [
+   "889D8498",
+   "888D2800"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 357,
+    "max_per_frame": 30,
+    "frames": 24
+   }
+  },
+  "evidence": [
+   "writes r3+0 without dirty bit",
+   "body identical to {'candidates': ['822D1BD0'], 'ninstr': 86, 'title': 'hydroth",
+   "runtime: race_all total=357 max/frame=30 frames=24",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D2F00",
+  "name": "D3D_888D2F00",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 8,
+  "ninsn": 189,
+  "callers_count": 1,
+  "callers_sample": [
+   "889D8770",
+   "888D37D8",
+   "888F3210",
+   "888F39A8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1713,
+    "max_per_frame": 93,
+    "frames": 85
+   }
+  },
+  "evidence": [
+   "189 instr, 8 arg(s)",
+   "body identical to {'candidates': ['822D2970'], 'ninstr': 189, 'title': 'hydrot",
+   "runtime: race_all total=1713 max/frame=93 frames=85",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D37D0",
+  "name": "D3D_Get_888D37D0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 1,
+  "callers_sample": [
+   "887FEFE8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3B38",
+  "name": "D3D_888D3B38",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 4,
+  "ninsn": 7,
+  "callers_count": 1,
+  "callers_sample": [
+   "88936A48"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "7 instr, 4 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D3FD8",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 1,
+  "ninsn": 7,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 82724,
+    "max_per_frame": 223,
+    "frames": 1642
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,64) and writes device+16",
+   "runtime: race_all total=82724 max/frame=223 frames=1642",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4038",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 9,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 18457,
+    "max_per_frame": 45,
+    "frames": 1641
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,512;oris r11,r11,4) and writes device+16",
+   "runtime: race_all total=18457 max/frame=45 frames=1641",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D4100",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 31,
+  "callers_count": 1,
+  "callers_sample": [
+   "88647E38"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 113032,
+    "max_per_frame": 329,
+    "frames": 1638
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1024;ori r11,r11,4) and writes device+16,device+12024",
+   "body identical to {'candidates': ['822C2308', '822C2398', '822C2428'], 'ninstr",
+   "runtime: race_all total=113032 max/frame=329 frames=1638",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4190",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 31,
+  "callers_count": 1,
+  "callers_sample": [
+   "88647E38"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 121057,
+    "max_per_frame": 334,
+    "frames": 1646
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1024;ori r11,r11,4) and writes device+16,device+12024",
+   "body identical to {'candidates': ['822C2308', '822C2398', '822C2428'], 'ninstr",
+   "runtime: race_all total=121057 max/frame=334 frames=1646",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4220",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 31,
+  "callers_count": 1,
+  "callers_sample": [
+   "88647E38"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 125703,
+    "max_per_frame": 341,
+    "frames": 1646
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1024;ori r11,r11,4) and writes device+16,device+12024",
+   "body identical to {'candidates': ['822C2308', '822C2398', '822C2428'], 'ninstr",
+   "runtime: race_all total=125703 max/frame=341 frames=1646",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D42B0",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 23,
+  "callers_count": 1,
+  "callers_sample": [
+   "88647E38"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 24510,
+    "max_per_frame": 241,
+    "frames": 1635
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1024;ori r11,r11,4) and writes device+16,device+12024",
+   "body identical to {'candidates': ['822C24B8', '822C2528', '822C2598'], 'ninstr",
+   "runtime: race_all total=24510 max/frame=241 frames=1635",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4320",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 23,
+  "callers_count": 1,
+  "callers_sample": [
+   "88647E38"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 24510,
+    "max_per_frame": 241,
+    "frames": 1635
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1024;ori r11,r11,4) and writes device+16,device+12024",
+   "body identical to {'candidates': ['822C24B8', '822C2528', '822C2598'], 'ninstr",
+   "runtime: race_all total=24510 max/frame=241 frames=1635",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4390",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 23,
+  "callers_count": 1,
+  "callers_sample": [
+   "88647E38"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 30561,
+    "max_per_frame": 243,
+    "frames": 1634
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1024;ori r11,r11,4) and writes device+16,device+12024",
+   "body identical to {'candidates': ['822C24B8', '822C2528', '822C2598'], 'ninstr",
+   "runtime: race_all total=30561 max/frame=243 frames=1634",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4400",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 33,
+  "callers_count": 1,
+  "callers_sample": [
+   "88647E38"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 115989,
+    "max_per_frame": 328,
+    "frames": 1637
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,1;ori r11,r11,1024) and writes device+16,device+12028",
+   "body identical to {'candidates': ['822C2608'], 'ninstr': 33, 'title': 'hydroth",
+   "runtime: race_all total=115989 max/frame=328 frames=1637",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4700",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 14,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 19369,
+    "max_per_frame": 47,
+    "frames": 1638
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048;oris r11,r11,2) and writes device+16,device+12052",
+   "body identical to {'candidates': ['822C2918', '822C29C0'], 'ninstr': 14, 'titl",
+   "runtime: race_all total=19369 max/frame=47 frames=1638",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D4740",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 7,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 23692,
+    "max_per_frame": 47,
+    "frames": 1635
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048) and writes device+16",
+   "runtime: race_all total=23692 max/frame=47 frames=1635",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D4770",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 9,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 21277,
+    "max_per_frame": 46,
+    "frames": 1633
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048;oris r11,r11,2) and writes device+16",
+   "runtime: race_all total=21277 max/frame=46 frames=1633",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D4850",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 9,
+  "callers_count": 1,
+  "callers_sample": [
+   "88648250"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 10683,
+    "max_per_frame": 37,
+    "frames": 1627
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048;oris r11,r11,2) and writes device+16",
+   "runtime: race_all total=10683 max/frame=37 frames=1627",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D4888",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 9,
+  "callers_count": 1,
+  "callers_sample": [
+   "88648250"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 40523,
+    "max_per_frame": 176,
+    "frames": 1627
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2048;oris r11,r11,2) and writes device+16",
+   "runtime: race_all total=40523 max/frame=176 frames=1627",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D4A80",
+  "name": "D3D_Set_888D4A80",
+  "tier": "B",
+  "class": "setter",
+  "arity": 2,
+  "ninsn": 17,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 6413,
+    "max_per_frame": 20,
+    "frames": 1625
+   }
+  },
+  "evidence": [
+   "writes r3+16 without dirty bit",
+   "body identical to {'candidates': ['822C2C98'], 'ninstr': 17, 'title': 'hydroth",
+   "runtime: race_all total=6413 max/frame=20 frames=1625",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D5798",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 7,
+  "callers_count": 1,
+  "callers_sample": [
+   "885F1880"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 36069,
+    "max_per_frame": 173,
+    "frames": 1624
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,256) and writes device+16",
+   "runtime: race_all total=36069 max/frame=173 frames=1624",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D57C8",
+  "name": "D3DDevice_SetState_off16",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 7,
+  "callers_count": 1,
+  "callers_sample": [
+   "885F1880"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 10094,
+    "max_per_frame": 23,
+    "frames": 1623
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,256) and writes device+16",
+   "runtime: race_all total=10094 max/frame=23 frames=1623",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D5978",
+  "name": "D3D_Set_888D5978",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 37,
+  "callers_count": 1,
+  "callers_sample": [
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C3BB8', '822C3E58'], 'ninstr': 37, 'titl",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D5B20",
+  "name": "D3D_Set_888D5B20",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 35,
+  "callers_count": 1,
+  "callers_sample": [
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C3D60'], 'ninstr': 35, 'title': 'hydroth",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D5C18",
+  "name": "D3D_Set_888D5C18",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 37,
+  "callers_count": 1,
+  "callers_sample": [
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C3BB8', '822C3E58'], 'ninstr': 37, 'titl",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D5CC0",
+  "name": "D3D_Set_888D5CC0",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 26,
+  "callers_count": 1,
+  "callers_sample": [
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C3F00'], 'ninstr': 26, 'title': 'hydroth",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D5D38",
+  "name": "D3D_Set_888D5D38",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 23,
+  "callers_count": 1,
+  "callers_sample": [
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D5E80",
+  "name": "D3D_Set_888D5E80",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 27,
+  "callers_count": 1,
+  "callers_sample": [
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C40C8'], 'ninstr': 27, 'title': 'hydroth",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D5F00",
+  "name": "D3D_Set_888D5F00",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 27,
+  "callers_count": 1,
+  "callers_sample": [
+   "88818758"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+24 without dirty bit",
+   "body identical to {'candidates': ['822C4148'], 'ninstr': 27, 'title': 'hydroth",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D6620",
+  "name": "D3DDevice_SetState",
+  "tier": "C",
+  "class": "state",
+  "arity": 3,
+  "ninsn": 52,
+  "callers_count": 1,
+  "callers_sample": [
+   "8880A888",
+   "888F5B68"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,32768;ori r11,r11,2) and writes device",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D66F0",
+  "name": "D3DDevice_SetState",
+  "tier": "C",
+  "class": "state",
+  "arity": 3,
+  "ninsn": 52,
+  "callers_count": 1,
+  "callers_sample": [
+   "8880A888",
+   "888F5B68"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,32768;ori r11,r11,2) and writes device",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D6818",
+  "name": "D3D_888D6818",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 3,
+  "ninsn": 46,
+  "callers_count": 1,
+  "callers_sample": [
+   "888069D0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1041850,
+    "max_per_frame": 2605,
+    "frames": 1227
+   }
+  },
+  "evidence": [
+   "46 instr, 3 arg(s)",
+   "runtime: race_all total=1041850 max/frame=2605 frames=1227",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888D6C20",
+  "name": "D3D_Set_888D6C20",
+  "tier": "B",
+  "class": "setter",
+  "arity": 2,
+  "ninsn": 3,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864B168"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 13653,
+    "max_per_frame": 41,
+    "frames": 1611
+   }
+  },
+  "evidence": [
+   "writes r3+12032 without dirty bit",
+   "runtime: race_all total=13653 max/frame=41 frames=1611",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888D7680",
+  "name": "D3DDevice_InsertFence",
+  "tier": "B",
+  "class": "sync",
+  "arity": 7,
+  "ninsn": 219,
+  "callers_count": 1,
+  "callers_sample": [
+   "888103C0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 901,
+    "max_per_frame": 1,
+    "frames": 901
+   }
+  },
+  "evidence": [
+   "emits EVENT_WRITE[1]",
+   "runtime: race_all total=901 max/frame=1 frames=901",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888D79F0",
+  "name": "D3DDevice_SetState_off12896",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 137,
+  "callers_count": 1,
+  "callers_sample": [
+   "88224BB0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,8) and writes device+12896",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D7CE0",
+  "name": "D3D_Set_888D7CE0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 8,
+  "ninsn": 302,
+  "callers_count": 1,
+  "callers_sample": [
+   "88810460"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 901,
+    "max_per_frame": 1,
+    "frames": 901
+   }
+  },
+  "evidence": [
+   "writes r3+0,r3+4,r3+8 without dirty bit",
+   "runtime: race_all total=901 max/frame=1 frames=901",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888D8198",
+  "name": "D3DDevice_SetState_off0",
+  "tier": "B",
+  "class": "state",
+  "arity": 1,
+  "ninsn": 164,
+  "callers_count": 1,
+  "callers_sample": [
+   "88224DC8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,128;ori r11,r11,8) and writes device+0,device+4,device+8",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D8798",
+  "name": "D3D_888D8798",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 26,
+  "callers_count": 1,
+  "callers_sample": [
+   "88936518"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "26 instr, 2 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D8998",
+  "name": "D3D_888D8998",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 59,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864D048"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 2,
+    "max_per_frame": 2,
+    "frames": 1
+   }
+  },
+  "evidence": [
+   "59 instr, 2 arg(s)",
+   "runtime: race_all total=2 max/frame=2 frames=1",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888D9950",
+  "name": "D3D_888D9950",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 5,
+  "ninsn": 19,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E9190"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 526,
+    "max_per_frame": 1,
+    "frames": 526
+   }
+  },
+  "evidence": [
+   "19 instr, 5 arg(s)",
+   "runtime: race_all total=526 max/frame=1 frames=526",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888DB8B0",
+  "name": "D3D_Set_888DB8B0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 2,
+  "ninsn": 14,
+  "callers_count": 1,
+  "callers_sample": [
+   "88800E00",
+   "888DD380"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1639,
+    "max_per_frame": 294,
+    "frames": 36
+   }
+  },
+  "evidence": [
+   "writes r3+0,r3+4,r3+8 without dirty bit",
+   "body identical to {'candidates': ['822C9208'], 'ninstr': 14, 'title': 'hydroth",
+   "runtime: race_all total=1639 max/frame=294 frames=36",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DBC90",
+  "name": "D3D_888DBC90",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 2,
+  "ninsn": 59,
+  "callers_count": 1,
+  "callers_sample": [
+   "88806BD0",
+   "888DBD80"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 79,
+    "max_per_frame": 7,
+    "frames": 28
+   }
+  },
+  "evidence": [
+   "59 instr, 2 arg(s)",
+   "body identical to {'candidates': ['822C98C0'], 'ninstr': 59, 'title': 'hydroth",
+   "runtime: race_all total=79 max/frame=7 frames=28",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DBF10",
+  "name": "D3D_Get_888DBF10",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 0,
+  "ninsn": 1,
+  "callers_count": 1,
+  "callers_sample": [
+   "889E3B40"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 1 instr, 0 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DBF18",
+  "name": "D3D_Get_888DBF18",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 2,
+  "ninsn": 4,
+  "callers_count": 1,
+  "callers_sample": [
+   "8892E008"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 107,
+    "max_per_frame": 14,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 4 instr, 2 arg(s), no stores",
+   "runtime: race_all total=107 max/frame=14 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DCCF8",
+  "name": "D3D_Get_888DCCF8",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 6,
+  "callers_count": 1,
+  "callers_sample": [
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 644,
+    "max_per_frame": 80,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 6 instr, 1 arg(s), no stores",
+   "runtime: race_all total=644 max/frame=80 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DCD58",
+  "name": "D3D_Get_888DCD58",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 1,
+  "callers_sample": [
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 644,
+    "max_per_frame": 80,
+    "frames": 12
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=644 max/frame=80 frames=12",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888DD2F0",
+  "name": "D3D_888DD2F0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 3,
+  "ninsn": 22,
+  "callers_count": 1,
+  "callers_sample": [
+   "887FE018"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "22 instr, 3 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888DD348",
+  "name": "D3D_888DD348",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 3,
+  "ninsn": 13,
+  "callers_count": 1,
+  "callers_sample": [
+   "88800E00"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1318,
+    "max_per_frame": 294,
+    "frames": 22
+   }
+  },
+  "evidence": [
+   "13 instr, 3 arg(s)",
+   "runtime: race_all total=1318 max/frame=294 frames=22",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DD470",
+  "name": "D3D_888DD470",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 3,
+  "ninsn": 16,
+  "callers_count": 1,
+  "callers_sample": [
+   "88800E00"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1314,
+    "max_per_frame": 293,
+    "frames": 22
+   }
+  },
+  "evidence": [
+   "16 instr, 3 arg(s)",
+   "runtime: race_all total=1314 max/frame=293 frames=22",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DD4B0",
+  "name": "D3D_888DD4B0",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 2,
+  "ninsn": 62,
+  "callers_count": 1,
+  "callers_sample": [
+   "88800E00",
+   "888DD5A8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1330,
+    "max_per_frame": 293,
+    "frames": 26
+   }
+  },
+  "evidence": [
+   "62 instr, 2 arg(s)",
+   "body identical to {'candidates': ['822C94F0'], 'ninstr': 62, 'title': 'hydroth",
+   "runtime: race_all total=1330 max/frame=293 frames=26",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888DE7E0",
+  "name": "D3D_Get_888DE7E0",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 1,
+  "callers_sample": [
+   "889FB148"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "tiny accessor, 5 instr, 1 arg(s), no stores",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E0A58",
+  "name": "D3D_888E0A58",
+  "tier": "B",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 5,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864F0A0",
+   "888D8798"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 3,
+    "max_per_frame": 1,
+    "frames": 3
+   }
+  },
+  "evidence": [
+   "5 instr, 1 arg(s)",
+   "runtime: race_all total=3 max/frame=1 frames=3",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E0DE8",
+  "name": "D3D_888E0DE8",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 8,
+  "ninsn": 63,
+  "callers_count": 1,
+  "callers_sample": [
+   "885EB208"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 515,
+    "max_per_frame": 1,
+    "frames": 515
+   }
+  },
+  "evidence": [
+   "63 instr, 8 arg(s)",
+   "runtime: race_all total=515 max/frame=1 frames=515",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888E11E0",
+  "name": "D3DDevice_BlockUntilIdle",
+  "tier": "B",
+  "class": "sync",
+  "arity": 6,
+  "ninsn": 216,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E18C0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 515,
+    "max_per_frame": 1,
+    "frames": 515
+   }
+  },
+  "evidence": [
+   "emits WAIT_REG_MEM",
+   "runtime: race_all total=515 max/frame=1 frames=515",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888E4460",
+  "name": "D3DDevice_DrawIndexedVerticesUP",
+  "tier": "A",
+  "class": "draw",
+  "arity": 8,
+  "ninsn": 326,
+  "callers_count": 1,
+  "callers_sample": [
+   "887FCF38",
+   "888E4978"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 44702,
+    "max_per_frame": 230,
+    "frames": 1563
+   }
+  },
+  "evidence": [
+   "emits DRAW_INDX[4]+P",
+   "runtime: race_all total=44702 max/frame=230 frames=1563",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E4978",
+  "name": "D3D_888E4978",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 8,
+  "ninsn": 40,
+  "callers_count": 1,
+  "callers_sample": [
+   "8864F338"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 44668,
+    "max_per_frame": 230,
+    "frames": 1562
+   }
+  },
+  "evidence": [
+   "40 instr, 8 arg(s)",
+   "runtime: race_all total=44668 max/frame=230 frames=1562",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E6C88",
+  "name": "D3D_888E6C88",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 1,
+  "ninsn": 30,
+  "callers_count": 1,
+  "callers_sample": [
+   "887FD2E0",
+   "888E17A0",
+   "888E6D58",
+   "888F2D90"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "30 instr, 1 arg(s)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E7948",
+  "name": "D3D_Set_888E7948",
+  "tier": "B",
+  "class": "setter",
+  "arity": 2,
+  "ninsn": 25,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E1938"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 130048,
+    "max_per_frame": 256,
+    "frames": 508
+   }
+  },
+  "evidence": [
+   "writes r3+0,r3+4,r3+8 without dirty bit",
+   "runtime: race_all total=130048 max/frame=256 frames=508",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E79B0",
+  "name": "D3D_888E79B0",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 1,
+  "ninsn": 7,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E1938"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 130048,
+    "max_per_frame": 256,
+    "frames": 508
+   }
+  },
+  "evidence": [
+   "7 instr, 1 arg(s)",
+   "runtime: race_all total=130048 max/frame=256 frames=508",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E79D0",
+  "name": "D3D_Set_888E79D0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 3,
+  "ninsn": 65,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E1938"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 130048,
+    "max_per_frame": 256,
+    "frames": 508
+   }
+  },
+  "evidence": [
+   "writes r3+4,r3+8 without dirty bit",
+   "runtime: race_all total=130048 max/frame=256 frames=508",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E7AD8",
+  "name": "D3DDevice_DrawIndexedVerticesUP",
+  "tier": "A",
+  "class": "draw",
+  "arity": 6,
+  "ninsn": 119,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E1938"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 6736,
+    "max_per_frame": 75,
+    "frames": 508
+   }
+  },
+  "evidence": [
+   "emits DRAW_INDX[4]",
+   "runtime: race_all total=6736 max/frame=75 frames=508",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888E7CB8",
+  "name": "D3DResource_Release",
+  "tier": "A",
+  "class": "lifetime",
+  "arity": 1,
+  "ninsn": 70,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E1938"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "lwarx/stwcx refcount",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888E7DD0",
+  "name": "D3DResource_Release",
+  "tier": "A",
+  "class": "lifetime",
+  "arity": 2,
+  "ninsn": 80,
+  "callers_count": 1,
+  "callers_sample": [
+   "885E1938"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 129792,
+    "max_per_frame": 256,
+    "frames": 507
+   }
+  },
+  "evidence": [
+   "lwarx/stwcx refcount",
+   "runtime: race_all total=129792 max/frame=256 frames=507",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E7F10",
+  "name": "D3D_888E7F10",
+  "tier": "B",
+  "class": "unknown",
+  "arity": 3,
+  "ninsn": 22,
+  "callers_count": 1,
+  "callers_sample": [
+   "885EB290"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 130304,
+    "max_per_frame": 256,
+    "frames": 509
+   }
+  },
+  "evidence": [
+   "22 instr, 3 arg(s)",
+   "runtime: race_all total=130304 max/frame=256 frames=509",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888E91F0",
+  "name": "D3DDevice_SetState_off0",
+  "tier": "B",
+  "class": "state",
+  "arity": 2,
+  "ninsn": 108,
+  "callers_count": 1,
+  "callers_sample": [
+   "885EB290"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 509,
+    "max_per_frame": 1,
+    "frames": 509
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,2) and writes device+0,device+4,device+8",
+   "runtime: race_all total=509 max/frame=1 frames=509",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888E93A0",
+  "name": "D3D_Set_888E93A0",
+  "tier": "B",
+  "class": "setter",
+  "arity": 1,
+  "ninsn": 49,
+  "callers_count": 1,
+  "callers_sample": [
+   "885EB290"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 509,
+    "max_per_frame": 1,
+    "frames": 509
+   }
+  },
+  "evidence": [
+   "writes r3+10940 without dirty bit",
+   "runtime: race_all total=509 max/frame=1 frames=509",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888E9468",
+  "name": "D3DDevice_InsertFence",
+  "tier": "B",
+  "class": "sync",
+  "arity": 4,
+  "ninsn": 253,
+  "callers_count": 1,
+  "callers_sample": [
+   "885EB290"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 130304,
+    "max_per_frame": 256,
+    "frames": 509
+   }
+  },
+  "evidence": [
+   "emits EVENT_WRITE[1],EVENT_WRITE_EXT[2]",
+   "runtime: race_all total=130304 max/frame=256 frames=509",
+   "cadence: per-draw"
+  ]
+ },
+ {
+  "va": "0x888EAC80",
+  "name": "D3DDevice_SetState_off4",
+  "tier": "B",
+  "class": "state",
+  "arity": 3,
+  "ninsn": 58,
+  "callers_count": 1,
+  "callers_sample": [
+   "888069D0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (oris r11,r11,49158;ori r11,r11,11520) and writes device+4",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EB148",
+  "name": "D3D_Set_888EB148",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 2,
+  "callers_count": 1,
+  "callers_sample": [
+   "88805BB0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+16752 without dirty bit",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EB150",
+  "name": "D3D_Set_888EB150",
+  "tier": "C",
+  "class": "load-time",
+  "arity": 2,
+  "ninsn": 2,
+  "callers_count": 1,
+  "callers_sample": [
+   "88805BB0"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes r3+16748 without dirty bit",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EB580",
+  "name": "D3D_Get_888EB580",
+  "tier": "B",
+  "class": "accessor",
+  "arity": 0,
+  "ninsn": 2,
+  "callers_count": 1,
+  "callers_sample": [
+   "88816FB0",
+   "888E8A28"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 1858,
+    "max_per_frame": 1,
+    "frames": 1858
+   }
+  },
+  "evidence": [
+   "tiny accessor, 2 instr, 0 arg(s), no stores",
+   "runtime: race_all total=1858 max/frame=1 frames=1858",
+   "cadence: per-frame"
+  ]
+ },
+ {
+  "va": "0x888EBBE8",
+  "name": "D3DDevice_SetState",
+  "tier": "C",
+  "class": "state",
+  "arity": 1,
+  "ninsn": 44,
+  "callers_count": 1,
+  "callers_sample": [
+   "88815130"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "ORs dirty bit (ori r11,r11,9) and writes device",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EC2F8",
+  "name": "D3DDevice_BlockUntilIdle",
+  "tier": "B",
+  "class": "sync",
+  "arity": 7,
+  "ninsn": 341,
+  "callers_count": 1,
+  "callers_sample": [
+   "88815130"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "emits WAIT_REG_MEM",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EC850",
+  "name": "D3DDevice_SetShaderConstantF",
+  "tier": "B",
+  "class": "constants",
+  "arity": 1,
+  "ninsn": 246,
+  "callers_count": 1,
+  "callers_sample": [
+   "88815130"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "writes PA_SC_LINE_CNTL(0x2300),PA_SU_POINT_SIZE(0x2280),PA_SU_POLY_OFFSET_FRONT_SCALE(0x2380),RB_DEPTHCONTROL(0x2200)",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888ECC28",
+  "name": "D3DDevice_Tiling",
+  "tier": "B",
+  "class": "tiling",
+  "arity": 3,
+  "ninsn": 389,
+  "callers_count": 1,
+  "callers_sample": [
+   "888050E8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "emits SET_BIN_MASK_LO[1],SET_BIN_MASK_HI[1],SET_BIN_SELECT_HI[1]",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ },
+ {
+  "va": "0x888EDA10",
+  "name": "D3DDevice_Tiling",
+  "tier": "B",
+  "class": "tiling",
+  "arity": 8,
+  "ninsn": 961,
+  "callers_count": 1,
+  "callers_sample": [
+   "88806648",
+   "888D7CE0",
+   "888F3210"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 64940,
+    "max_per_frame": 80,
+    "frames": 1855
+   }
+  },
+  "evidence": [
+   "emits SET_BIN_MASK_LO[1],SET_BIN_MASK_HI[1]",
+   "runtime: race_all total=64940 max/frame=80 frames=1855",
+   "cadence: per-pass"
+  ]
+ },
+ {
+  "va": "0x888F0CC0",
+  "name": "D3DResource_Release",
+  "tier": "A",
+  "class": "lifetime",
+  "arity": 5,
+  "ninsn": 94,
+  "callers_count": 1,
+  "callers_sample": [
+   "88806AE8"
+  ],
+  "runtime": {
+   "race_all": {
+    "total": 0,
+    "max_per_frame": 0,
+    "frames": 0
+   }
+  },
+  "evidence": [
+   "lwarx/stwcx refcount",
+   "runtime: race_all total=0 max/frame=0 frames=0",
+   "cadence: load-time"
+  ]
+ }
+]

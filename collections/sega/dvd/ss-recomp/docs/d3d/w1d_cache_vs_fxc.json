@@ -1,0 +1,8942 @@
+[
+{
+"hash": "1E6883FCCDE1F688",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A4A965C189287B99",
+"type": 1,
+"dwords": 9,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.56,
+"fxc_dwords": 9
+},
+{
+"hash": "FE372503800FBC9D",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "90E6E5694A57B612",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 15
+},
+{
+"hash": "D19182BE0951A742",
+"type": 0,
+"dwords": 39,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E5529982266D5A38",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.47,
+"fxc_dwords": 15
+},
+{
+"hash": "103B6AAEE41C86E1",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.37,
+"fxc_dwords": 27
+},
+{
+"hash": "76922758447F37F1",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2D12E1F6FA78C277",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F7919E8E7BE5CBC9",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 3,
+"class": "variant_samelen",
+"fxc": "RESIDENT_03880_90AFD034.fxc",
+"sim": 0.62,
+"fxc_dwords": 21
+},
+{
+"hash": "D437CDDFB1D56DD6",
+"type": 0,
+"dwords": 39,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2DA1A34264D18533",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.2,
+"fxc_dwords": 15
+},
+{
+"hash": "3A92D78FE55C7B83",
+"type": 1,
+"dwords": 9,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.56,
+"fxc_dwords": 9
+},
+{
+"hash": "D3207A360ED87E80",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.44,
+"fxc_dwords": 18
+},
+{
+"hash": "7156CE05C6365E51",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.58,
+"fxc_dwords": 24
+},
+{
+"hash": "F62C0DC9C7803633",
+"type": 1,
+"dwords": 36,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "54AAA6882BF85C23",
+"type": 1,
+"dwords": 9,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.56,
+"fxc_dwords": 9
+},
+{
+"hash": "30BF15520BD8E236",
+"type": 0,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00213_07CE7756.fxc",
+"sim": 0.54,
+"fxc_dwords": 48
+},
+{
+"hash": "ADA8BFBB3BE060EF",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B6C9863F710683EC",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F6E50169510E6C8B",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.33,
+"fxc_dwords": 18
+},
+{
+"hash": "90186D80A66FBCCF",
+"type": 1,
+"dwords": 207,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E2C0370ECABD1497",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.92,
+"fxc_dwords": 24
+},
+{
+"hash": "3152EAAA847DC153",
+"type": 0,
+"dwords": 30,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.93,
+"fxc_dwords": 30
+},
+{
+"hash": "2DCBB5641844DA1D",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C7293F406480E208",
+"type": 0,
+"dwords": 99,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.1,
+"fxc_dwords": 87
+},
+{
+"hash": "9CAD2CF62A0BBE90",
+"type": 1,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B2E1552167F5932C",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "95C518F98A01BA0B",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 15
+},
+{
+"hash": "BE6DF2FE407950C8",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "918C2B7E6CA33E26",
+"type": 1,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EA167A1CB0B4AEE6",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "DB957F773EDEA820",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 126
+},
+{
+"hash": "A0017316D9A9A79D",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "AA49A67A359E8694",
+"type": 1,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "70D1B94B99722258",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "850C7363860D0992",
+"type": 1,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8F14FA4F71CF0F40",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.81,
+"fxc_dwords": 27
+},
+{
+"hash": "475CBD972EF35E1E",
+"type": 1,
+"dwords": 165,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 165
+},
+{
+"hash": "F6069BC07C06365F",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "9C3A2CB30B9CCF9C",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E5D85B2CBE76729D",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "8EC78203510A7584",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 21
+},
+{
+"hash": "40A88A0792ADC34F",
+"type": 0,
+"dwords": 30,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.83,
+"fxc_dwords": 30
+},
+{
+"hash": "DA3CE8243C3410AB",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5FB22519852B1241",
+"type": 0,
+"dwords": 480,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "26C13D973C13A528",
+"type": 1,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BA7272ECAABC252D",
+"type": 0,
+"dwords": 480,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4F66C96D487D39BD",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8CF0EFEECA8224B9",
+"type": 0,
+"dwords": 444,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F75B1ABF153DCF4E",
+"type": 1,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F7D16F3D3E50D44D",
+"type": 0,
+"dwords": 480,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "53C58EA1346F6607",
+"type": 1,
+"dwords": 42,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "855C42D092B9D334",
+"type": 0,
+"dwords": 141,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3A21A421C1E5284B",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.47,
+"fxc_dwords": 15
+},
+{
+"hash": "8A6EE45F4981D005",
+"type": 1,
+"dwords": 36,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.33,
+"fxc_dwords": 15
+},
+{
+"hash": "C271FD2400D839E5",
+"type": 0,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "167FAAF71F6C3783",
+"type": 1,
+"dwords": 39,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C942C15C412CF503",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "2A78806C7971C5C4",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 15
+},
+{
+"hash": "FC4B71B0ED79BAA4",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "440845F8FAB54A61",
+"type": 1,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C8302F90258AC60E",
+"type": 0,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "02D85E23DBC0B1FF",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00137_C3DF1B5C.fxc",
+"sim": 0.21,
+"fxc_dwords": 48
+},
+{
+"hash": "E9A550CDD98FBA0A",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7F1DDBBDA6F56E03",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00137_C3DF1B5C.fxc",
+"sim": 0.21,
+"fxc_dwords": 48
+},
+{
+"hash": "957DE776E6742641",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1D1D47BED32F8BAE",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00215_07F4B4D0.fxc",
+"sim": 0.18,
+"fxc_dwords": 33
+},
+{
+"hash": "1E786EA047AEB18F",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.27,
+"fxc_dwords": 15
+},
+{
+"hash": "542AE23DDF069CD3",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1908EC4E5AAFF5CA",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.44,
+"fxc_dwords": 18
+},
+{
+"hash": "A1720C447C56E174",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1406815F987652C2",
+"type": 1,
+"dwords": 12,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AFAA3A2F1C8BB8A9",
+"type": 0,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00215_07F4B4D0.fxc",
+"sim": 0.18,
+"fxc_dwords": 33
+},
+{
+"hash": "3E91969D31B435FA",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_03880_90AFD034.fxc",
+"sim": 1.0,
+"fxc_dwords": 21
+},
+{
+"hash": "5AD2BAE722F3A0C4",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00073_3E758132.fxc",
+"sim": 0.16,
+"fxc_dwords": 45
+},
+{
+"hash": "64C573C3F62AEBBC",
+"type": 1,
+"dwords": 30,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1DCB374EB4D0233B",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.16,
+"fxc_dwords": 81
+},
+{
+"hash": "4938461BF27A8903",
+"type": 1,
+"dwords": 177,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F9F2BD199B1F6510",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.1,
+"fxc_dwords": 60
+},
+{
+"hash": "873A074199E2BFD6",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EECEA913376DC2A4",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.35,
+"fxc_dwords": 81
+},
+{
+"hash": "08C8F37F7AAA994B",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D8D64BA0E4432870",
+"type": 0,
+"dwords": 165,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "48DAA538A77BE3E8",
+"type": 1,
+"dwords": 180,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0EAC4DDD76BC9F35",
+"type": 0,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1F6FE4B5CEF7B40A",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B496B86F4D840929",
+"type": 0,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B090E4FA2DFB83CC",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "38D0B825DBF66103",
+"type": 0,
+"dwords": 174,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "38861290CF074F3C",
+"type": 1,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2DBCF3F060FDE22D",
+"type": 0,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E149F7E594C3E8BC",
+"type": 1,
+"dwords": 138,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3EEEEF1559B294E6",
+"type": 0,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B15D04B038DAF5D0",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F330A51247EFAA16",
+"type": 0,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5194DF203BA7D0B5",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7B36425C13068056",
+"type": 0,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F361BF6297E69E93",
+"type": 1,
+"dwords": 159,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4D573CC19AB043AF",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "8AE31D2786CFD735",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9A3914BE1A8CC990",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "863591E1FC138338",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6B1443A52AE5FCD2",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "B00F989603D307E4",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "00E5CAC941B2A8CF",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04371_A21929D8.fxc",
+"sim": 0.26,
+"fxc_dwords": 84
+},
+{
+"hash": "2689F719009D8E7B",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A5C5373A0B0EEBAB",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "77EFAB005CA66EA8",
+"type": 1,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3F772ED08D569DA4",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "B5C7B68101465AE1",
+"type": 1,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7E24F71F8FB63395",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2ADFCE4095F44529",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2FF969262B8D95E0",
+"type": 0,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_03114_74D0B818.fxc",
+"sim": 0.23,
+"fxc_dwords": 78
+},
+{
+"hash": "936EB96FB4C0D7DC",
+"type": 1,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5F4A5F145CFE9B7D",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "D0D1D9DAFF139BF0",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "335A841344D6AF7E",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DC69178B79DA236D",
+"type": 1,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EAE5C8A4D125B131",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "BA9D06F6BB183D64",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7994A79C80B3048D",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "74CC520589C92069",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "674D944388643622",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C0E81260D900F59E",
+"type": 1,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C44FAC485967E4A2",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "60446D73D0B56B77",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6D4A86D814C51228",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "79D73BCB12840CEA",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F9874F2446DED364",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.24,
+"fxc_dwords": 84
+},
+{
+"hash": "1DDE16E976CF066F",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0D42DE33D046591E",
+"type": 0,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.27,
+"fxc_dwords": 93
+},
+{
+"hash": "273279C89349531C",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C552A3EF7AA5F6BA",
+"type": 0,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A93F6CA0017F9927",
+"type": 1,
+"dwords": 180,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E7DDAE84F49BDACC",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "81B0E7B222EDE97B",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "007ABB71CA7FDA5B",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "FBE387C108683B1B",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DE62A785EF8F85B0",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "AEE5B237B66C68C9",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0300FD161D620DD5",
+"type": 0,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "674806AEACB0628D",
+"type": 1,
+"dwords": 213,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F6E83F1237AFCE54",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.23,
+"fxc_dwords": 84
+},
+{
+"hash": "D024E44B2DE1EB63",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9EB816F0CFE71DBD",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "01ADAA674BFD5351",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B84F213B792FD813",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "1F15463321CCE0F7",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9066756C33DC1B7E",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.17,
+"fxc_dwords": 87
+},
+{
+"hash": "D9C6D3F2CDB9AD6D",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "77C3B4119F243B8E",
+"type": 0,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.19,
+"fxc_dwords": 81
+},
+{
+"hash": "C2E41082E1729B37",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "10D13B864739C54C",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CD30B263902C942B",
+"type": 1,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A4C511E530B239A6",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "151C1A6D80E843BF",
+"type": 1,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "35B7C81B5738F12B",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A3F1399F47956A0E",
+"type": 1,
+"dwords": 156,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DD5EAFBD5330808D",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.17,
+"fxc_dwords": 87
+},
+{
+"hash": "DE9DFFB207B73FD9",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "09B975296F4F8F61",
+"type": 0,
+"dwords": 141,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4772BA3801A5E6CD",
+"type": 1,
+"dwords": 174,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "422D3E77F9DA609A",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "FE7FBAD262ADFD4E",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "931C49674E3F5BA7",
+"type": 0,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.17,
+"fxc_dwords": 87
+},
+{
+"hash": "08BC254F8083FEAD",
+"type": 1,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BF5D19E76DD0D1AD",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "0F26D9A8E03F8BB8",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "97C7CA4ACAD92461",
+"type": 0,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6BABC6B4DAD98B62",
+"type": 1,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DC06309256F501D4",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04371_A21929D8.fxc",
+"sim": 0.19,
+"fxc_dwords": 84
+},
+{
+"hash": "8AC85DF59C680AF8",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "609E094F9D25F7B9",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.19,
+"fxc_dwords": 93
+},
+{
+"hash": "9B11396126CF67F8",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "626174581077ABA2",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.23,
+"fxc_dwords": 84
+},
+{
+"hash": "EDE5796C530F4115",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7D3CC14FB0D48112",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.89,
+"fxc_dwords": 81
+},
+{
+"hash": "0C688A64FEA2B9B4",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4BF6178F03452E84",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "NEM_GRAVEYARD_00002_0210D91B.fxc",
+"sim": 0.89,
+"fxc_dwords": 81
+},
+{
+"hash": "F7BC78C1F19BC210",
+"type": 1,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EC884AA46AE0B7DA",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "NEM_GRAVEYARD_00002_0210D91B.fxc",
+"sim": 0.88,
+"fxc_dwords": 72
+},
+{
+"hash": "DA408AC8E130AC14",
+"type": 1,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E47FF67C7FC4492A",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.88,
+"fxc_dwords": 72
+},
+{
+"hash": "99D7935C1C774B95",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "955941190EFA8B1F",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "42207E06A7780999",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8016E5FFD319ED31",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "46C3FB5D1078C8E3",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "79E04D13ECB27E37",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "A43124F92797CB88",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E3998E695593A305",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "CD8C45AD4C91DDBE",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "31236F1D16AD5E69",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "4CECCC5D5CE1A175",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F0C2D689438A4E49",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "C5DB9252821CAD47",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E2A160CD2400C04E",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "NEM_GRAVEYARD_00002_0210D91B.fxc",
+"sim": 0.89,
+"fxc_dwords": 81
+},
+{
+"hash": "480D0544A42D5112",
+"type": 1,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "61E00CDA26F89145",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.35,
+"fxc_dwords": 81
+},
+{
+"hash": "340CC4663D393F74",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DAFE4C9C39FBA187",
+"type": 0,
+"dwords": 234,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "15F5BEC266A86D29",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B0596431C7F6D932",
+"type": 0,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B04A999F9DCAE7D2",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6022C46628725F45",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00073_3E758132.fxc",
+"sim": 0.84,
+"fxc_dwords": 45
+},
+{
+"hash": "E7F99804FAA03532",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.47,
+"fxc_dwords": 15
+},
+{
+"hash": "6CC66EBE8AE39AF8",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "B61DDAF5DDE3F864",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00346_0C9CCCD0.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "DE453670B36507A4",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00497_12AC5DEA.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "98568778EEA297E4",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00315_0B5CEAAA.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "55324C314873A845",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "7842C6E9ABC3BFC7",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E6BDD48816495392",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "50F8E03AF730D8E5",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2B027694370ADDFF",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "308F04788A0E74CD",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CA549F5F3179191B",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DCB16D1C8579991E",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "AF4B455D0147F509",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "68503090F5FC2F2A",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "A1A0FA126DC93868",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "E043828E1F7FFF2B",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "87C8C1340DBEFF3D",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 1.0,
+"fxc_dwords": 15
+},
+{
+"hash": "A9A852CB30C8A9FC",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "F64067B9A7207AA3",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "22E8C83BDCD122AA",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "DOCKS_00043_0EC089C1.fxc",
+"sim": 0.84,
+"fxc_dwords": 45
+},
+{
+"hash": "1D65D5C2AD725F91",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "DOCKS_00043_0EC089C1.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "F1E4050CB490078F",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "DOWNTOWNPOWERPLAYS_02308_D9791DBB.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "4E0437C346CB8942",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "DOWNTOWNPOWERPLAYS_02308_D9791DBB.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "F2F87A99686C29B1",
+"type": 0,
+"dwords": 180,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DA88121AF94941D5",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 1.0,
+"fxc_dwords": 15
+},
+{
+"hash": "26B747C32BD4D102",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.33,
+"fxc_dwords": 18
+},
+{
+"hash": "3ADD883B1105960A",
+"type": 1,
+"dwords": 201,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "654DD82706CCD5EC",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "C7AC5F750ACF6D58",
+"type": 1,
+"dwords": 9,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 9
+},
+{
+"hash": "71BC876DA09F1EBD",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.44,
+"fxc_dwords": 18
+},
+{
+"hash": "360E5E3AC69489EF",
+"type": 1,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5029FA0F23CB933A",
+"type": 0,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.89,
+"fxc_dwords": 18
+},
+{
+"hash": "0D9C4852F0810F5F",
+"type": 1,
+"dwords": 387,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C56E40999550B34E",
+"type": 0,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "95E1448D77A391C8",
+"type": 1,
+"dwords": 39,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.27,
+"fxc_dwords": 15
+},
+{
+"hash": "E4B5F65D2FA9DDC2",
+"type": 0,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C0740195E747B04D",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.24,
+"fxc_dwords": 21
+},
+{
+"hash": "4F39A1A6EAE482CD",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00002_049F8A88.fxc",
+"sim": 0.89,
+"fxc_dwords": 105
+},
+{
+"hash": "31887AF339225DB6",
+"type": 1,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B446BF5EC9B5BE8D",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00230_CBFDF198.fxc",
+"sim": 0.89,
+"fxc_dwords": 105
+},
+{
+"hash": "3BB2C2EC77FD883C",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.24,
+"fxc_dwords": 21
+},
+{
+"hash": "B4D1E07942C6CAFE",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9FD3B901A72AF5A5",
+"type": 1,
+"dwords": 42,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.17,
+"fxc_dwords": 18
+},
+{
+"hash": "A1A54128883F7930",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "214687B170A3B779",
+"type": 1,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3E0F73A9AC24964F",
+"type": 0,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_03114_74D0B818.fxc",
+"sim": 0.24,
+"fxc_dwords": 78
+},
+{
+"hash": "25351025D09F6155",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A6CDA26C683D6A87",
+"type": 0,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "23684EA458BD2AE9",
+"type": 1,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "29AF9D541F82903A",
+"type": 0,
+"dwords": 444,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6CE025BE30410FD6",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.4,
+"fxc_dwords": 15
+},
+{
+"hash": "E1F3E44FF363A751",
+"type": 0,
+"dwords": 480,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "24DC8222AE70E6C0",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F2FCFAA9715BC73B",
+"type": 0,
+"dwords": 477,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4E7F511AD6847355",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8B1B12358AC7A7B5",
+"type": 0,
+"dwords": 420,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "56AA0C1A0D9769B4",
+"type": 1,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2CD819E5916D12C8",
+"type": 0,
+"dwords": 444,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6FB3F9B6EC9D8F16",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3656217D5AF67737",
+"type": 0,
+"dwords": 432,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "33E7B76E60B4B8E3",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.33,
+"fxc_dwords": 15
+},
+{
+"hash": "18D0F4E87797FAF9",
+"type": 0,
+"dwords": 162,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "367EC81ABA52DE8A",
+"type": 1,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E00B336386FC525E",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "E54B7A3FD1088B9A",
+"type": 1,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6863419AF85C699F",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "209753AD648B8FCC",
+"type": 1,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04953_B6A3F7C4.fxc",
+"sim": 0.38,
+"fxc_dwords": 21
+},
+{
+"hash": "169954E6B91C71D1",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "367047BE84D5477A",
+"type": 1,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "57A400B5EFBF7E16",
+"type": 0,
+"dwords": 42,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00112_64C9F9C0.fxc",
+"sim": 0.88,
+"fxc_dwords": 42
+},
+{
+"hash": "F92C4D1AB8AA7F8C",
+"type": 1,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F907AA90D00D59D9",
+"type": 0,
+"dwords": 21,
+"trailing_zero_dwords": 0,
+"class": "variant_padded",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.61,
+"fxc_dwords": 18
+},
+{
+"hash": "3539C1B8F454AD3E",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3651DFCD5F16E244",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0C196A1CFF31937D",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D0D54D58DEACBA0E",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "549A0921FE92CBB9",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2AF03C85EAD4E841",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "EA5CD554F7200F0D",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5F6EB3BC96CE8FC0",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 3,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.44,
+"fxc_dwords": 18
+},
+{
+"hash": "8F28134096224488",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "3FAE4069A97ABC74",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "F10DDBC57F2DD30C",
+"type": 1,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "ACB817D7B15EE17B",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "1FFD1BD5B569C6E6",
+"type": 1,
+"dwords": 165,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A8D92CE4187C0161",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "4059557FA83E5877",
+"type": 1,
+"dwords": 273,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "72E39BB1E1E526E4",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "26796596D963EC5D",
+"type": 1,
+"dwords": 444,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3AB3A47F2BCF76FB",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "4FC062CAF2B4CAB9",
+"type": 1,
+"dwords": 726,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7320402DF07EC130",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "FCBB2E4CA2374C33",
+"type": 1,
+"dwords": 285,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "40A9F6E9DB11898E",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "616C9AAE93A36B0C",
+"type": 1,
+"dwords": 522,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "506C29770F79EDE9",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "BE7C47625ACD1DB0",
+"type": 1,
+"dwords": 333,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "818A3E61E6BC1ADA",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "EADC027CDEB75F2C",
+"type": 1,
+"dwords": 615,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D5B3C830C1DA460F",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "52EABE08C6DE511B",
+"type": 1,
+"dwords": 612,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E1BAFB96DF79B77C",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "9F792F06A827BE70",
+"type": 1,
+"dwords": 1053,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B4C83FD50374ECAE",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "EB444D63DA9F6048",
+"type": 1,
+"dwords": 297,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AB148B771D10B1A0",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "5770E657B75E2457",
+"type": 1,
+"dwords": 564,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "55193D81BD7442B9",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "88956E72A32ADFA0",
+"type": 1,
+"dwords": 348,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "ADD3D277B8227C94",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "35F25511DE6ED46B",
+"type": 1,
+"dwords": 639,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1B57D48585210BFD",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "62250B6A58312029",
+"type": 1,
+"dwords": 624,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "24BF7AED9C909659",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "4A689F9CCA740CAC",
+"type": 1,
+"dwords": 1104,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CEF7D6B15406D2DD",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "DFB1145FE2CA8057",
+"type": 1,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0207BD2374180B00",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "84CD536F05FD89A3",
+"type": 1,
+"dwords": 342,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A0688BAFDCA497B7",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "58E0F082C0C06D8A",
+"type": 1,
+"dwords": 612,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E3217F6162BFB2CA",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D35F610E5B66ABAC",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "268ABAA4D64DBD97",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8927141E12FDEFA6",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "2A04D2D1E73DE0FB",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "848B5B0CD5F20C1B",
+"type": 1,
+"dwords": 750,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "77C5C07641D58387",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.31,
+"fxc_dwords": 81
+},
+{
+"hash": "715343AD5FB5ADB0",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "12D9CE4B02B148FA",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "F2D70174AEDB000A",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "46DD9943BAF95095",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5C42CEF1DA9A657C",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "21F82B98C30863AA",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00038_01F287E6.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "EA59DD8895762516",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00038_01F287E6.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "A0228F0954AC1C9D",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00038_01F287E6.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "DE915221E295DC07",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4A936BA57A54C3D3",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "409D78A621069039",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.21,
+"fxc_dwords": 87
+},
+{
+"hash": "6904AFDCB4136ED8",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "64BA9E41AE2BB3B3",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "F343C0FAE224CF10",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1BB81BAB755AD384",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "24325117D8B8454A",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8E854467D61A7A47",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "A27A02A109368061",
+"type": 1,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CC5612FAC3F2A28F",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "5CA547F00A7BE9D1",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EDF8EB98C684A574",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "74C55B31FB7A031B",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2EB5A8008A1C61E5",
+"type": 0,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.26,
+"fxc_dwords": 87
+},
+{
+"hash": "A100732C99D8DFDF",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9A5DB7A1D9BCF0DD",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.24,
+"fxc_dwords": 84
+},
+{
+"hash": "645F8E1C7CED8212",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "91F48A729DF00EA3",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "5E6DCD1E1125BF2F",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8FAFF2359CC463A6",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2EFCF34F3F2CF95B",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0871082C489E42B3",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "38FA9BA29B762F94",
+"type": 1,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AEA4C0369A1946B4",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "1F19278A2D8C1AEA",
+"type": 1,
+"dwords": 240,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "19878978E0C2C80A",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "EE49D7EA1DF6C4FB",
+"type": 1,
+"dwords": 444,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D56AFDD12E82ED53",
+"type": 0,
+"dwords": 39,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.41,
+"fxc_dwords": 39
+},
+{
+"hash": "9776A728C0C7961E",
+"type": 1,
+"dwords": 36,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "FAA033895C5DC0CC",
+"type": 0,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9FA3D043B51F0276",
+"type": 1,
+"dwords": 252,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EC5D773D3AF18167",
+"type": 0,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E3C2C2A9037C8F02",
+"type": 1,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0A984389CACBDC6E",
+"type": 0,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CEF6CF31CB1B3A20",
+"type": 1,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2EDDD103E7025F81",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.48,
+"fxc_dwords": 66
+},
+{
+"hash": "9E00397D215232DE",
+"type": 1,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A820F07C8758E1E3",
+"type": 0,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.25,
+"fxc_dwords": 93
+},
+{
+"hash": "A5E9129EEA360521",
+"type": 1,
+"dwords": 186,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "32F7AE0CA3957594",
+"type": 0,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3E71435B149B9319",
+"type": 1,
+"dwords": 216,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "66E25450E2E2CE7B",
+"type": 0,
+"dwords": 141,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4567794EF9CB97A8",
+"type": 1,
+"dwords": 177,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9F0E490421670962",
+"type": 0,
+"dwords": 174,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "90513130D774C417",
+"type": 1,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DC3C52A7ABEF6317",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.5,
+"fxc_dwords": 66
+},
+{
+"hash": "D0DC4A40DF696FBC",
+"type": 1,
+"dwords": 177,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1EB6146AB80B761D",
+"type": 0,
+"dwords": 180,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "40C0AEB05B99ED46",
+"type": 1,
+"dwords": 225,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DA1112B7F2917513",
+"type": 0,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3CFA11A30E4A848E",
+"type": 1,
+"dwords": 258,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C993A0EC1C5E8C02",
+"type": 0,
+"dwords": 183,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3DF494220E56A6B5",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_00035_01E839F6.fxc",
+"sim": 1.0,
+"fxc_dwords": 21
+},
+{
+"hash": "DAF8D71AA512091C",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.21,
+"fxc_dwords": 87
+},
+{
+"hash": "6D798FCDB3B8EECE",
+"type": 1,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D5EF71F620283F21",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "17E7CC169AC9C39D",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8692CCBDE952ADA0",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "65F153BB8CCC3664",
+"type": 1,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A62BF394FE345EFF",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "77B98FF0E46543BF",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E7D1DA576766E7D1",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "BA88CEEE55183D68",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "97375E0C11D28113",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "75FE33A31AA26520",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "06A93361A4346145",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "1DFDE132A2D54C00",
+"type": 1,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B7279B674224A6E7",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "441DCE405B61050A",
+"type": 1,
+"dwords": 138,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DC5EACA1343E1526",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "8FE8AB4852082243",
+"type": 1,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A45FF940E319E3CF",
+"type": 0,
+"dwords": 180,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E6B87A59A98776DB",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1A457421F4AE6A24",
+"type": 0,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.25,
+"fxc_dwords": 87
+},
+{
+"hash": "537AAD52131D827A",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E0044502E3B7216F",
+"type": 0,
+"dwords": 180,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4791AE7C0A9EF72A",
+"type": 1,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D427D678119B785A",
+"type": 0,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.79,
+"fxc_dwords": 24
+},
+{
+"hash": "7292569B026E8447",
+"type": 1,
+"dwords": 39,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9AE8137C6BECE59B",
+"type": 0,
+"dwords": 168,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D897E32AC3F8AA7C",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.47,
+"fxc_dwords": 15
+},
+{
+"hash": "F27962F48D3D8DA3",
+"type": 0,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7E0422D8D6E83871",
+"type": 1,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "49EC3FC202BA3D30",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01745_401BAB08.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "6152451BB975B93A",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.33,
+"fxc_dwords": 57
+},
+{
+"hash": "7B8DAE282A5B74F1",
+"type": 1,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B6AF7BC729E66EC7",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "B81C05CBB25B47F8",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A954814252874624",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "3BF5B156B6F2BA35",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "021F36CAD5869AC1",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "1A6289F5DD10119D",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "66471C0D1D149D9C",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00556_155BA38A.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "F501E090854134F8",
+"type": 0,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1750150D1E7BF6D3",
+"type": 1,
+"dwords": 183,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B5E8BF6AA973BD47",
+"type": 0,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.24,
+"fxc_dwords": 93
+},
+{
+"hash": "525BF316683156EA",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "76505E5C99F28905",
+"type": 0,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_03114_74D0B818.fxc",
+"sim": 0.38,
+"fxc_dwords": 78
+},
+{
+"hash": "CF987FD7DE7B13D5",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2BB2E57FAE418361",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04181_9AFA58E4.fxc",
+"sim": 0.42,
+"fxc_dwords": 72
+},
+{
+"hash": "C313971D0DA50A89",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6B482604A0AE20CE",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04371_A21929D8.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "E26956B0D095044A",
+"type": 1,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2EF841D585BB57D8",
+"type": 0,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_02235_53C42087.fxc",
+"sim": 0.87,
+"fxc_dwords": 54
+},
+{
+"hash": "F94A0B6E732C0F6A",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1F291C1CB874BCFF",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00002_049F8A88.fxc",
+"sim": 0.1,
+"fxc_dwords": 105
+},
+{
+"hash": "8A622E27B0B843C0",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BA5CD3CEFC416CF2",
+"type": 0,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_02235_53C42087.fxc",
+"sim": 0.87,
+"fxc_dwords": 54
+},
+{
+"hash": "C4A3715A284D694C",
+"type": 1,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7928588D6B732C71",
+"type": 0,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_02395_59CB0B8C.fxc",
+"sim": 0.88,
+"fxc_dwords": 60
+},
+{
+"hash": "906810DE82E21D62",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "311C3CA1CE33E38E",
+"type": 0,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_03005_70D559A5.fxc",
+"sim": 0.88,
+"fxc_dwords": 60
+},
+{
+"hash": "0191CBFCAB7A0937",
+"type": 1,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "63E95DF542920450",
+"type": 0,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.55,
+"fxc_dwords": 42
+},
+{
+"hash": "3CBD8B6F9B96772F",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EF044E26F4D211BE",
+"type": 0,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00213_07CE7756.fxc",
+"sim": 0.54,
+"fxc_dwords": 48
+},
+{
+"hash": "5B1AEAEABE8B8310",
+"type": 1,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D0AC1AC5F38BBEBE",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.22,
+"fxc_dwords": 78
+},
+{
+"hash": "2D0C367C6990C3A7",
+"type": 1,
+"dwords": 138,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "41A74A864BD93C46",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.13,
+"fxc_dwords": 87
+},
+{
+"hash": "95885A7BC557E72F",
+"type": 1,
+"dwords": 183,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "65E65A480BF934F6",
+"type": 0,
+"dwords": 156,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "969322BAEC886D1C",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "144C0EA17B2FC74A",
+"type": 0,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A7FA9A54F48CC379",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DE5CF231C35CED3B",
+"type": 0,
+"dwords": 204,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "49A05D0AC7052158",
+"type": 1,
+"dwords": 39,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E7C9B65BE26116DA",
+"type": 0,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_03114_74D0B818.fxc",
+"sim": 0.38,
+"fxc_dwords": 78
+},
+{
+"hash": "78FF305A38EE8255",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9036B5ACA13E7152",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04371_A21929D8.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "B948026E0B5E1B00",
+"type": 1,
+"dwords": 141,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8C53899CB21F2EB7",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00002_049F8A88.fxc",
+"sim": 0.11,
+"fxc_dwords": 105
+},
+{
+"hash": "78A16ABF2DC44341",
+"type": 1,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "449B600BF0E46AAC",
+"type": 0,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_05743_D2B2364C.fxc",
+"sim": 0.87,
+"fxc_dwords": 54
+},
+{
+"hash": "D931741D086CE283",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5E0899E847E36FBA",
+"type": 0,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.55,
+"fxc_dwords": 42
+},
+{
+"hash": "8A0088FE6B4DD672",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2951217A2E8E8C96",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.22,
+"fxc_dwords": 78
+},
+{
+"hash": "8CD6C9DB043D9713",
+"type": 1,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "252924C0F54E81E9",
+"type": 0,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.21,
+"fxc_dwords": 84
+},
+{
+"hash": "70F86C9D7EEE6144",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6B23A2F4BB6CA666",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_04181_9AFA58E4.fxc",
+"sim": 0.9,
+"fxc_dwords": 72
+},
+{
+"hash": "595DCB14C1797CAD",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "392923D30614DDFA",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01593_3A98146F.fxc",
+"sim": 0.56,
+"fxc_dwords": 57
+},
+{
+"hash": "0E432EB25F4820D8",
+"type": 1,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "54707419B35DC38F",
+"type": 0,
+"dwords": 51,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "FA178F975F83600C",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A2E2885348E531E6",
+"type": 0,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_04181_9AFA58E4.fxc",
+"sim": 0.85,
+"fxc_dwords": 48
+},
+{
+"hash": "C1E0D83441B65DC0",
+"type": 1,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D34D87B452744BF7",
+"type": 0,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00215_07F4B4D0.fxc",
+"sim": 0.18,
+"fxc_dwords": 33
+},
+{
+"hash": "D9448DB7752C1A0E",
+"type": 1,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AF2CD8AFF7B2CEAD",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00215_07F4B4D0.fxc",
+"sim": 0.18,
+"fxc_dwords": 33
+},
+{
+"hash": "FD807F43286582C0",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3919DF6B899E6324",
+"type": 0,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_03862_8FDE8D6E.fxc",
+"sim": 0.87,
+"fxc_dwords": 54
+},
+{
+"hash": "0B935FF12A06B3BE",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E9B15E79B580D40A",
+"type": 0,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.16,
+"fxc_dwords": 87
+},
+{
+"hash": "6D5DBBA7A5939802",
+"type": 1,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "809403D117DC1A1D",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01530_387DC438.fxc",
+"sim": 0.35,
+"fxc_dwords": 120
+},
+{
+"hash": "FCF37FAE5C4B950E",
+"type": 1,
+"dwords": 141,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "ED8A038DA30B5FE1",
+"type": 0,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04371_A21929D8.fxc",
+"sim": 0.31,
+"fxc_dwords": 84
+},
+{
+"hash": "E3D144AC205BC40F",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2E4F579519C3B70B",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.15,
+"fxc_dwords": 87
+},
+{
+"hash": "11FDF3FC7E306520",
+"type": 1,
+"dwords": 195,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B4FC220443D4CE47",
+"type": 0,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.5,
+"fxc_dwords": 78
+},
+{
+"hash": "43B6D1D679CB535F",
+"type": 1,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BC2E7042BEBB1A11",
+"type": 0,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.91,
+"fxc_dwords": 78
+},
+{
+"hash": "07DFB1E234FAEB3B",
+"type": 1,
+"dwords": 177,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5FD24533665EC080",
+"type": 0,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.15,
+"fxc_dwords": 87
+},
+{
+"hash": "96F40173006F9D91",
+"type": 1,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "454CDD1C32763CF7",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.15,
+"fxc_dwords": 87
+},
+{
+"hash": "5FE7C8AED1DB7AEB",
+"type": 1,
+"dwords": 198,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6ED1C58BB5E5C71B",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01530_387DC438.fxc",
+"sim": 0.21,
+"fxc_dwords": 120
+},
+{
+"hash": "82EE657C0242F4BC",
+"type": 1,
+"dwords": 252,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7DE703DFEF254B17",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_02516_5EC3F698.fxc",
+"sim": 0.44,
+"fxc_dwords": 66
+},
+{
+"hash": "9A125C41CA918BBB",
+"type": 1,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7AEF0522770CECCE",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.15,
+"fxc_dwords": 87
+},
+{
+"hash": "D3CC468B8F84DDCF",
+"type": 1,
+"dwords": 216,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5E24A4EA5563BE40",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.89,
+"fxc_dwords": 66
+},
+{
+"hash": "0FE1C5A185139BEB",
+"type": 1,
+"dwords": 159,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "527427EF2CE1FB7F",
+"type": 0,
+"dwords": 99,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.18,
+"fxc_dwords": 87
+},
+{
+"hash": "0D109E280017E68C",
+"type": 1,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E8953A0DED4D37D7",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.16,
+"fxc_dwords": 93
+},
+{
+"hash": "56738CCA47686B18",
+"type": 1,
+"dwords": 216,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4BB35DAE8EC43B31",
+"type": 0,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BBF20201FC324C50",
+"type": 1,
+"dwords": 225,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C0C5E83EA454AD35",
+"type": 0,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CB24F4A25835ED7C",
+"type": 1,
+"dwords": 258,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "00A3F0B911030A5A",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.88,
+"fxc_dwords": 57
+},
+{
+"hash": "B39C17BFF54BFE17",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B7F1CB508349C809",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00073_3E758132.fxc",
+"sim": 0.16,
+"fxc_dwords": 45
+},
+{
+"hash": "D3CBE99C65D6EC59",
+"type": 1,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "438109987B55B39B",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.11,
+"fxc_dwords": 72
+},
+{
+"hash": "9C26E7E00D506E63",
+"type": 1,
+"dwords": 42,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "24B9EFF4E74D66D8",
+"type": 0,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_06396_E9B7644C.fxc",
+"sim": 0.12,
+"fxc_dwords": 78
+},
+{
+"hash": "70DCC2422A83400C",
+"type": 1,
+"dwords": 51,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F60D436906CD8BB5",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E4756432261ED7D1",
+"type": 1,
+"dwords": 24,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.44,
+"fxc_dwords": 18
+},
+{
+"hash": "C369DA615AACF5AB",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00137_C3DF1B5C.fxc",
+"sim": 0.21,
+"fxc_dwords": 48
+},
+{
+"hash": "ED3C5F535DFCFB3D",
+"type": 1,
+"dwords": 21,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E35D104D5C3FA740",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.35,
+"fxc_dwords": 81
+},
+{
+"hash": "7008114295446863",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "03BD30C202F87147",
+"type": 0,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.26,
+"fxc_dwords": 93
+},
+{
+"hash": "CDCEE3825C39D8E0",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "712FDD05CB844AED",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "50EAF0DC41D4D3B7",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F524BC6E76670CE3",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.35,
+"fxc_dwords": 81
+},
+{
+"hash": "39C22A764A3F6F6A",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E04B9950A90B4A19",
+"type": 0,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5E17760D4110F242",
+"type": 1,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5571479F65D81351",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.37,
+"fxc_dwords": 81
+},
+{
+"hash": "5155C28E4843977A",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "719D15C1387DEBE9",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_03114_74D0B818.fxc",
+"sim": 0.26,
+"fxc_dwords": 78
+},
+{
+"hash": "DDE67BE9361DA78D",
+"type": 1,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "87FA17E07CF547E3",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.31,
+"fxc_dwords": 81
+},
+{
+"hash": "D28BE8864BC6C54B",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "55C2A3F8222F89C2",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.35,
+"fxc_dwords": 81
+},
+{
+"hash": "A20661A9E9820749",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "60568CF17D42704E",
+"type": 0,
+"dwords": 87,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.37,
+"fxc_dwords": 84
+},
+{
+"hash": "1F329ECA087D87E5",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "075C40CE4CEFA953",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "968E43C857C2888E",
+"type": 1,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BF27220B9FCE4569",
+"type": 0,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8F88D77A7730C578",
+"type": 1,
+"dwords": 162,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "86DE7AC05EF39E34",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "9B4BE005BC46464B",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "65D89DFCB864D2FE",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_03114_74D0B818.fxc",
+"sim": 0.21,
+"fxc_dwords": 78
+},
+{
+"hash": "91587412053B994D",
+"type": 1,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D2D01CBC88D61772",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01530_387DC438.fxc",
+"sim": 0.23,
+"fxc_dwords": 99
+},
+{
+"hash": "8434BA580C6F84A8",
+"type": 1,
+"dwords": 159,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C7BD0321515A61DE",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.33,
+"fxc_dwords": 57
+},
+{
+"hash": "8A77E59894DA1984",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.06,
+"fxc_dwords": 126
+},
+{
+"hash": "979CD4C817A285A8",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.56,
+"fxc_dwords": 39
+},
+{
+"hash": "A960B890358402AF",
+"type": 1,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D498A0C6B77C3EF4",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.33,
+"fxc_dwords": 57
+},
+{
+"hash": "C691EE0C495AA279",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "54B3DC5DC91A64AD",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "7355B69F493DAAB6",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2473D37EBDF10424",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.15,
+"fxc_dwords": 93
+},
+{
+"hash": "5C728EA07731CBAC",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3A1AB975EC806373",
+"type": 0,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "69861037741E6354",
+"type": 1,
+"dwords": 162,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "854C91558EDA88E4",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "6B6533F8D9625428",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "124F0F97E26AE292",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0D7D90D233F5C8C4",
+"type": 1,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "96A2305BBC90A8D8",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "093034F9390FF9BC",
+"type": 1,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BBFB931914650C90",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "10B701CA352305EE",
+"type": 1,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2529EBAE19F1EEF8",
+"type": 0,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AC4ED4B421F7BB3A",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AB1881CAF4D38C8E",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.15,
+"fxc_dwords": 87
+},
+{
+"hash": "801DC23BE44D9580",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DA5A3A6BEE0A010F",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "D9521B005B832E65",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AF23A99EFBE46FB1",
+"type": 0,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2A96BAA7EBB62263",
+"type": 1,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A8B053C53710DC33",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.21,
+"fxc_dwords": 87
+},
+{
+"hash": "E9CDA385497752E9",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3662437122BABA92",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BD54E48179AE49EF",
+"type": 1,
+"dwords": 168,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "76FB62C368BB33FB",
+"type": 0,
+"dwords": 141,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "052FEEC75A0EBF16",
+"type": 1,
+"dwords": 198,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0990BE82AFDD5D63",
+"type": 0,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B1776D8BBC19F205",
+"type": 1,
+"dwords": 192,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DAAB61419D4DFAB6",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "74A5E5F7D6DF89DB",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3D7DC15087204C49",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "64C42AE3FB66C756",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F02A60899CBC4886",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.18,
+"fxc_dwords": 60
+},
+{
+"hash": "5F38F8798FD002A4",
+"type": 1,
+"dwords": 60,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "13417ACE3F15E9A5",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.31,
+"fxc_dwords": 81
+},
+{
+"hash": "B18504BD5DB9B59F",
+"type": 1,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3F8F1CEC8ED59607",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.65,
+"fxc_dwords": 72
+},
+{
+"hash": "5A5C3CB39DCC23CC",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8EB8E6EBD7C84C4E",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "464D81E4AD0983CD",
+"type": 1,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BF2510A6EC3D773F",
+"type": 0,
+"dwords": 66,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.89,
+"fxc_dwords": 66
+},
+{
+"hash": "7D24CD71DBA4D721",
+"type": 1,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9226767FB6F95153",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "27022E914C7C4452",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "59C27E53A0326569",
+"type": 0,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "17660430EFBFFCB2",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E44B25B965199364",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "0E8D32426CBA4929",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7B175C11881F1F79",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.35,
+"fxc_dwords": 81
+},
+{
+"hash": "20248555B8DD3C18",
+"type": 1,
+"dwords": 99,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8522F5E1873E8D54",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "ABDD53BC361BB927",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1458047313823B01",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1C01F2B2F554FA7D",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_03699_8A5B5BCA.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "2CC37AB1C9A30E99",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "65C6B1E956AB794A",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DAC0B4EF43291B67",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 1.0,
+"fxc_dwords": 15
+},
+{
+"hash": "0CFBE0B91E878667",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_01321_3103DDDA.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "6BD724B3CF9B5083",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01321_3103DDDA.fxc",
+"sim": 1.0,
+"fxc_dwords": 15
+},
+{
+"hash": "4747CA14A3B7189D",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "2CD0F807DC44E808",
+"type": 0,
+"dwords": 207,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5E3B50138E32B95D",
+"type": 1,
+"dwords": 186,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9EF6BC2DE39C75E1",
+"type": 0,
+"dwords": 222,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BF616C96E45C8B99",
+"type": 1,
+"dwords": 201,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "707708518D78E4B4",
+"type": 0,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "458298DFFD8EDAFE",
+"type": 1,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "55381E75511EAF17",
+"type": 0,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01530_387DC438.fxc",
+"sim": 0.17,
+"fxc_dwords": 120
+},
+{
+"hash": "586D106F938F82F1",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D541AFCFC5726D11",
+"type": 0,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01530_387DC438.fxc",
+"sim": 0.04,
+"fxc_dwords": 120
+},
+{
+"hash": "DBBD1F4B791A0B4F",
+"type": 1,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2E127ED5A85FCA2A",
+"type": 0,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01530_387DC438.fxc",
+"sim": 0.04,
+"fxc_dwords": 120
+},
+{
+"hash": "E5CE6B2865A71851",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "2B816680B16595D9",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.15,
+"fxc_dwords": 93
+},
+{
+"hash": "A95D7A0135A9DD3E",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "39A2E7DAA1B5AD1D",
+"type": 0,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.19,
+"fxc_dwords": 81
+},
+{
+"hash": "67EA8F2C87E447D0",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C2F00043E42221E4",
+"type": 0,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EA11D226400FC443",
+"type": 1,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3A541149D4E992F8",
+"type": 0,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8901F75B8C277C71",
+"type": 1,
+"dwords": 189,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "016E79535866D142",
+"type": 0,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.17,
+"fxc_dwords": 84
+},
+{
+"hash": "908EC6AA40926569",
+"type": 1,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F7AE5516CE7D9B06",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.17,
+"fxc_dwords": 87
+},
+{
+"hash": "7563A8E0D3CB3F78",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8B3CCCE008FA3F36",
+"type": 0,
+"dwords": 156,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0FFF2E31DB4F30FF",
+"type": 1,
+"dwords": 186,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0484668741A10EDA",
+"type": 0,
+"dwords": 54,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.56,
+"fxc_dwords": 39
+},
+{
+"hash": "981AD55C0108C6D2",
+"type": 1,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5760A5915451FF13",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "417A041BF79BB103",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F23868BB8AB63E67",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "0168F97763CCB9B1",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A24211055E853310",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00363_0D028F84.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "A470EF75A76E5C63",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_00363_0D028F84.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "006397C51A3E0F01",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A97F7B6101749C20",
+"type": 1,
+"dwords": 150,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E62E34A2AFF6EECB",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "50BA441590A25AA8",
+"type": 1,
+"dwords": 162,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "37BF0E791FC57CCC",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "9C9B5C2A340FE08E",
+"type": 1,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2664EF538A4B720A",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.17,
+"fxc_dwords": 87
+},
+{
+"hash": "5A5F5E51E10C0AAE",
+"type": 1,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8541C99987DB9379",
+"type": 0,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "10E2C695CE7EB34C",
+"type": 1,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9E3F96C86FE313FC",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "E6C54FA0D73AD2D1",
+"type": 1,
+"dwords": 120,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "181F8C820D360DD2",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "562438D4960EFCED",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6AD3D7DF73B53DC8",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "FC17DAF2BA53E694",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "863117F5325E81B2",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "395E72945162FD8D",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8FD953B0FF061A3B",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D3D5F0487DA12505",
+"type": 1,
+"dwords": 147,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B9CD2CF45CCFBE96",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "58C7CDC57FE4D766",
+"type": 1,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "354BC10495C91EDF",
+"type": 0,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F8727AACC68ABFFB",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5D1492A7FCDE734A",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B7BD491A1032E099",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CA35CC17E4CDFD8E",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00225_084E59BC.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "43591D3EDDD34F49",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "1E0D4FDEDDF8BC0B",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "8C2613A96DF2B03D",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "5158F0479B735CAD",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "B4E33FEE05EBD06E",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "61C279FFB2C1902E",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BA50566DAD97A47D",
+"type": 1,
+"dwords": 162,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "31B8AD92CDB42CB2",
+"type": 0,
+"dwords": 141,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "39B0A1BF48D7BF09",
+"type": 1,
+"dwords": 183,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "59E28A04AC5D03BD",
+"type": 0,
+"dwords": 195,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "74BAFA71C7576977",
+"type": 1,
+"dwords": 216,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8E03FD5D5BEF7160",
+"type": 0,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.27,
+"fxc_dwords": 81
+},
+{
+"hash": "813D258900DD33A1",
+"type": 1,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "540F1042590D1A33",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.32,
+"fxc_dwords": 81
+},
+{
+"hash": "404B4738C6E93EBB",
+"type": 1,
+"dwords": 78,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "14162E55831B5BD4",
+"type": 0,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D0BC28DDAB0A0B00",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5208020946973D42",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "DB8FAFFEC6D9102F",
+"type": 1,
+"dwords": 294,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "80DFC2344AB3C289",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "5045DB2E8DC991D1",
+"type": 1,
+"dwords": 534,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2C5FAC6E7C489776",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "74FB913778B0DAB1",
+"type": 1,
+"dwords": 576,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0BA6B7106928092B",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "CDDA019C4317B9B7",
+"type": 1,
+"dwords": 1011,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "388248ACBA4BC69D",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "1AAF08B2485ABAEE",
+"type": 1,
+"dwords": 357,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E96D965D990E8A85",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "165AD9F9255754CA",
+"type": 1,
+"dwords": 654,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "87F1398C160A1706",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "650B1D43D084447A",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6C4A93C41D6DB741",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "DD86728FE7BA050B",
+"type": 0,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "213DFD01877000DC",
+"type": 1,
+"dwords": 159,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "00DFE3AE605CE524",
+"type": 0,
+"dwords": 138,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EDB8D80C8E21B4B3",
+"type": 1,
+"dwords": 183,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "73E75C9A1BCE7F3A",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "69777A345E3C38A6",
+"type": 1,
+"dwords": 489,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7F8895BAF11993D0",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "D4D7AF16D580A0C0",
+"type": 1,
+"dwords": 402,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C942940CF01D9F5A",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "D310ACEE656201A5",
+"type": 1,
+"dwords": 666,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1815BBA3ED0BEA14",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "0840F31FD567E7B6",
+"type": 1,
+"dwords": 252,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "357AE19994641C23",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "9360EE3E3F372E71",
+"type": 1,
+"dwords": 1032,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "12F66180A1F27359",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "E7BFD00BAB42D2E8",
+"type": 1,
+"dwords": 690,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "73B364381ED4C1D6",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.35,
+"fxc_dwords": 81
+},
+{
+"hash": "7564E0BAC69B7E9F",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EC026ED864517DA6",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.24,
+"fxc_dwords": 84
+},
+{
+"hash": "7DA0513E7E9A0D58",
+"type": 1,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "526548CEF4031F64",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "334B6F1DF1406093",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F85DAE27EFE293C8",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.24,
+"fxc_dwords": 84
+},
+{
+"hash": "4CE9148AC4E95FD7",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CD3D4CAE0AE833AE",
+"type": 0,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "76C2F2C8A600F98C",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "67EC2A60459EBDE6",
+"type": 0,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1FF241232C16C8D8",
+"type": 1,
+"dwords": 192,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "ADA8A1BC8866EDC5",
+"type": 0,
+"dwords": 96,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.22,
+"fxc_dwords": 81
+},
+{
+"hash": "8D4C827DEDA52247",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "229E7EEA56418A4E",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "099004AD28D36772",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E838A9887772361C",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "EEBA37512EA13F23",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "82902905A85925EF",
+"type": 0,
+"dwords": 33,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03_00053_29B17EFD.fxc",
+"sim": 0.85,
+"fxc_dwords": 33
+},
+{
+"hash": "945064EF52B21BFE",
+"type": 0,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "89B4F80129CF79E8",
+"type": 1,
+"dwords": 156,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "71B80785072E1DD0",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.32,
+"fxc_dwords": 72
+},
+{
+"hash": "76A3679AA8A6E10C",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E58D6C37699E884A",
+"type": 0,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.18,
+"fxc_dwords": 60
+},
+{
+"hash": "B10401890B382EE3",
+"type": 1,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "29B13AF3ADAC12EA",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.33,
+"fxc_dwords": 57
+},
+{
+"hash": "FFC63BAE45A5D415",
+"type": 1,
+"dwords": 123,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "EAE3E95CA7D4E0C9",
+"type": 0,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6CEC79D013B27381",
+"type": 1,
+"dwords": 195,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0996BEB8985FE58E",
+"type": 0,
+"dwords": 135,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "AC8A263AC53C47D7",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "5C7A7383DD339C5E",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "E3A4EF4A764C4E83",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "CA9D2482938CE0C0",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "07D22ED027A67152",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "535461E6EA6CD621",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "F310DA6DA15F6DE6",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "DBB4391D40A0A96C",
+"type": 1,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B1843959A2D597BA",
+"type": 0,
+"dwords": 72,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.65,
+"fxc_dwords": 72
+},
+{
+"hash": "6771997A4FE38D26",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "86BACD4B35DB9ECD",
+"type": 0,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "226E13BF5ADD6336",
+"type": 1,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "ED7A2F7FB44AA1F8",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "4EC32D83295FFDBA",
+"type": 1,
+"dwords": 309,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6A6ECFD657526BBF",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "8ECDE6726861B01A",
+"type": 1,
+"dwords": 576,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "747B0EA1171F3A22",
+"type": 0,
+"dwords": 159,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6AE101614BC6BA69",
+"type": 1,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C03A099D79157A7F",
+"type": 0,
+"dwords": 63,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.28,
+"fxc_dwords": 57
+},
+{
+"hash": "243D437F3EE72A6A",
+"type": 1,
+"dwords": 117,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7489E3E239D729C2",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "C18A29B0BC963F15",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "4CDC83356F83B092",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "DF03E98D7D82E24E",
+"type": 1,
+"dwords": 228,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CD1E764DF3C3B67F",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "2C871B8803B2B604",
+"type": 1,
+"dwords": 591,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "CDE6EAB177A56DF4",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "D7477364C9D73DC7",
+"type": 0,
+"dwords": 105,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01530_387DC438.fxc",
+"sim": 0.23,
+"fxc_dwords": 99
+},
+{
+"hash": "4D5BEE48B255FBEE",
+"type": 1,
+"dwords": 153,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E81443612A1CA788",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "AIRPORT_TEST_03POWERPLAYS_00345_71A015F5.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "2A6B3C778F84418B",
+"type": 0,
+"dwords": 75,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "NEM_DOWNTOWN_00054_515883D4.fxc",
+"sim": 0.22,
+"fxc_dwords": 72
+},
+{
+"hash": "92188BD365109CC0",
+"type": 1,
+"dwords": 126,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "7E5F2BDEC63B5944",
+"type": 0,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9591071614FC2918",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A632ECACC77AD13F",
+"type": 0,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BCAD0BC9A4620976",
+"type": 1,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "22B324C8A38AAF59",
+"type": 0,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00128_04E96CC4.fxc",
+"sim": 0.93,
+"fxc_dwords": 27
+},
+{
+"hash": "78D40126CF96E777",
+"type": 0,
+"dwords": 159,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "0534ED32DAA9440D",
+"type": 1,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A1EF9C53322D052F",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.24,
+"fxc_dwords": 84
+},
+{
+"hash": "F6FE9A74883F4A3C",
+"type": 1,
+"dwords": 114,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "45FC0475003E9D60",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D08A983C4E90E54C",
+"type": 1,
+"dwords": 102,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6B2CB896D361E62A",
+"type": 0,
+"dwords": 84,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "DOCKS_00513_B7E7D7E5.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "415458FC32EAF3B6",
+"type": 1,
+"dwords": 93,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "72E3CF105B05A2E5",
+"type": 0,
+"dwords": 81,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "AIRPORT_TEST_03_00277_FE9DBAE1.fxc",
+"sim": 0.32,
+"fxc_dwords": 81
+},
+{
+"hash": "C1869F0F4C51709A",
+"type": 1,
+"dwords": 69,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "917631BA5CDC46C7",
+"type": 0,
+"dwords": 162,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "151C3FBDA59D5763",
+"type": 1,
+"dwords": 465,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F040D49DF0F4250A",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00265_09AF2F74.fxc",
+"sim": 0.6,
+"fxc_dwords": 57
+},
+{
+"hash": "0EE3F4DC7BA85803",
+"type": 1,
+"dwords": 111,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "832846C4C5EBB256",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "5AA9606BCCC01B74",
+"type": 1,
+"dwords": 129,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "6519A42BB670DBBC",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "9D02006D89B4C758",
+"type": 1,
+"dwords": 207,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "A747E0A83737F3B9",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "9F84EEB5E0607922",
+"type": 1,
+"dwords": 282,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "66EE1AE1DBDE55A7",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "A1C5CD36CB31D488",
+"type": 1,
+"dwords": 462,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3FC33F8468A42BA9",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "649BA8E6A67B9E9F",
+"type": 1,
+"dwords": 291,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "B312C884FBC92E4C",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "FF454A8F3419F8F5",
+"type": 1,
+"dwords": 168,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8DA4A53ADB21A3BD",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "1366710DC7DCA1E8",
+"type": 1,
+"dwords": 162,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "9ABD61A70FBD80B2",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "F3EFFA121ECA3AE7",
+"type": 1,
+"dwords": 294,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F325F4767888AA02",
+"type": 0,
+"dwords": 132,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "C4DE111BDF80AFFD",
+"type": 1,
+"dwords": 27,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.4,
+"fxc_dwords": 15
+},
+{
+"hash": "B233E1EFF16AB2A5",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.33,
+"fxc_dwords": 18
+},
+{
+"hash": "DCE7D72BBD5B4F5F",
+"type": 1,
+"dwords": 180,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1443EA2D44F764E4",
+"type": 0,
+"dwords": 48,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "3AC0FBB82F003B5C",
+"type": 1,
+"dwords": 18,
+"trailing_zero_dwords": 0,
+"class": "exact",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 1.0,
+"fxc_dwords": 18
+},
+{
+"hash": "4CC030BF36CB0016",
+"type": 1,
+"dwords": 15,
+"trailing_zero_dwords": 3,
+"class": "variant_samelen",
+"fxc": "RESIDENT_00115_045EF63C.fxc",
+"sim": 0.67,
+"fxc_dwords": 15
+},
+{
+"hash": "FA91A47324D53F6B",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "E7240C0310E2BF77",
+"type": 1,
+"dwords": 396,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1C46FDCA8FAE348E",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "E30E106D3E72CEE3",
+"type": 1,
+"dwords": 606,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "526565DB3B7247D7",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "68F0D6B6FC13E33A",
+"type": 1,
+"dwords": 414,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "FFA73E1491C56492",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "FF0B1BD3CA0C7978",
+"type": 1,
+"dwords": 627,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D42E0A6DA75B976C",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "7BB28A1014BBE703",
+"type": 1,
+"dwords": 417,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F37EC96269C5E96C",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "26E1023A32B7F4EF",
+"type": 1,
+"dwords": 576,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "99437E216CB72360",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "E4F8A48C49DE1B73",
+"type": 1,
+"dwords": 957,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "51BB4F83994CC5E7",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "14169DAFA7E5CB36",
+"type": 1,
+"dwords": 666,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "2E860786119FCF78",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "C1D4712FD289EC4B",
+"type": 1,
+"dwords": 441,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "D54C7AB094FB84AD",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "18DC986D94D1446E",
+"type": 1,
+"dwords": 459,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E6626F9C35546499",
+"type": 0,
+"dwords": 45,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "6EC8137ED5C0BB31",
+"type": 1,
+"dwords": 687,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DCD5478AF5D1B7A5",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "D64F7F8A1E6C97C4",
+"type": 0,
+"dwords": 198,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "F998DF3DF8642D99",
+"type": 1,
+"dwords": 42,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "DBC262A409865D92",
+"type": 0,
+"dwords": 108,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_04371_A21929D8.fxc",
+"sim": 0.3,
+"fxc_dwords": 84
+},
+{
+"hash": "DA4E54C3EB97C119",
+"type": 1,
+"dwords": 144,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "675048AEF0CD02B6",
+"type": 0,
+"dwords": 90,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_00533_1470E4B8.fxc",
+"sim": 0.22,
+"fxc_dwords": 78
+},
+{
+"hash": "A3186C44088FDA41",
+"type": 1,
+"dwords": 138,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "1FC952F5451A63CA",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "CEEB29B8B59CC5A1",
+"type": 1,
+"dwords": 609,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "BDD344BC14D981B5",
+"type": 1,
+"dwords": 990,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "E225004EDBEAFEB8",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "44885EF933AEC950",
+"type": 1,
+"dwords": 624,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "424F0359DB2AB6A4",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "084966F01F1AD9E9",
+"type": 1,
+"dwords": 1047,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "49337AE1155D489F",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "0C7013A77048AE2F",
+"type": 1,
+"dwords": 588,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+},
+{
+"hash": "8538BD0AD3B896A6",
+"type": 0,
+"dwords": 57,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": "RESIDENT_01988_4A8D3DF2.fxc",
+"sim": 0.28,
+"fxc_dwords": 18
+},
+{
+"hash": "5C99AFF75EBF0D86",
+"type": 1,
+"dwords": 972,
+"trailing_zero_dwords": 0,
+"class": "none",
+"fxc": null,
+"sim": null,
+"fxc_dwords": null
+}
+]

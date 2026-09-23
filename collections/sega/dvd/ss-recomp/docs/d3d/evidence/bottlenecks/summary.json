@@ -1,0 +1,74 @@
+{
+  "run": 84,
+  "swap_first": 2161,
+  "swap_last": 2280,
+  "frames": 120,
+  "config": "FSI, readback_resolve=full, normal 60 Hz video mode, warm cache",
+  "metrics": {
+    "frame_ms": {
+      "mean": 84.732275,
+      "median": 84.51,
+      "p95": 92.247
+    },
+    "draw_cpu_ms": {
+      "mean": 79.0985,
+      "median": 78.733,
+      "p95": 86.679
+    },
+    "fence_wait_ms": {
+      "mean": 43.616375,
+      "median": 43.9435,
+      "p95": 48.442
+    },
+    "draws": {
+      "mean": 4274.458333333333,
+      "median": 4365.5,
+      "p95": 4533.0
+    },
+    "submissions": {
+      "mean": 80.85,
+      "median": 81.0,
+      "p95": 82.0
+    },
+    "texture_sets_written": {
+      "mean": 1335.7666666666667,
+      "median": 1345.5,
+      "p95": 1489.0
+    },
+    "texture_sets_reused": {
+      "mean": 487.7916666666667,
+      "median": 510.5,
+      "p95": 559.0
+    },
+    "resolve_cpu_ms": {
+      "mean": 59.68545,
+      "median": 59.8215,
+      "p95": 64.507
+    },
+    "readback_sync_ms": {
+      "mean": 48.04439166666667,
+      "median": 48.418499999999995,
+      "p95": 52.792
+    },
+    "readback_copy_ms": {
+      "mean": 10.589508333333333,
+      "median": 10.3485,
+      "p95": 11.963
+    },
+    "readback_count": {
+      "mean": 76.0,
+      "median": 76.0,
+      "p95": 76.0
+    },
+    "readback_bytes": {
+      "mean": 84246528.0,
+      "median": 84246528.0,
+      "p95": 84246528.0
+    },
+    "draw_without_resolve_ms": {
+      "mean": 19.41305,
+      "median": 19.6875,
+      "p95": 25.076
+    }
+  }
+}

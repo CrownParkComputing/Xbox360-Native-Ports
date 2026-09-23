@@ -25,9 +25,9 @@ virtual Xbox 360 pad.
 
 <p align="center"><img src="docs/img/rexmenu-home.png" alt="rexmenu home rail" width="900"></p>
 
-*Home rail on a fresh install: letter tiles and "not imported yet" until you
-point the launcher at your own copy of each game. Once a title's content is
-imported, its dashboard tile art appears.*
+*Home rail on a fresh install: each title shows its box icon with a "NO
+ASSETS" badge until you point the launcher at your own copy of the game and
+the import verifies.*
 
 ### Controls
 
@@ -172,9 +172,14 @@ those (or symlink) when building from a fresh clone.
 
 ## Legal
 
-No game files, discs, packages or assets are distributed here or downloaded by
-the launchers. `content/content.sha256` holds only checksums, so an import can
-be verified. You need to own the game.
+No original game files are distributed here or downloaded by the launchers:
+no executables, disc images, packages, audio, textures or shaders. What a
+port tree does contain is its recompiled code (`generated/`) — a machine
+translation of the game's program code, carrying no assets — plus each
+title's small dashboard box icon (`icon.png`), shown on the launcher rail to
+identify the game; all other game art (achievement icons, screenshots,
+extracted textures) is deliberately excluded. `content/content.sha256` holds
+only checksums, so an import can be verified. You need to own the game.
 
 The runtime is built on [rexglue-sdk](https://github.com/CrownParkComputing/rexglue-sdk)
 (portions derived from the Xenia project).

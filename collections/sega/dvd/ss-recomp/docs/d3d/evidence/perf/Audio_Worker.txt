@@ -1,0 +1,37 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 58K of event 'cycles:u'
+# Event count (approx.): 577310561843
+#
+# Children      Self  Shared Object        Symbol                                                                                                                                                                                                            IPC   [IPC Coverage]
+# ........  ........  ...................  ................................................................................................................................................................................................................  ....................
+#
+     7.76%     0.00%  libc.so.6            [.] ___pthread_mutex_trylock (inlined)                                                                                                                                                                            -      -            
+     7.74%     7.74%  libc.so.6            [.] pthread_mutex_trylock                                                                                                                                                                                         -      -            
+     4.82%     0.00%  libc.so.6            [.] 0x00007fd179cb1f6d                                                                                                                                                                                            -      -            
+     4.81%     4.81%  libc.so.6            [.] 0x00000000000b1f6d                                                                                                                                                                                            -      -            
+     3.50%     0.00%  libc.so.6            [.] __clock_gettime (inlined)                                                                                                                                                                                     -      -            
+     3.36%     3.36%  [vdso]               [.] __vdso_clock_gettime                                                                                                                                                                                          -      -            
+     2.62%     2.62%  librexruntime.so     [.] rex::thread::PosixConditionBase::WaitMultiple(std::vector<rex::thread::PosixConditionBase*, std::allocator<rex::thread::PosixConditionBase*> >&&, bool, std::chrono::duration<long, std::ratio<1l, 1000l> >)  -      -            
+     1.49%     1.49%  librexruntime.so     [.] rex::thread::PosixCondition<rex::thread::Semaphore>::signaled() const                                                                                                                                         -      -            
+     1.34%     1.34%  libc.so.6            [.] 0x00000000000b1c67                                                                                                                                                                                            -      -            
+     1.34%     0.00%  libc.so.6            [.] 0x00007fd179cb1c67                                                                                                                                                                                            -      -            
+     1.14%     0.00%  libc.so.6            [.] ___pthread_mutex_unlock (inlined)                                                                                                                                                                             -      -            
+     1.14%     1.14%  libc.so.6            [.] pthread_mutex_unlock                                                                                                                                                                                          -      -            
+     0.42%     0.42%  libc.so.6            [.] 0x00000000000b1c5b                                                                                                                                                                                            -      -            
+     0.42%     0.00%  libc.so.6            [.] 0x00007fd179cb1c5b                                                                                                                                                                                            -      -            
+     0.41%     0.41%  libstdc++.so.6.0.36  [.] std::chrono::_V2::steady_clock::now()                                                                                                                                                                         -      -            
+     0.41%     0.00%  libstdc++.so.6.0.36  [.] now (inlined)                                                                                                                                                                                                 -      -            
+     0.40%     0.00%  libc.so.6            [.] __pthread_mutex_unlock_usercnt (inlined)                                                                                                                                                                      -      -            
+     0.21%     0.21%  libc.so.6            [.] malloc                                                                                                                                                                                                        -      -            
+     0.21%     0.00%  libc.so.6            [.] __libc_malloc (inlined)                                                                                                                                                                                       -      -            
+     0.20%     0.20%  libc.so.6            [.] 0x00000000000b1f3e                                                                                                                                                                                            -      -            
+     0.20%     0.00%  libc.so.6            [.] 0x00007fd179cb1f3e                                                                                                                                                                                            -      -            
+
+
+#
+# (Tip: To compare scalability of two workload samples use perf diff -c ratio file1 file2)
+#
