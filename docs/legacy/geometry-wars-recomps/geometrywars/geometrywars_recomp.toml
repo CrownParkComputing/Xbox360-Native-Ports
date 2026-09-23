@@ -1,0 +1,102 @@
+[main]
+file_path = "assets/default.xex"
+out_directory_path = "ppc"
+switch_table_file_path = "geometrywars_jumptable.toml"
+restgprlr_14_address = 0x82098570
+savegprlr_14_address = 0x82098520
+restfpr_14_address = 0x8209946C
+savefpr_14_address = 0x82099420
+restvmx_14_address = 0x82099D08
+savevmx_14_address = 0x82099A70
+restvmx_64_address = 0x82099D9C
+savevmx_64_address = 0x82099B04
+longjmp_address = 0x82099600
+setjmp_address = 0x82099830
+
+[[main.functions]]
+address = 0x8202C234
+size = 0x14
+
+[[main.functions]]
+address = 0x8202C23C
+size = 0xC
+
+[[main.functions]]
+address = 0x8202C248
+size = 0x4D4
+
+[[main.functions]]
+address = 0x8202C714
+size = 0x8
+
+[[main.functions]]
+address = 0x8202D9D4
+size = 0xE4
+
+[[main.functions]]
+address = 0x8202DAB8
+size = 0x8
+
+[[main.functions]]
+address = 0x8202DAC0
+size = 0x2C
+
+[[main.functions]]
+address = 0x8202DAEC
+size = 0x10
+
+[[main.functions]]
+address = 0x8202DB0C
+size = 0x10
+
+[[main.functions]]
+address = 0x8202DB1C
+size = 0x8
+
+[[main.functions]]
+address = 0x820A21A0
+size = 0x14
+
+[[main.functions]]
+address = 0x820B62F0
+size = 0x8
+
+[[main.functions]]
+address = 0x820B63D4
+size = 0xC
+
+[[main.functions]]
+address = 0x820B7028
+size = 0x8
+
+[[main.functions]]
+address = 0x820B70E4
+size = 0xC
+
+[[main.functions]]
+address = 0x820CC95C
+size = 0x20
+
+[[main.functions]]
+address = 0x820CC97C
+size = 0x8
+
+[[main.functions]]
+address = 0x820CC990
+size = 0x24
+
+[[main.functions]]
+address = 0x820CCA00
+size = 0x10
+
+[[main.functions]]
+address = 0x820CCA48
+size = 0x14
+
+[[main.functions]]
+address = 0x820CCA74
+size = 0x14
+
+[[main.functions]]
+address = 0x820CCAFC
+size = 0x8

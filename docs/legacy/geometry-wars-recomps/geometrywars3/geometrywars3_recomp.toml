@@ -1,0 +1,867 @@
+[main]
+file_path = "assets/default.xex"
+out_directory_path = "ppc"
+switch_table_file_path = "geometrywars3_jumptable.toml"
+longjmp_address = 0x82619110
+setjmp_address = 0x82619720
+
+restgprlr_14_address = 0x826141D0
+savegprlr_14_address = 0x82614180
+restfpr_14_address = 0x82614C8C
+savefpr_14_address = 0x82614C40
+restvmx_14_address = 0x82619D28
+savevmx_14_address = 0x82619A90
+restvmx_64_address = 0x82619DBC
+savevmx_64_address = 0x82619B24
+
+[[main.functions]]
+address = 0x82169CB4
+size = 0x28
+
+[[main.functions]]
+address = 0x82169CDC
+size = 0x38
+
+[[main.functions]]
+address = 0x82169CE4
+size = 0x18
+
+[[main.functions]]
+address = 0x82169CFC
+size = 0x18
+
+[[main.functions]]
+address = 0x82169D14
+size = 0x8
+
+[[main.functions]]
+address = 0x821711F0
+size = 0x10
+
+[[main.functions]]
+address = 0x82171200
+size = 0x38
+
+[[main.functions]]
+address = 0x82171288
+size = 0x34
+
+[[main.functions]]
+address = 0x821712A4
+size = 0x18
+
+[[main.functions]]
+address = 0x821712BC
+size = 0x34
+
+[[main.functions]]
+address = 0x821712E4
+size = 0x8
+
+[[main.functions]]
+address = 0x821712EC
+size = 0x4
+
+[[main.functions]]
+address = 0x821712F0
+size = 0x10
+
+[[main.functions]]
+address = 0x82171300
+size = 0xC
+
+[[main.functions]]
+address = 0x821A2A70
+size = 0x8
+
+[[main.functions]]
+address = 0x821D2528
+size = 0x10
+
+[[main.functions]]
+address = 0x821D771C
+size = 0x10
+
+[[main.functions]]
+address = 0x821D9118
+size = 0x10
+
+[[main.functions]]
+address = 0x821E7168
+size = 0x8
+
+[[main.functions]]
+address = 0x821E7228
+size = 0x8
+
+[[main.functions]]
+address = 0x821F12B0
+size = 0x24
+
+[[main.functions]]
+address = 0x821F1380
+size = 0x8
+
+[[main.functions]]
+address = 0x821F3548
+size = 0x8
+
+[[main.functions]]
+address = 0x82236A1C
+size = 0xC
+
+[[main.functions]]
+address = 0x82236B88
+size = 0x10
+
+[[main.functions]]
+address = 0x8226F844
+size = 0xC
+
+[[main.functions]]
+address = 0x8226F8A0
+size = 0x20
+
+[[main.functions]]
+address = 0x822FAD64
+size = 0x10
+
+[[main.functions]]
+address = 0x822FD3E0
+size = 0x10
+
+[[main.functions]]
+address = 0x822FD99C
+size = 0x8
+
+[[main.functions]]
+address = 0x822FDE40
+size = 0x10
+
+[[main.functions]]
+address = 0x82324A14
+size = 0x8
+
+[[main.functions]]
+address = 0x82324ACC
+size = 0x8
+
+[[main.functions]]
+address = 0x82324AD4
+size = 0x8
+
+[[main.functions]]
+address = 0x82324AE4
+size = 0x18
+
+[[main.functions]]
+address = 0x82324AFC
+size = 0x18
+
+[[main.functions]]
+address = 0x82324B04
+size = 0x10
+
+[[main.functions]]
+address = 0x82324B7C
+size = 0x18
+
+[[main.functions]]
+address = 0x82324B94
+size = 0x20
+
+[[main.functions]]
+address = 0x82324BB4
+size = 0x18
+
+[[main.functions]]
+address = 0x82324BCC
+size = 0x20
+
+[[main.functions]]
+address = 0x82324BEC
+size = 0x20
+
+[[main.functions]]
+address = 0x82324C0C
+size = 0x18
+
+[[main.functions]]
+address = 0x82324C24
+size = 0x20
+
+[[main.functions]]
+address = 0x82324C44
+size = 0x18
+
+[[main.functions]]
+address = 0x82324C5C
+size = 0x10
+
+[[main.functions]]
+address = 0x82324C6C
+size = 0x20
+
+[[main.functions]]
+address = 0x82324C8C
+size = 0x20
+
+[[main.functions]]
+address = 0x82324CAC
+size = 0x10
+
+[[main.functions]]
+address = 0x82324CBC
+size = 0x10
+
+[[main.functions]]
+address = 0x82324CCC
+size = 0x10
+
+[[main.functions]]
+address = 0x82324CDC
+size = 0x10
+
+[[main.functions]]
+address = 0x82324CEC
+size = 0x18
+
+[[main.functions]]
+address = 0x82324D04
+size = 0x28
+
+[[main.functions]]
+address = 0x82324D2C
+size = 0x20
+
+[[main.functions]]
+address = 0x82324D4C
+size = 0x18
+
+[[main.functions]]
+address = 0x82324D64
+size = 0x1C
+
+[[main.functions]]
+address = 0x82324D80
+size = 0x8
+
+[[main.functions]]
+address = 0x82324E0C
+size = 0x10
+
+[[main.functions]]
+address = 0x82324E1C
+size = 0x10
+
+[[main.functions]]
+address = 0x82324E24
+size = 0x8
+
+[[main.functions]]
+address = 0x82324E2C
+size = 0x10
+
+[[main.functions]]
+address = 0x82324E34
+size = 0x8
+
+[[main.functions]]
+address = 0x82324E3C
+size = 0x8
+
+[[main.functions]]
+address = 0x82324E6C
+size = 0x8
+
+[[main.functions]]
+address = 0x82324E8C
+size = 0x8
+
+[[main.functions]]
+address = 0x82324EAC
+size = 0x20
+
+[[main.functions]]
+address = 0x82324EC4
+size = 0x8
+
+[[main.functions]]
+address = 0x82324ECC
+size = 0x20
+
+[[main.functions]]
+address = 0x82324EEC
+size = 0x18
+
+[[main.functions]]
+address = 0x82324F04
+size = 0x20
+
+[[main.functions]]
+address = 0x82324F24
+size = 0x30
+
+[[main.functions]]
+address = 0x82324F34
+size = 0x18
+
+[[main.functions]]
+address = 0x82324F4C
+size = 0x8
+
+[[main.functions]]
+address = 0x82324F54
+size = 0x18
+
+[[main.functions]]
+address = 0x82324F6C
+size = 0x20
+
+[[main.functions]]
+address = 0x82324F8C
+size = 0x18
+
+[[main.functions]]
+address = 0x82324FA4
+size = 0x10
+
+[[main.functions]]
+address = 0x82324FB4
+size = 0x20
+
+[[main.functions]]
+address = 0x82324FD4
+size = 0x20
+
+[[main.functions]]
+address = 0x82324FF4
+size = 0x18
+
+[[main.functions]]
+address = 0x8232500C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232501C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232502C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232503C
+size = 0x18
+
+[[main.functions]]
+address = 0x82325054
+size = 0x30
+
+[[main.functions]]
+address = 0x82325084
+size = 0x28
+
+[[main.functions]]
+address = 0x823250AC
+size = 0x18
+
+[[main.functions]]
+address = 0x823250C4
+size = 0x1C
+
+[[main.functions]]
+address = 0x823250E0
+size = 0x8
+
+[[main.functions]]
+address = 0x8232516C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232517C
+size = 0x10
+
+[[main.functions]]
+address = 0x82325184
+size = 0x8
+
+[[main.functions]]
+address = 0x8232518C
+size = 0x10
+
+[[main.functions]]
+address = 0x82325194
+size = 0x8
+
+[[main.functions]]
+address = 0x8232519C
+size = 0x8
+
+[[main.functions]]
+address = 0x8232520C
+size = 0x18
+
+[[main.functions]]
+address = 0x82325224
+size = 0x20
+
+[[main.functions]]
+address = 0x82325244
+size = 0x18
+
+[[main.functions]]
+address = 0x8232525C
+size = 0x20
+
+[[main.functions]]
+address = 0x8232527C
+size = 0x18
+
+[[main.functions]]
+address = 0x82325294
+size = 0x20
+
+[[main.functions]]
+address = 0x823252B4
+size = 0x20
+
+[[main.functions]]
+address = 0x823252D4
+size = 0x18
+
+[[main.functions]]
+address = 0x823252EC
+size = 0x10
+
+[[main.functions]]
+address = 0x823252FC
+size = 0x20
+
+[[main.functions]]
+address = 0x8232531C
+size = 0x20
+
+[[main.functions]]
+address = 0x8232533C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232534C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232535C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232536C
+size = 0x10
+
+[[main.functions]]
+address = 0x8232537C
+size = 0x18
+
+[[main.functions]]
+address = 0x82325394
+size = 0x28
+
+[[main.functions]]
+address = 0x823253BC
+size = 0x20
+
+[[main.functions]]
+address = 0x823253DC
+size = 0x18
+
+[[main.functions]]
+address = 0x823253F4
+size = 0x1C
+
+[[main.functions]]
+address = 0x82325410
+size = 0x8
+
+[[main.functions]]
+address = 0x82338E70
+size = 0x10
+
+[[main.functions]]
+address = 0x82339060
+size = 0x10
+
+[[main.functions]]
+address = 0x8234B354
+size = 0x34
+
+[[main.functions]]
+address = 0x8234B460
+size = 0x8
+
+[[main.functions]]
+address = 0x8234B60C
+size = 0xC
+
+[[main.functions]]
+address = 0x82351000
+size = 0x20
+
+[[main.functions]]
+address = 0x82351028
+size = 0x4
+
+[[main.functions]]
+address = 0x8235D128
+size = 0x8
+
+[[main.functions]]
+address = 0x82394BB8
+size = 0x14
+
+[[main.functions]]
+address = 0x82394BEC
+size = 0x4
+
+[[main.functions]]
+address = 0x823CFDBC
+size = 0x18
+
+[[main.functions]]
+address = 0x823E9CC0
+size = 0x18
+
+[[main.functions]]
+address = 0x823EC8AC
+size = 0x8
+
+[[main.functions]]
+address = 0x824410A0
+size = 0x14
+
+[[main.functions]]
+address = 0x824410A8
+size = 0xC
+
+[[main.functions]]
+address = 0x824410B4
+size = 0x4F8
+
+[[main.functions]]
+address = 0x824415A4
+size = 0x8
+
+[[main.functions]]
+address = 0x824428AC
+size = 0xE4
+
+[[main.functions]]
+address = 0x82442990
+size = 0x8
+
+[[main.functions]]
+address = 0x82442998
+size = 0x2C
+
+[[main.functions]]
+address = 0x824429C4
+size = 0x10
+
+[[main.functions]]
+address = 0x824429E0
+size = 0x10
+
+[[main.functions]]
+address = 0x824429F0
+size = 0x8
+
+[[main.functions]]
+address = 0x8244920C
+size = 0x10
+
+[[main.functions]]
+address = 0x82449254
+size = 0x8
+
+[[main.functions]]
+address = 0x82477F24
+size = 0x10
+
+[[main.functions]]
+address = 0x82477F6C
+size = 0x8
+
+[[main.functions]]
+address = 0x8248A47C
+size = 0x1C
+
+[[main.functions]]
+address = 0x8248A780
+size = 0x4
+
+[[main.functions]]
+address = 0x824B7CBC
+size = 0x30
+
+[[main.functions]]
+address = 0x824B7D0C
+size = 0x14
+
+[[main.functions]]
+address = 0x824B7E04
+size = 0x8
+
+[[main.functions]]
+address = 0x824C016C
+size = 0x84
+
+[[main.functions]]
+address = 0x824E2CDC
+size = 0x8
+
+[[main.functions]]
+address = 0x824E2CF8
+size = 0x1C
+
+[[main.functions]]
+address = 0x824E2D6C
+size = 0x10
+
+[[main.functions]]
+address = 0x824E2DB4
+size = 0x10
+
+[[main.functions]]
+address = 0x824E2DC4
+size = 0x8
+
+[[main.functions]]
+address = 0x8250458C
+size = 0x10
+
+[[main.functions]]
+address = 0x82583848
+size = 0x8
+
+[[main.functions]]
+address = 0x8258385C
+size = 0x8
+
+[[main.functions]]
+address = 0x82583EBC
+size = 0x8
+
+[[main.functions]]
+address = 0x8258418C
+size = 0xC
+
+[[main.functions]]
+address = 0x82584198
+size = 0x10
+
+[[main.functions]]
+address = 0x82584664
+size = 0x10
+
+[[main.functions]]
+address = 0x825847A4
+size = 0x8
+
+[[main.functions]]
+address = 0x825848E8
+size = 0x28
+
+[[main.functions]]
+address = 0x825849F0
+size = 0xC
+
+[[main.functions]]
+address = 0x82584EC0
+size = 0x124
+
+[[main.functions]]
+address = 0x82585170
+size = 0x1EC
+
+[[main.functions]]
+address = 0x8258535C
+size = 0x20
+
+[[main.functions]]
+address = 0x82585374
+size = 0x8
+
+[[main.functions]]
+address = 0x8258537C
+size = 0x10
+
+[[main.functions]]
+address = 0x825AA330
+size = 0x8
+
+[[main.functions]]
+address = 0x825AA338
+size = 0x8
+
+[[main.functions]]
+address = 0x825AA340
+size = 0xC
+
+[[main.functions]]
+address = 0x825AA348
+size = 0x4
+
+[[main.functions]]
+address = 0x825AA34C
+size = 0xC
+
+[[main.functions]]
+address = 0x825B1560
+size = 0x14
+
+[[main.functions]]
+address = 0x825B2660
+size = 0x34
+
+[[main.functions]]
+address = 0x825B26D0
+size = 0x8
+
+[[main.functions]]
+address = 0x825B2700
+size = 0x4
+
+[[main.functions]]
+address = 0x825B2704
+size = 0x30
+
+[[main.functions]]
+address = 0x825B27AC
+size = 0x14
+
+[[main.functions]]
+address = 0x825B2804
+size = 0xC
+
+[[main.functions]]
+address = 0x825B2840
+size = 0xC
+
+[[main.functions]]
+address = 0x825B284C
+size = 0x10
+
+[[main.functions]]
+address = 0x825FD0A0
+size = 0x8
+
+[[main.functions]]
+address = 0x825FD170
+size = 0x8
+
+[[main.functions]]
+address = 0x8260347C
+size = 0x4
+
+[[main.functions]]
+address = 0x826281E4
+size = 0x14
+
+[[main.functions]]
+address = 0x82628F70
+size = 0x88
+
+[[main.functions]]
+address = 0x8262900C
+size = 0xC
+
+[[main.functions]]
+address = 0x8262904C
+size = 0x8
+
+[[main.functions]]
+address = 0x82629174
+size = 0x14
+
+[[main.functions]]
+address = 0x826294E0
+size = 0x8
+
+[[main.functions]]
+address = 0x826294EC
+size = 0x8
+
+[[main.functions]]
+address = 0x82629620
+size = 0x8
+
+[[main.functions]]
+address = 0x82629D08
+size = 0x8
+
+[[main.functions]]
+address = 0x82629D10
+size = 0xC
+
+[[main.functions]]
+address = 0x82629DAC
+size = 0xC
+
+[[main.functions]]
+address = 0x8262F7A8
+size = 0x68
+
+[[main.functions]]
+address = 0x8262F854
+size = 0x5C
+
+[[main.functions]]
+address = 0x8262F8B0
+size = 0x2C
+
+[[main.functions]]
+address = 0x8262F8D4
+size = 0x8
+
+[[main.functions]]
+address = 0x8263347C
+size = 0x74
+
+[[main.functions]]
+address = 0x8263354C
+size = 0x8
+
+[[main.functions]]
+address = 0x82633554
+size = 0x2F8
+
+[[main.functions]]
+address = 0x8263384C
+size = 0x2C
+
+[[main.functions]]
+address = 0x82633878
+size = 0xC
+
+[[main.functions]]
+address = 0x8263E434
+size = 0x5C
+
+[[main.functions]]
+address = 0x8263E4C8
+size = 0x8
+
+[[main.functions]]
+address = 0x8263E6C4
+size = 0xF8
+
+[[main.functions]]
+address = 0x8263E7BC
+size = 0x18
+
+[[main.functions]]
+address = 0x8263E7D4
+size = 0x18
+
+[[main.functions]]
+address = 0x8263E7EC
+size = 0xC

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  A NativeActivity and nothing else.
+
+  There is no Java in this port: android.app.NativeActivity is a stock Android
+  class that loads a named .so and calls android_main in it, so hasCode is false
+  and the whole application is libwhittyxenon.so. That keeps the port's Android
+  surface to the four files under android/src, which is what makes it reviewable.
+
+  minSdkVersion 30, not armsx2's 26, and the reason is one function:
+  memfd_create is __INTRODUCED_IN(30) in the NDK's sys/mman.h, and
+  guest_memory::initialize needs it to back the console's three physical-memory
+  aliases with one shared object. Every device this was written for is far above
+  30, so it costs nothing.
+
+  extractNativeLibs is true. An uncompressed, page-aligned library in the APK is
+  what Play wants and is a packaging job of its own; a debug build handed over on
+  a cable does not need it, and saying so here is cheaper than discovering it.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.whittyxenon.player"
+          android:versionCode="1"
+          android:versionName="0.1">
+
+    <uses-sdk android:minSdkVersion="30" android:targetSdkVersion="34" />
+    <uses-feature android:name="android.hardware.vulkan.version"
+                  android:version="0x400003" android:required="true" />
+    <!-- The physical controls, if the device has them. NOT required: a phone
+         with none still runs, it just has nothing to play with yet - touch is
+         a design job rather than a mapping, and a bad virtual stick on a
+         twin-stick shooter is worse than none. -->
+    <uses-feature android:name="android.hardware.gamepad"
+                  android:required="false" />
+
+    <application android:label="Whitty Xenon"
+                 android:hasCode="false"
+                 android:extractNativeLibs="true"
+                 android:debuggable="true">
+        <!-- Fullscreen and no title bar, from the platform's own style so
+             nothing has to be compiled into the APK. Without it a
+             NativeActivity gets the default theme's action bar and the surface
+             is the screen minus a strip - and the frame is then fitted to that
+             strip's dimensions, which is exactly the resampling the whole
+             present layout exists to avoid. -->
+        <activity android:name="android.app.NativeActivity"
+                  android:exported="true"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:screenOrientation="landscape"
+                  android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|density">
+            <meta-data android:name="android.app.lib_name"
+                       android:value="whittyxenon" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
